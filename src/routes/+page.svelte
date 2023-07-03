@@ -1,8 +1,9 @@
 <!-- javascript -->
-<!-- imports -->
 <script>
+  // imports
   import LoadScreen from "../components/LoadScreen.svelte";
   import Navbar from "../components/Navbar.svelte";
+  import Home from "../components/Home.svelte";
   let menuOpen = false;
 
   // LoadScreen
@@ -18,6 +19,7 @@
 {:else}
   <div>
     <Navbar {menuOpen} on:toggleMenu={() => (menuOpen = !menuOpen)} />
+    <Home />
   </div>
 {/if}
 

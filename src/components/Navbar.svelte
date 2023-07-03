@@ -40,7 +40,10 @@
   <div class="max-w-full mx-auto px-4 sm:px-6 lg:px-16">
     <div class="flex items-center justify-between h-16 sm:h-20 lg:h-20">
       <div class="flex-shrink-0">
-        <span class="text-white text-3xl sm:text-4xl lg:text-4xl">grz.</span>
+        <span
+          class="text-white text-3xl sm:text-4xl font-bold font-sans lg:text-4xl"
+          >grz.</span
+        >
       </div>
       {#if isMobileView && !menuOpen}
         <div class="md:hidden">
