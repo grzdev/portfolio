@@ -1,9 +1,14 @@
+<!-- Javascript -->
 <script lang="ts">
+  import { onMount } from "svelte";
   import Avatar from "../images/avatar.png";
-  const options = ["Javascript", "React", "Typescript"];
+  import { fade } from "svelte/transition";
+  import Icon from "@iconify/svelte";
+  const options = ["Javascript", "React", "Typescript", "Frontend"];
   let currentIndex = 0;
 
   function changeOption() {
+    // header text change
     const optionsElement = document.getElementById("options");
     if (optionsElement) {
       optionsElement.classList.add("fade-out");
@@ -19,50 +24,130 @@
       }
     }
   }
+  setInterval(changeOption, 4000);
 
-  setInterval(changeOption, 6000);
+  // imade fade in
+  let fadeIn = false;
+  onMount(() => {
+    setTimeout(() => {
+      fadeIn = true;
+    }, 200);
+  });
+
+  // text fly in
+  let showText1 = false;
+  onMount(() => {
+    setTimeout(() => {
+      showText1 = true;
+    }, 500);
+  });
+  let showText2 = false;
+  onMount(() => {
+    setTimeout(() => {
+      showText2 = true;
+    }, 900);
+  });
+  let showText3 = false;
+  onMount(() => {
+    setTimeout(() => {
+      showText3 = true;
+    }, 1300);
+  });
 </script>
 
+// HTML
 <div
-  class="flex flex-col-reverse sm:flex-col-reverse md:flex-row justify-center items-center text-white mt-[2rem] sm:mt-[1rem] md:mt-[4rem] gap-[2rem] sm:gap-[2rem] md:gap-[4rem]"
+  class="flex flex-col-reverse sm:flex-col-reverse md:flex-row justify-center items-center text-white mt-[1rem] sm:mt-[-1rem] md:mt-[2rem] gap-[2rem] sm:gap-[2rem] md:gap-[4rem] lg:gap-[8rem]"
 >
   <div class="w-[] sm:w-[35rem] md:w-[35rem]">
     <div
       class="flex flex-col justify-center sm:justify-center mt:justify-start items-center sm:items-center md:items-start"
     >
-      <h1
-        class="text-[2.4rem] mt-[-1rem] sm:mt-[-2rem] md:mt-[2rem] sm:text-[3rem] md:text-[4rem] font-bold"
-      >
-        Hey, I'm Damilola
-      </h1>
-      <h1 class="text-[1.5rem] sm:text-[2rem] md:text-[2.5rem] font-bold">
-        A <span id="options">Frontend</span> developer
-      </h1>
-      <div class="flex flex-row mt-[2rem] sm:mt-[2rem] md:mt-[2rem] gap-[2rem]">
-        <button>
-          <span> Explore</span>
-        </button>
-      </div>
+      {#if showText1}
+        <h1
+          class="fly-in text-[2.4rem] mt-[-1rem] sm:mt-[1rem] md:mt-[2rem] sm:text-[3rem] md:text-[4rem] font-bold"
+        >
+          Hey, I'm Damilola
+        </h1>
+      {/if}
+      {#if showText2}
+        <h1
+          class="fly-in text-[1.5rem] sm:text-[2rem] md:text-[2.5rem] font-bold"
+        >
+          A <span
+            id="options"
+            class="bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 text-transparent bg-clip-text"
+            >Frontend</span
+          > developer
+        </h1>
+      {/if}
+      {#if showText3}
+        <div
+          class="fly-in flex flex-row mt-[1.3rem] sm:mt-[1.5rem] md:mt-[2rem] gap-[2rem]"
+        >
+          <button>
+            <span> Explore</span>
+          </button>
+        </div>
+      {/if}
     </div>
   </div>
   <div>
-    <img class="w-[20rem] sm:w-[23rem] md:w-[30rem]" src={Avatar} alt="" />
+    {#if fadeIn}
+      <div>
+        <img
+          src={Avatar}
+          alt=""
+          in:fade
+          class="fade-transition w-[20rem] sm:w-[23rem] md:w-[30rem]"
+        />
+        <div class="move-container">
+          <Icon
+            icon="vscode-icons:file-type-tailwind"
+            class="text-4xl sm:text-5xl md:text-5xl absolute mt-[-21rem] ml-[4rem] sm:mt-[-23rem] sm:ml-[4rem] md:mt-[-28rem] md:ml-[5rem] move"
+          />
+          <Icon
+            icon="logos:react"
+            class="text-4xl sm:text-5xl md:text-5xl absolute mt-[-19.5rem] ml-[16rem] sm:mt-[-20rem] sm:ml-[18rem] md:mt-[-26rem] md:ml-[24rem]"
+          />
+          <Icon
+            icon="devicon:svelte"
+            class="text-4xl sm:text-5xl md:text-5xl absolute mt-[-12rem] ml-[1.5rem] sm:mt-[-12rem] sm:ml-[1rem] md:mt-[-16rem] md:ml-[2rem]"
+          />
+          <Icon
+            icon="logos:firebase"
+            class="text-4xl sm:text-5xl md:text-5xl absolute mt-[-10rem] ml-[18rem] sm:mt-[-10rem] sm:ml-[21rem] md:mt-[-13rem] md:ml-[27rem]"
+          />
+          <Icon
+            icon="skill-icons:typescript"
+            class="text-4xl sm:text-5xl md:text-5xl absolute mt-[-3rem] ml-[0.6rem] sm:mt-[-3rem] sm:ml-[-1rem] md:mt-[-3rem] md:ml-[1rem]"
+          />
+          <Icon
+            icon="skill-icons:css"
+            class="text-4xl sm:text-5xl md:text-5xl absolute mt-[-2rem] ml-[18rem] sm:mt-[-2rem] sm:ml-[21rem] md:mt-[-2rem] md:ml-[27rem]"
+          />
+        </div>
+      </div>
+    {/if}
   </div>
 </div>
 
+// CSS
+
 <style>
-  /* @keyframes fly {
-    0% {
-      transform: translateY(-100%);
-    }
+  .move-container {
+    animation: move 2s ease-in-out infinite;
+  }
+
+  @keyframes move {
+    0%,
     100% {
       transform: translateY(0);
     }
+    50% {
+      transform: translateY(-10px);
+    }
   }
-
-  .fly-animation {
-    animation: fly 1s ease-in-out;
-  } */
   button {
     padding: 0.1em 0.25em;
     width: 13em;
@@ -97,5 +182,26 @@
 
   button span:not(hover) {
     transition: all 1s;
+  }
+  .fly-in {
+    animation: fly-in 0.5s ease-out, fade-in 0.5s ease-in;
+  }
+
+  @keyframes fly-in {
+    from {
+      transform: translateY(100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
   }
 </style>
