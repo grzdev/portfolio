@@ -26,6 +26,7 @@
 	"type": "module",
 	"dependencies": {
 		"framer-motion": "^10.12.17",
-		"svelte-feather": "^2.0.0-next.2"
+		"svelte-feather": "^2.0.0-next.2",
+		"svelte-spa-router": "^3.3.0"
 	}
 }
