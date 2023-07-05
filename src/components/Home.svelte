@@ -4,7 +4,7 @@
   import Avatar from "../images/avatar.png";
   import { fade } from "svelte/transition";
   import Icon from "@iconify/svelte";
-  const options = ["Javascript", "React", "Typescript", "Frontend"];
+  const options = ["javascript", "react", "typescript", "frontend"];
   let currentIndex = 0;
 
   function changeOption() {
@@ -24,7 +24,7 @@
       }
     }
   }
-  setInterval(changeOption, 4000);
+  setInterval(changeOption, 5000);
 
   // imade fade in
   let fadeIn = false;
@@ -65,7 +65,7 @@
     >
       {#if showText1}
         <h1
-          class="fly-in text-[2.4rem] mt-[-1rem] sm:mt-[1rem] md:mt-[2rem] sm:text-[3rem] md:text-[4rem] font-bold"
+          class="fly-in text-[2.4rem] mt-[0.5rem] sm:mt-[1rem] md:mt-[3rem] sm:text-[3rem] md:text-[4rem] font-bold"
         >
           Hey, I'm Damilola
         </h1>
@@ -77,7 +77,7 @@
           A <span
             id="options"
             class="bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 text-transparent bg-clip-text"
-            >Frontend</span
+            >frontend</span
           > developer
         </h1>
       {/if}
@@ -99,32 +99,32 @@
           src={Avatar}
           alt=""
           in:fade
-          class="fade-transition w-[20rem] sm:w-[23rem] md:w-[30rem]"
+          class="fade-transition w-[18rem] sm:w-[23rem] md:w-[30rem]"
         />
         <div class="move-container">
           <Icon
             icon="vscode-icons:file-type-tailwind"
-            class="text-4xl sm:text-5xl md:text-5xl absolute mt-[-21rem] ml-[4rem] sm:mt-[-23rem] sm:ml-[4rem] md:mt-[-28rem] md:ml-[5rem] move"
+            class="text-3xl sm:text-5xl md:text-5xl absolute mt-[-19rem] ml-[4rem] sm:mt-[-23rem] sm:ml-[4rem] md:mt-[-28rem] md:ml-[5rem] move"
           />
           <Icon
             icon="logos:react"
-            class="text-4xl sm:text-5xl md:text-5xl absolute mt-[-19.5rem] ml-[16rem] sm:mt-[-20rem] sm:ml-[18rem] md:mt-[-26rem] md:ml-[24rem]"
+            class="text-3xl sm:text-5xl md:text-5xl absolute mt-[-17.5rem] ml-[14rem] sm:mt-[-20rem] sm:ml-[18rem] md:mt-[-26rem] md:ml-[24rem]"
           />
           <Icon
             icon="devicon:svelte"
-            class="text-4xl sm:text-5xl md:text-5xl absolute mt-[-12rem] ml-[1.5rem] sm:mt-[-12rem] sm:ml-[1rem] md:mt-[-16rem] md:ml-[2rem]"
+            class="text-3xl sm:text-5xl md:text-5xl absolute mt-[-10rem] ml-[1.5rem] sm:mt-[-12rem] sm:ml-[1rem] md:mt-[-16rem] md:ml-[2rem]"
           />
           <Icon
             icon="logos:firebase"
-            class="text-4xl sm:text-5xl md:text-5xl absolute mt-[-10rem] ml-[18rem] sm:mt-[-10rem] sm:ml-[21rem] md:mt-[-13rem] md:ml-[27rem]"
+            class="text-3xl sm:text-5xl md:text-5xl absolute mt-[-9rem] ml-[16rem] sm:mt-[-10rem] sm:ml-[21rem] md:mt-[-13rem] md:ml-[27rem]"
           />
           <Icon
             icon="skill-icons:typescript"
-            class="text-4xl sm:text-5xl md:text-5xl absolute mt-[-3rem] ml-[0.6rem] sm:mt-[-3rem] sm:ml-[-1rem] md:mt-[-3rem] md:ml-[1rem]"
+            class="text-3xl sm:text-5xl md:text-5xl absolute mt-[-2rem] ml-[0.6rem] sm:mt-[-3rem] sm:ml-[-1rem] md:mt-[-3rem] md:ml-[1rem]"
           />
           <Icon
             icon="skill-icons:css"
-            class="text-4xl sm:text-5xl md:text-5xl absolute mt-[-2rem] ml-[18rem] sm:mt-[-2rem] sm:ml-[21rem] md:mt-[-2rem] md:ml-[27rem]"
+            class="text-3xl sm:text-5xl md:text-5xl absolute mt-[-2rem] ml-[16rem] sm:mt-[-2rem] sm:ml-[21rem] md:mt-[-2rem] md:ml-[27rem]"
           />
         </div>
       </div>

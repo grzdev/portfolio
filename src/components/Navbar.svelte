@@ -5,6 +5,7 @@
   import { onMount } from "svelte";
   import { createEventDispatcher } from "svelte";
   import { fade, fly } from "svelte/transition";
+  import { goto } from "$app/navigation";
 
   //  navbar function
   export let menuOpen: boolean;
@@ -71,12 +72,12 @@
       <div class="hidden md:block">
         <div class="ml-10 flex items-baseline space-x-4">
           <a
-            href="#"
+            href="/"
             class="text-gray-300 hover:text-white text-bounce px-3 py-2 rounded-md text-xl font-medium"
             >home</a
           >
           <a
-            href="#"
+            href="/projects"
             class="text-gray-300 hover:text-white text-bounce px-3 py-2 rounded-md text-xl font-medium"
             >projects</a
           >
@@ -174,7 +175,7 @@
               out:fly={{ y: 200, duration: 2000 }}>home</a
             >
             <a
-              href="#"
+              href="/projects"
               class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-3xl sm:text-4xl font-medium"
               in:fly={{ y: 200, duration: 1500 }}
               out:fly={{ y: 200, duration: 1500 }}>projects</a
