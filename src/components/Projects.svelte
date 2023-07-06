@@ -3,16 +3,25 @@
 </script>
 
 <!-- HTML -->
-<div class="flex justify-center items-center">
-  <!-- <h1 class="text-white">projects</h1> -->
-  <div class="flip-container">
-    <div class="flip-card">
-      <div
-        class="flip-front bg-[#25AFCE] w-[25rem] h-[20rem] rounded-tl-2xl rounded-br-2xl"
-      />
-      <div
-        class="flip-back bg-[#0f4652] w-[25rem] h-[20rem] rounded-tl-2xl rounded-br-2xl"
-      />
+<div class="flex justify-center items-center flex-col mt-[1rem]">
+  <div class="flex justify-center items-center flex-col">
+    <h1 class="text-white text-3xl font-mono font-bold">personal projects</h1>
+    <div class="flip-container mt-[1rem]">
+      <div class="flip-card">
+        <div class="flip-front bg-[#093139] rounded-tl-2xl rounded-br-2xl" />
+        <div class="flip-back rounded-tl-2xl rounded-br-2xl" />
+      </div>
+    </div>
+  </div>
+  <div class="flex justify-center items-center flex-col">
+    <h1 class="text-white text-3xl font-mono font-bold mt-[1rem]">
+      work related
+    </h1>
+    <div class="flip-container mt-[1rem]">
+      <div class="flip-card">
+        <div class="flip-front bg-[#093139] rounded-tl-2xl rounded-br-2xl" />
+        <div class="flip-back rounded-tl-2xl rounded-br-2xl" />
+      </div>
     </div>
   </div>
 </div>
@@ -24,15 +33,15 @@
   }
 
   .flip-card {
-    width: 25rem;
-    height: 20rem;
+    width: 22rem;
+    height: 15rem;
     border-radius: 1rem;
     transition: transform 0.5s;
     transform-style: preserve-3d;
   }
 
   .flip-container:hover .flip-card {
-    transform: rotateY(180deg);
+    transform: rotateY(-180deg);
   }
 
   .flip-front,
@@ -45,6 +54,6 @@
 
   .flip-back {
     transform: rotateY(180deg);
-    background-color: #0f4652;
+    background-color: #208aa2;
   }
 </style>

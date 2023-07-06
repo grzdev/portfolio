@@ -57,7 +57,7 @@
 
 // HTML
 <div
-  class="flex flex-col-reverse sm:flex-col-reverse md:flex-row justify-center items-center text-white mt-[1rem] sm:mt-[-1rem] md:mt-[2rem] gap-[2rem] sm:gap-[2rem] md:gap-[4rem] lg:gap-[8rem]"
+  class="flex flex-col-reverse sm:flex-col-reverse md:flex-row justify-center items-center text-white mt-[1rem] sm:mt-[-1rem] md:mt-[3rem] gap-[2rem] sm:gap-[2rem] md:gap-[4rem] lg:gap-[8rem]"
 >
   <div class="w-[] sm:w-[35rem] md:w-[35rem]">
     <div
@@ -65,16 +65,16 @@
     >
       {#if showText1}
         <h1
-          class="fly-in text-[2.4rem] mt-[0.5rem] sm:mt-[1rem] md:mt-[3rem] sm:text-[3rem] md:text-[4rem] font-bold"
+          class="fly-in font-mono text-[2.4rem] mt-[0.5rem] sm:mt-[1rem] md:mt-[3rem] sm:text-[3rem] md:text-[3rem] font-bold"
         >
-          Hey, I'm Damilola
+          hey, i'm Dami
         </h1>
       {/if}
       {#if showText2}
         <h1
-          class="fly-in text-[1.5rem] sm:text-[2rem] md:text-[2.5rem] font-bold"
+          class="fly-in font-mono text-[1.5rem] sm:text-[2rem] md:text-[2.5rem] font-bold"
         >
-          A <span id="options" class="text-[#25AFCE]">frontend</span> developer
+          a <span id="options" class="text-[#25AFCE]">frontend</span> developer
         </h1>
       {/if}
       {#if showText3}

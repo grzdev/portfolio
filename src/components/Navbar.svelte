@@ -72,17 +72,17 @@
         <div class="ml-10 flex items-baseline space-x-4">
           <a
             href="/"
-            class="text-gray-300 hover:text-white text-bounce px-3 py-2 rounded-md text-xl font-medium"
+            class="text-gray-300 font-mono hover:text-white text-bounce px-3 py-2 rounded-md text-xl font-semibold"
             >home</a
           >
           <a
             href="/projects"
-            class="text-gray-300 hover:text-white text-bounce px-3 py-2 rounded-md text-xl font-medium"
+            class="text-gray-300 font-mono hover:text-white text-bounce px-3 py-2 rounded-md text-xl font-semibold"
             >projects</a
           >
           <a
             href="#"
-            class="text-gray-300 hover:text-white text-bounce px-3 py-2 rounded-md text-xl font-medium"
+            class="text-gray-300 font-mono hover:text-white text-bounce px-3 py-2 rounded-md text-xl font-semibold"
             >about</a
           >
         </div>
@@ -91,7 +91,8 @@
       <!-- Contact me button -->
       <div class="hidden md:block mt-[1rem]">
         <button class="btn-cssbuttons">
-          <span class="text-gray-200">Reach me</span><span />
+          <span class="text-gray-200 font-mono font-bold text-xl">Reach me</span
+          ><span />
           <ul>
             <li>
               <a
@@ -145,27 +146,34 @@
             <div class="flex flex-col gap-[2rem] items-center justify-center">
               <a
                 href="#"
-                class="text-gray-300 hover:text-white mt-[3rem] px-3 py-2 rounded-md text-3xl sm:text-4xl font-medium"
+                class="text-gray-300 font-mono hover:text-white mt-[3rem] px-3 py-2 rounded-md text-3xl sm:text-4xl font-semibold"
                 in:fly={{ y: 200, duration: 1000 }}
                 out:fly={{ y: 200, duration: 2000 }}>home</a
               >
               <a
                 href="/projects"
-                class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-3xl sm:text-4xl font-medium"
+                class="text-gray-300 font-mono hover:text-white px-3 py-2 rounded-md text-3xl sm:text-4xl font-semibold"
                 in:fly={{ y: 200, duration: 1500 }}
                 out:fly={{ y: 200, duration: 1500 }}>projects</a
               >
               <a
                 href="#"
-                class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-3xl sm:text-4xl font-medium"
+                class="text-gray-300 font-mono hover:text-white px-3 py-2 rounded-md text-3xl sm:text-4xl font-semibold"
                 in:fly={{ y: 200, duration: 2000 }}
                 out:fly={{ y: 200, duration: 1000 }}>about</a
               >
               <a
                 href="#"
-                class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-3xl sm:text-4xl font-medium"
+                class="text-gray-300 font-mono hover:text-white px-3 py-2 rounded-md text-3xl sm:text-4xl font-semibold"
                 in:fly={{ y: 200, duration: 2500 }}
-                out:fly={{ y: 200, duration: 500 }}>reach me</a
+                out:fly={{ y: 200, duration: 500 }}>contact me</a
+              >
+            </div>
+            <div class="mt-[4rem]">
+              <button
+                class="downloadCV"
+                in:fly={{ y: 200, duration: 3000 }}
+                out:fly={{ y: 200, duration: 300 }}>Download CV</button
               >
             </div>
             <div />
@@ -287,5 +295,49 @@
 
   .btn-cssbuttons:hover ul li:nth-child(3) a {
     transition-delay: 0.25s;
+  }
+  .downloadCV {
+    appearance: none;
+    background-color: transparent;
+    border: 0.125em solid #25afce;
+    border-radius: 1rem 0 1rem 0;
+    box-sizing: border-box;
+    color: #25afce;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+      "Segoe UI Symbol";
+    font-size: 16px;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0;
+    min-height: 3.75em;
+    min-width: 0;
+    outline: none;
+    padding: 1em 2.3em;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(0.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+  }
+
+  .downloadCV:disabled {
+    pointer-events: none;
+  }
+
+  .downloadCV:hover {
+    color: #fff;
+    background-color: #0f4e5b;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+  }
+
+  .downloadCV:active {
+    box-shadow: none;
+    transform: translateY(0);
   }
 </style>
