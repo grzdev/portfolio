@@ -74,20 +74,18 @@
         <h1
           class="fly-in text-[1.5rem] sm:text-[2rem] md:text-[2.5rem] font-bold"
         >
-          A <span
-            id="options"
-            class="bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 text-transparent bg-clip-text"
-            >frontend</span
-          > developer
+          A <span id="options" class="text-[#25AFCE]">frontend</span> developer
         </h1>
       {/if}
       {#if showText3}
         <div
           class="fly-in flex flex-row mt-[1.3rem] sm:mt-[1.5rem] md:mt-[2rem] gap-[2rem]"
         >
-          <button>
-            <span> Explore</span>
-          </button>
+          <a href="/projects">
+            <button>
+              <span> Explore</span>
+            </button>
+          </a>
         </div>
       {/if}
     </div>
@@ -101,30 +99,30 @@
           in:fade
           class="fade-transition w-[18rem] sm:w-[23rem] md:w-[30rem]"
         />
-        <div class="move-container">
+        <div class="move-container fade-transition" in:fade>
           <Icon
-            icon="vscode-icons:file-type-tailwind"
-            class="text-3xl sm:text-5xl md:text-5xl absolute mt-[-19rem] ml-[4rem] sm:mt-[-23rem] sm:ml-[4rem] md:mt-[-28rem] md:ml-[5rem] move"
+            icon="teenyicons:tailwind-solid"
+            class="text-3xl sm:text-4xl md:text-5xl text-[#25AFCE] absolute mt-[-19rem] ml-[4rem] sm:mt-[-23rem] sm:ml-[4rem] md:mt-[-28rem] md:ml-[5rem] move"
           />
           <Icon
-            icon="logos:react"
-            class="text-3xl sm:text-5xl md:text-5xl absolute mt-[-17.5rem] ml-[14rem] sm:mt-[-20rem] sm:ml-[18rem] md:mt-[-26rem] md:ml-[24rem]"
+            icon="mdi:react"
+            class="text-3xl sm:text-4xl md:text-5xl text-[#25AFCE]  absolute mt-[-17.5rem] ml-[14rem] sm:mt-[-20rem] sm:ml-[18rem] md:mt-[-26rem] md:ml-[24rem]"
           />
           <Icon
-            icon="devicon:svelte"
-            class="text-3xl sm:text-5xl md:text-5xl absolute mt-[-10rem] ml-[1.5rem] sm:mt-[-12rem] sm:ml-[1rem] md:mt-[-16rem] md:ml-[2rem]"
+            icon="nonicons:svelte-16"
+            class="text-3xl sm:text-4xl md:text-5xl text-[#25AFCE] absolute mt-[-10rem] ml-[1.5rem] sm:mt-[-12rem] sm:ml-[1rem] md:mt-[-16rem] md:ml-[2rem]"
           />
           <Icon
-            icon="logos:firebase"
-            class="text-3xl sm:text-5xl md:text-5xl absolute mt-[-9rem] ml-[16rem] sm:mt-[-10rem] sm:ml-[21rem] md:mt-[-13rem] md:ml-[27rem]"
+            icon="teenyicons:firebase-solid"
+            class="text-3xl sm:text-4xl md:text-5xl text-[#25AFCE] absolute mt-[-9rem] ml-[16rem] sm:mt-[-10rem] sm:ml-[21rem] md:mt-[-13rem] md:ml-[27rem]"
           />
           <Icon
-            icon="skill-icons:typescript"
-            class="text-3xl sm:text-5xl md:text-5xl absolute mt-[-2rem] ml-[0.6rem] sm:mt-[-3rem] sm:ml-[-1rem] md:mt-[-3rem] md:ml-[1rem]"
+            icon="bxl:typescript"
+            class="text-3xl sm:text-4xl md:text-5xl text-[#25AFCE] absolute mt-[-2rem] ml-[0.6rem] sm:mt-[-3rem] sm:ml-[-1rem] md:mt-[-3rem] md:ml-[1rem]"
           />
           <Icon
-            icon="skill-icons:css"
-            class="text-3xl sm:text-5xl md:text-5xl absolute mt-[-2rem] ml-[16rem] sm:mt-[-2rem] sm:ml-[21rem] md:mt-[-2rem] md:ml-[27rem]"
+            icon="simple-icons:css3"
+            class="text-3xl sm:text-4xl md:text-5xl text-[#25AFCE]  absolute mt-[-1rem] ml-[16rem] sm:mt-[-2rem] sm:ml-[21rem] md:mt-[-2rem] md:ml-[27rem]"
           />
         </div>
       </div>
@@ -145,7 +143,7 @@
       transform: translateY(0);
     }
     50% {
-      transform: translateY(-10px);
+      transform: translateY(-15px);
     }
   }
   button {
@@ -163,21 +161,27 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    font-weight: 700;
     bottom: 0.4em;
     width: 8.25em;
     height: 2.5em;
-    background-color: #212121;
+    background: rgb(15, 70, 82);
+    background: linear-gradient(
+      304deg,
+      rgba(15, 70, 82, 1) 0%,
+      rgba(38, 188, 222, 1) 100%
+    );
     border-radius: 0.2em;
     font-size: 1.5em;
     color: #fff;
     border: 0.08em solid #fff;
-    box-shadow: 0 0.4em 0.1em 0.019em #fff;
+    box-shadow: 0 0.4em 0.1em 0.019em #d3d1d1;
   }
 
   button span:hover {
     transition: all 0.5s;
     transform: translate(0, 0.4em);
-    box-shadow: 0 0 0 0 #fff;
+    box-shadow: 0 0 0 0 #d3d1d1;
   }
 
   button span:not(hover) {
