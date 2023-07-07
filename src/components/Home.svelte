@@ -57,7 +57,7 @@
 
 // HTML
 <div
-  class="flex flex-col-reverse sm:flex-col-reverse md:flex-row justify-center items-center text-white mt-[1rem] sm:mt-[-1rem] md:mt-[3rem] gap-[2rem] sm:gap-[2rem] md:gap-[4rem] lg:gap-[8rem]"
+  class="flex flex-col-reverse sm:flex-col-reverse md:flex-row justify-center items-center text-white mt-[1rem] sm:mt-[-1rem] md:mt-[3rem] gap-[2rem] sm:gap-[2rem] md:gap-[3rem] lg:gap-[6rem]"
 >
   <div class="w-[] sm:w-[35rem] md:w-[35rem]">
     <div
@@ -65,7 +65,7 @@
     >
       {#if showText1}
         <h1
-          class="fly-in font-mono text-[2.4rem] mt-[0.5rem] sm:mt-[1rem] md:mt-[3rem] sm:text-[3rem] md:text-[3rem] font-bold"
+          class="fly-in font-mono text-[2.4rem] mt-[-0.5rem] sm:mt-[-0.5rem] md:mt-[3rem] sm:text-[3rem] md:text-[3rem] font-bold"
         >
           hey, i'm Dami
         </h1>
@@ -74,7 +74,7 @@
         <h1
           class="fly-in font-mono text-[1.5rem] sm:text-[2rem] md:text-[2.5rem] font-bold"
         >
-          a <span id="options" class="text-[#25AFCE]">frontend</span> developer
+          a <span id="options" class="text-[#76c3ff]">frontend</span> developer
         </h1>
       {/if}
       {#if showText3}
@@ -102,27 +102,27 @@
         <div class="move-container fade-transition" in:fade>
           <Icon
             icon="teenyicons:tailwind-solid"
-            class="text-3xl sm:text-4xl md:text-5xl text-[#25AFCE] absolute mt-[-19rem] ml-[4rem] sm:mt-[-23rem] sm:ml-[4rem] md:mt-[-28rem] md:ml-[5rem] move"
+            class="text-3xl sm:text-4xl md:text-5xl text-[#76c3ff] absolute mt-[-19rem] ml-[4rem] sm:mt-[-23rem] sm:ml-[4rem] md:mt-[-28rem] md:ml-[5rem] move"
           />
           <Icon
             icon="mdi:react"
-            class="text-3xl sm:text-4xl md:text-5xl text-[#25AFCE]  absolute mt-[-17.5rem] ml-[14rem] sm:mt-[-20rem] sm:ml-[18rem] md:mt-[-26rem] md:ml-[24rem]"
+            class="text-3xl sm:text-4xl md:text-5xl text-[#76c3ff]  absolute mt-[-17.5rem] ml-[14rem] sm:mt-[-20rem] sm:ml-[18rem] md:mt-[-26rem] md:ml-[24rem]"
           />
           <Icon
             icon="nonicons:svelte-16"
-            class="text-3xl sm:text-4xl md:text-5xl text-[#25AFCE] absolute mt-[-10rem] ml-[1.5rem] sm:mt-[-12rem] sm:ml-[1rem] md:mt-[-16rem] md:ml-[2rem]"
+            class="text-3xl sm:text-4xl md:text-5xl text-[#76c3ff] absolute mt-[-10rem] ml-[1.5rem] sm:mt-[-12rem] sm:ml-[1rem] md:mt-[-16rem] md:ml-[2rem]"
           />
           <Icon
             icon="teenyicons:firebase-solid"
-            class="text-3xl sm:text-4xl md:text-5xl text-[#25AFCE] absolute mt-[-9rem] ml-[16rem] sm:mt-[-10rem] sm:ml-[21rem] md:mt-[-13rem] md:ml-[27rem]"
+            class="text-3xl sm:text-4xl md:text-5xl text-[#76c3ff] absolute mt-[-9rem] ml-[16rem] sm:mt-[-10rem] sm:ml-[21rem] md:mt-[-13rem] md:ml-[27rem]"
           />
           <Icon
             icon="bxl:typescript"
-            class="text-3xl sm:text-4xl md:text-5xl text-[#25AFCE] absolute mt-[-2rem] ml-[0.6rem] sm:mt-[-3rem] sm:ml-[-1rem] md:mt-[-3rem] md:ml-[1rem]"
+            class="text-3xl sm:text-4xl md:text-5xl text-[#76c3ff] absolute mt-[-2rem] ml-[0.6rem] sm:mt-[-3rem] sm:ml-[-1rem] md:mt-[-3rem] md:ml-[1rem]"
           />
           <Icon
             icon="simple-icons:css3"
-            class="text-3xl sm:text-4xl md:text-5xl text-[#25AFCE]  absolute mt-[-1rem] ml-[16rem] sm:mt-[-2rem] sm:ml-[21rem] md:mt-[-2rem] md:ml-[27rem]"
+            class="text-3xl sm:text-4xl md:text-5xl text-[#76c3ff]  absolute mt-[-1rem] ml-[16rem] sm:mt-[-2rem] sm:ml-[21rem] md:mt-[-2rem] md:ml-[27rem]"
           />
         </div>
       </div>
@@ -165,12 +165,13 @@
     bottom: 0.4em;
     width: 8.25em;
     height: 2.5em;
-    background: rgb(15, 70, 82);
+    background: rgb(12, 32, 56);
     background: linear-gradient(
       304deg,
-      rgba(15, 70, 82, 1) 0%,
-      rgba(38, 188, 222, 1) 100%
+      rgba(12, 32, 56, 1) 0%,
+      rgba(57, 167, 254, 1) 100%
     );
+
     border-radius: 0.2em;
     font-size: 1.5em;
     color: #fff;
@@ -188,7 +189,7 @@
     transition: all 1s;
   }
   .fly-in {
-    animation: fly-in 0.5s ease-out, fade-in 0.5s ease-in;
+    animation: fly-in 1s ease-out, fade-in 1s ease-in;
   }
 
   @keyframes fly-in {
