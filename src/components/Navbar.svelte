@@ -35,13 +35,13 @@
 </script>
 
 <!-- HTML -->
-<nav class="">
+<nav class="mt-[0.5rem] sm:mt-[0.5rem] md:mt-[1rem]">
   <div class="max-w-full mx-auto px-4 sm:px-6 lg:px-16">
     <div class="flex items-center justify-between h-16 sm:h-20 lg:h-20">
       <div class="flex-shrink-0">
         <!-- Logo -->
         <span
-          class="text-white text-3xl sm:text-4xl font-bold font-sans lg:text-4xl"
+          class="text-white text-3xl sm:text-4xl font-bold font-mono lg:text-4xl"
           >grz.</span
         >
       </div>
@@ -72,18 +72,23 @@
         <div class="ml-10 flex items-baseline space-x-4">
           <a
             href="/"
-            class="text-gray-300 font-mono hover:text-white text-bounce px-3 py-2 rounded-md text-xl font-semibold"
+            class="text-gray-300 font-mono hover:text-white text-bounce px-3 py-2 rounded-md text-2xl font-semibold"
             >home</a
           >
           <a
             href="/projects"
-            class="text-gray-300 font-mono hover:text-white text-bounce px-3 py-2 rounded-md text-xl font-semibold"
+            class="text-gray-300 font-mono hover:text-white text-bounce px-3 py-2 rounded-md text-2xl font-semibold"
             >projects</a
           >
           <a
-            href="#"
-            class="text-gray-300 font-mono hover:text-white text-bounce px-3 py-2 rounded-md text-xl font-semibold"
+            href="/about"
+            class="text-gray-300 font-mono hover:text-white text-bounce px-3 py-2 rounded-md text-2xl font-semibold"
             >about</a
+          >
+          <a
+            href="/contact"
+            class="text-gray-300 font-mono hover:text-white text-bounce px-3 py-2 rounded-md text-2xl font-semibold"
+            >contact</a
           >
         </div>
       </div>
@@ -91,7 +96,7 @@
       <!-- Contact me button -->
       <div class="hidden md:block mt-[1rem]">
         <button class="btn-cssbuttons">
-          <span class="text-gray-200 font-mono font-bold text-xl">Reach me</span
+          <span class="text-gray-200 font-mono font-bold text-xl">reach me</span
           ><span />
           <ul>
             <li>
@@ -145,35 +150,40 @@
           <div class="flex flex-col gap-[2rem] items-center justify-center">
             <div class="flex flex-col gap-[2rem] items-center justify-center">
               <a
-                href="#"
+                href="/"
                 class="text-gray-300 font-mono hover:text-white mt-[3rem] px-3 py-2 rounded-md text-3xl sm:text-4xl font-semibold"
-                in:fly={{ y: 200, duration: 1000 }}
+                in:fly={{ y: 200, duration: 700 }}
                 out:fly={{ y: 200, duration: 2000 }}>home</a
               >
               <a
                 href="/projects"
                 class="text-gray-300 font-mono hover:text-white px-3 py-2 rounded-md text-3xl sm:text-4xl font-semibold"
-                in:fly={{ y: 200, duration: 1500 }}
+                in:fly={{ y: 200, duration: 1200 }}
                 out:fly={{ y: 200, duration: 1500 }}>projects</a
               >
               <a
-                href="#"
+                href="/about"
                 class="text-gray-300 font-mono hover:text-white px-3 py-2 rounded-md text-3xl sm:text-4xl font-semibold"
-                in:fly={{ y: 200, duration: 2000 }}
+                in:fly={{ y: 200, duration: 1500 }}
                 out:fly={{ y: 200, duration: 1000 }}>about</a
               >
               <a
-                href="#"
+                href="/contact"
                 class="text-gray-300 font-mono hover:text-white px-3 py-2 rounded-md text-3xl sm:text-4xl font-semibold"
-                in:fly={{ y: 200, duration: 2500 }}
+                in:fly={{ y: 200, duration: 1800 }}
                 out:fly={{ y: 200, duration: 500 }}>contact me</a
               >
             </div>
-            <div class="mt-[4rem]">
+            <div class="mt-[4rem] flex flex-row gap-[2rem]">
               <button
                 class="downloadCV"
-                in:fly={{ y: 200, duration: 3000 }}
-                out:fly={{ y: 200, duration: 300 }}>Download CV</button
+                in:fly={{ y: 200, duration: 2000 }}
+                out:fly={{ y: 200, duration: 300 }}>Get CV</button
+              >
+              <button
+                class="downloadCV2"
+                in:fly={{ y: 200, duration: 2000 }}
+                out:fly={{ y: 200, duration: 300 }}>Hire me</button
               >
             </div>
             <div />
@@ -196,8 +206,7 @@
   .btn-cssbuttons {
     --btn-color: black;
     position: relative;
-    padding: 16px 32px;
-    font-family: Roboto, sans-serif;
+    padding: 10px 32px;
     font-weight: 600;
     font-size: 16px;
     line-height: 1;
@@ -299,10 +308,10 @@
   .downloadCV {
     appearance: none;
     background-color: transparent;
-    border: 0.125em solid #25afce;
+    border: 0.125em solid #245da1;
     border-radius: 1rem 0 1rem 0;
     box-sizing: border-box;
-    color: #25afce;
+    color: #65abff;
     cursor: pointer;
     display: inline-block;
     font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI",
@@ -312,10 +321,10 @@
     font-weight: 700;
     line-height: normal;
     margin: 0;
-    min-height: 3.75em;
+    min-height: 3em;
     min-width: 0;
     outline: none;
-    padding: 1em 2.3em;
+    padding: 0.6em 1.5em;
     text-align: center;
     text-decoration: none;
     transition: all 300ms cubic-bezier(0.23, 1, 0.32, 1);
@@ -331,12 +340,57 @@
 
   .downloadCV:hover {
     color: #fff;
-    background-color: #0f4e5b;
+    background-color: #245da1;
     box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
     transform: translateY(-2px);
   }
 
   .downloadCV:active {
+    box-shadow: none;
+    transform: translateY(0);
+  }
+
+  .downloadCV2 {
+    appearance: none;
+    background-color: #245da1;
+    border: 0.125em solid #245da1;
+    border-radius: 1rem 0 1rem 0;
+    box-sizing: border-box;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+      "Segoe UI Symbol";
+    font-size: 16px;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0;
+    min-height: 3em;
+    min-width: 0;
+    outline: none;
+    padding: 0.6em 1.5em;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(0.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+  }
+
+  .downloadCV2:disabled {
+    pointer-events: none;
+  }
+
+  .downloadCV2:hover {
+    color: #65abff;
+    background-color: transparent;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+  }
+
+  .downloadCV2:active {
     box-shadow: none;
     transform: translateY(0);
   }
