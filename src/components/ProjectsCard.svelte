@@ -9,7 +9,7 @@
   <div class="flip-container mt-[1rem]">
     <div class="flip-card">
       <div
-        class="flip-front bg-[#114793] rounded-tl-2xl rounded-br-2xl justify-center items-center flex flex-col"
+        class="flip-front bg-[#00214e] rounded-tl-2xl rounded-br-2xl justify-center items-center flex flex-col"
       >
         <h1
           class="text-2xl sm:text-3xl md:text-3xl text-white font-mono font-bold"
@@ -17,7 +17,7 @@
           {project.name}
         </h1>
         <p
-          class="text-md sm:text-xl md:text-xl text-white font-mono font-bold mt-[1rem] w-[14rem] text-center"
+          class="text-sm sm:text-xl md:text-xl text-white font-mono font-bold mt-[1rem] w-[14rem] text-center"
         >
           {project.desc}
         </p>
@@ -69,8 +69,8 @@
   @media (max-width: 640px) {
     /* Set different width and height for smaller screens */
     .flip-card {
-      width: 16rem;
-      height: 9rem;
+      width: 17rem;
+      height: 10rem;
     }
   }
 
@@ -88,7 +88,7 @@
 
   .flip-back {
     transform: rotateY(180deg);
-    background-color: #0a2e60;
+    background-color: #000f24;
   }
 
   .container {
