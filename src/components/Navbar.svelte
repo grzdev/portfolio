@@ -93,7 +93,7 @@
         </div>
       </div>
 
-      <!-- Contact me button -->
+      <!-- Reach me button -->
       <div class="hidden md:block mt-[1rem]">
         <button class="btn-cssbuttons">
           <span class="text-gray-200 font-mono font-bold text-xl">reach me</span
@@ -118,7 +118,6 @@
                 href="https://github.com/grzdev"
                 class="text-white font-bold text-2xl"
               >
-                <!-- CHANGE THIS TO NORMAL ICONS -->
                 <Icon icon="teenyicons:github-solid" />
               </a>
             </li>
@@ -158,31 +157,31 @@
               <a
                 href="/projects"
                 class="text-gray-300 font-mono hover:text-white px-3 py-2 rounded-md text-3xl sm:text-4xl font-semibold"
-                in:fly={{ y: 200, duration: 1200 }}
+                in:fly={{ y: 200, duration: 1000 }}
                 out:fly={{ y: 200, duration: 1500 }}>projects</a
               >
               <a
                 href="/about"
                 class="text-gray-300 font-mono hover:text-white px-3 py-2 rounded-md text-3xl sm:text-4xl font-semibold"
-                in:fly={{ y: 200, duration: 1500 }}
+                in:fly={{ y: 200, duration: 1300 }}
                 out:fly={{ y: 200, duration: 1000 }}>about</a
               >
               <a
                 href="/contact"
                 class="text-gray-300 font-mono hover:text-white px-3 py-2 rounded-md text-3xl sm:text-4xl font-semibold"
-                in:fly={{ y: 200, duration: 1800 }}
-                out:fly={{ y: 200, duration: 500 }}>contact me</a
+                in:fly={{ y: 200, duration: 1600 }}
+                out:fly={{ y: 200, duration: 500 }}>contact</a
               >
             </div>
             <div class="mt-[4rem] flex flex-row gap-[2rem]">
               <button
                 class="downloadCV"
-                in:fly={{ y: 200, duration: 2000 }}
+                in:fly={{ y: 200, duration: 1900 }}
                 out:fly={{ y: 200, duration: 300 }}>Get CV</button
               >
               <button
                 class="downloadCV2"
-                in:fly={{ y: 200, duration: 2000 }}
+                in:fly={{ y: 200, duration: 1900 }}
                 out:fly={{ y: 200, duration: 300 }}>Hire me</button
               >
             </div>
@@ -212,7 +211,7 @@
     line-height: 1;
     color: white;
     background: none;
-    border: 2px solid #25afce;
+    border: 2px solid #76c3ff;
     border-radius: 1rem 0 1rem 0;
     outline: none;
     overflow: hidden;
