@@ -11,7 +11,7 @@
 
 <!-- HTML -->
 <div
-  class="flex flex-col px-[1rem] sm:px-[4rem] md:px-[4rem] mt-[1rem] overflow-x-hidden"
+  class="flex flex-col px-[1rem] sm:px-[4rem] md:px-[4rem] mt-[2rem] sm:mt-[1rem] md:mt-[1rem] overflow-x-hidden"
 >
   <div class="flex flex-col">
     <h1
@@ -25,7 +25,7 @@
       <ProjectsCard {projects} />
     </div>
   </div>
-  <div class="flex flex-col mt-[1rem] sm:mt-[2rem] md:mt-[2rem]">
+  <div class="flex flex-col mt-[2rem] sm:mt-[2rem] md:mt-[2rem]">
     <h1
       class="text-gray-200 text-xl sm:text-3xl md:text-3xl font-mono font-bold mt-[1rem]"
     >
