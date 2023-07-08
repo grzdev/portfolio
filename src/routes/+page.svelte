@@ -1,9 +1,9 @@
 <!-- javascript -->
 <script>
   // imports
+  import Navbar from "../modules/Navbar.svelte";
+  import Home from "../modules/Home.svelte";
   import LoadScreen from "../components/LoadScreen.svelte";
-  import Navbar from "../components/Navbar.svelte";
-  import Home from "../components/Home.svelte";
   let menuOpen = false;
 
   // LoadScreen

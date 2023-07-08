@@ -40,10 +40,13 @@
     <div class="flex items-center justify-between h-16 sm:h-20 lg:h-20">
       <div class="flex-shrink-0">
         <!-- Logo -->
-        <span
-          class="text-white text-3xl sm:text-4xl font-bold font-mono lg:text-4xl"
-          >grz.</span
-        >
+        <a href="/">
+          <span
+            class="text-white text-3xl sm:text-4xl font-bold font-mono lg:text-4xl"
+          >
+            grz.
+          </span>
+        </a>
       </div>
 
       <!-- Navbar button -->
