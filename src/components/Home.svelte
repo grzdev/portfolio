@@ -55,10 +55,11 @@
   });
 </script>
 
-// HTML
+<!-- HTML -->
 <div
   class="flex flex-col-reverse sm:flex-col-reverse md:flex-row justify-center items-center text-white mt-[1rem] sm:mt-[-1rem] md:mt-[3rem] gap-[2rem] sm:gap-[2rem] md:gap-[3rem] lg:gap-[6rem]"
 >
+  <!-- Name/Job -->
   <div class="w-[] sm:w-[35rem] md:w-[35rem]">
     <div
       class="flex flex-col justify-center sm:justify-center mt:justify-start items-center sm:items-center md:items-start"
@@ -90,6 +91,8 @@
       {/if}
     </div>
   </div>
+
+  <!-- Avatar -->
   <div>
     {#if fadeIn}
       <div>
@@ -130,8 +133,7 @@
   </div>
 </div>
 
-// CSS
-
+<!-- CSS -->
 <style>
   .move-container {
     animation: move 2s ease-in-out infinite;
