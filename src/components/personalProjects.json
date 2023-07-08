@@ -1,0 +1,65 @@
+{
+    "personal":[
+        {
+            "id": 1,
+            "name": "pennywise",
+            "desc": "a daily expense tracker",
+            "tools": {
+                "first": "nextjs",
+                "second": "typescript",
+                "third": "firebase"
+            },
+            "link": "https://pennywiise.netlify.app/",
+            "repo": "https://github.com/grzdev/pennywise"
+        },
+        {
+            "id": 2,
+            "name": "shpair",
+            "desc": "an e-commerce site for sneakers",
+            "tools": {
+                "first": "nextjs",
+                "second": "react",
+                "third": "chakra-ui"
+            },
+            "link": "https://shpair.netlify.app/",
+            "repo": "https://github.com/grzdev/shpair"
+        },
+        {
+            "id": 3,
+            "name": "plnr",
+            "desc": "a simple todo app",
+            "tools": {
+                "first": "react",
+                "second": "redux",
+                "third": "chakra ui"
+            },
+            "link": "https://plnr.netlify.app/",
+            "repo": "https://github.com/grzdev/plnr"
+        },
+        {
+            "id": 4,
+            "name": "quizorb",
+            "desc": "a quiz game",
+            "tools": {
+                "first": "react",
+                "second": "redux",
+                "third": "rest-api"
+            },
+            "link": "https://quizorb.netlify.app/",
+            "repo": "https://github.com/grzdev/quizorb"
+        },
+        {
+            "id": 5,
+            "name": "damioyeniyi",
+            "desc": "personal portfolio",
+            "tools": {
+                "first": "svelte",
+                "second": "typescript",
+                "third": "taiwlind"
+            },
+            "link": "https://damioyeniyi.netlify.app/",
+            "repo": "https://github.com/grzdev/portfolio"
+        }
+    ]
+}
+

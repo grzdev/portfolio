@@ -2,8 +2,8 @@
 <script>
   // imports
   import LoadScreen from "../../components/LoadScreen.svelte";
-  import Navbar from "../../components/Navbar.svelte";
-  import Projects from "../../components/Projects.svelte";
+  import Navbar from "../../modules/Navbar.svelte";
+  import Projects from "../../modules/Projects.svelte";
   let menuOpen = false;
 
   // LoadScreen

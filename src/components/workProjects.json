@@ -1,0 +1,28 @@
+{
+    "work":[ 
+        {
+        "id": 1,
+        "name": "clinic api",
+        "desc": "list of clinics under medispark",
+        "tools": {
+            "first": "nextjs",
+            "second": "react",
+            "third": "redux"
+        },
+        "link": "https://swiftmedispark-clinics.netlify.app/",
+        "repo": "https://github.com/grzdev/clinic-directories"
+        },
+        {
+            "id": 2,
+            "name": "VENNDO task",
+            "desc": "interview task",
+            "tools": {
+                "first": "typescript",
+                "second": "nextjs",
+                "third": "rest-api"
+            },
+            "link": "https://venndo-ui.netlify.app/",
+            "repo": "https://github.com/grzdev/venndo-ui"
+        }
+    ]
+}

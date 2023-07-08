@@ -1,11 +1,10 @@
 <script lang="ts">
   import Icon from "@iconify/svelte";
   import type { Project } from "./projectsInterface";
-  export let projects: Project[] = [];
+  export let projects2: Project[] = [];
 </script>
 
-<!-- personal projects -->
-{#each projects as project (project.id)}
+{#each projects2 as project (project.id)}
   <div class="flip-container mt-[1rem]">
     <div class="flip-card">
       <div
