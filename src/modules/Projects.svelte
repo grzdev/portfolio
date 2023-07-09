@@ -73,7 +73,7 @@
     background-color: #555;
   }
   .slide-in {
-    animation: slide-in 1.7s;
+    animation: slide-in 1.5s;
   }
 
   @keyframes slide-in {
@@ -85,7 +85,7 @@
     }
   }
   .slide-in2 {
-    animation: slide-in 2s;
+    animation: slide-in 1.8s;
   }
 
   @keyframes slide-in2 {
