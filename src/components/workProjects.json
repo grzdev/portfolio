@@ -3,7 +3,7 @@
         {
         "id": 1,
         "name": "clinic api",
-        "desc": "list of clinics under medispark",
+        "desc": "list of clinics with medispark's emr",
         "tools": {
             "first": "nextjs",
             "second": "react",
