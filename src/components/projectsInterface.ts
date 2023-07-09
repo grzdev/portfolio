@@ -2,6 +2,7 @@ export interface Project {
     id: number;
     name: string;
     desc: string;
+    type: string;
     tools: {
       first: string;
       second: string;
@@ -14,6 +15,7 @@ export interface Project {
     id: number;
     name: string;
     desc: string;
+    type: string;
     tools: {
       first: string;
       second: string;
