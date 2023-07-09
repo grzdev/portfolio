@@ -7,6 +7,15 @@
   import WorkProjectsCard from "../components/WorkProjectsCard.svelte";
   export let projects: Project[] = personalProjects.personal;
   export let projects2: Project2[] = workProjects.work;
+
+  import { onMount } from "svelte";
+  import { fade } from "svelte/transition";
+
+  let showDiv = false;
+
+  onMount(() => {
+    showDiv = true;
+  });
 </script>
 
 <!-- HTML -->
@@ -16,11 +25,13 @@
   <div class="flex flex-col">
     <h1
       class="text-gray-200 text-xl sm:text-3xl md:text-3xl font-mono font-bold"
+      in:fade
     >
       personal projects
     </h1>
     <div
       class="flex flex-row gap-[1.3rem] sm:gap-[2rem] md:gap-[2rem] overflow-x-auto custom-scrollbar"
+      class:slide-in={showDiv}
     >
       <ProjectsCard {projects} />
     </div>
@@ -28,14 +39,16 @@
   <div class="flex flex-col mt-[2rem] sm:mt-[2rem] md:mt-[2rem]">
     <h1
       class="text-gray-200 text-xl sm:text-3xl md:text-3xl font-mono font-bold mt-[1rem]"
+      in:fade
     >
       work projects
     </h1>
-    <div
+    <divy
       class="flex flex-row gap-[1.3rem] sm:gap-[2rem] md:gap-[2rem] overflow-x-auto custom-scrollbar"
+      class:slide-in2={showDiv}
     >
       <WorkProjectsCard {projects2} />
-    </div>
+    </divy>
   </div>
 </div>
 
@@ -58,5 +71,29 @@
   /* Style the scrollbar thumb when hovered */
   .custom-scrollbar::-webkit-scrollbar-thumb:hover {
     background-color: #555;
+  }
+  .slide-in {
+    animation: slide-in 1.5s;
+  }
+
+  @keyframes slide-in {
+    from {
+      transform: translateX(30%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  .slide-in2 {
+    animation: slide-in 1.8s;
+  }
+
+  @keyframes slide-in2 {
+    from {
+      transform: translateX(30%);
+    }
+    to {
+      transform: translateX(0);
+    }
   }
 </style>
