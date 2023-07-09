@@ -31,7 +31,7 @@
             "tools": {
                 "first": "react",
                 "second": "redux",
-                "third": "chakra ui"
+                "third": "chakra-ui"
             },
             "link": "https://plnr.netlify.app/",
             "repo": "https://github.com/grzdev/plnr"
@@ -55,7 +55,7 @@
             "tools": {
                 "first": "svelte",
                 "second": "typescript",
-                "third": "taiwlind"
+                "third": "tailwind"
             },
             "link": "https://damioyeniyi.netlify.app/",
             "repo": "https://github.com/grzdev/portfolio"
