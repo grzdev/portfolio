@@ -1,1 +1,1 @@
-<h1>About page</h1>
+<h1 class="text-white">About page</h1>
