@@ -4,6 +4,7 @@
             "id": 1,
             "name": "pennywise",
             "desc": "a daily expense tracker",
+            "type": "website/webapp",
             "tools": {
                 "first": "nextjs",
                 "second": "typescript",
@@ -16,6 +17,7 @@
             "id": 2,
             "name": "shpair",
             "desc": "an e-commerce site for sneakers",
+            "type": "webapp",
             "tools": {
                 "first": "nextjs",
                 "second": "react",
@@ -28,6 +30,7 @@
             "id": 3,
             "name": "plnr",
             "desc": "a simple todo app",
+            "type": "webapp",
             "tools": {
                 "first": "react",
                 "second": "redux",
@@ -40,6 +43,7 @@
             "id": 4,
             "name": "quizorb",
             "desc": "a quiz game",
+            "type": "webapp",
             "tools": {
                 "first": "react",
                 "second": "redux",
@@ -52,6 +56,7 @@
             "id": 5,
             "name": "damioyeniyi",
             "desc": "personal portfolio",
+            "type": "website",
             "tools": {
                 "first": "svelte",
                 "second": "typescript",

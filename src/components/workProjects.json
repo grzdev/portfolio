@@ -4,6 +4,7 @@
         "id": 1,
         "name": "clinic api",
         "desc": "list of clinics with medispark's emr",
+        "type": "website",
         "tools": {
             "first": "nextjs",
             "second": "react",
@@ -16,6 +17,7 @@
             "id": 2,
             "name": "VENNDO task",
             "desc": "interview task",
+            "type": "webapp",
             "tools": {
                 "first": "typescript",
                 "second": "nextjs",

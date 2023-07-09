@@ -16,9 +16,14 @@
           {project.name}
         </h1>
         <p
-          class="text-sm sm:text-xl md:text-xl text-gray-200 font-mono font-bold mt-[1rem] w-[14rem] text-center"
+          class="text-sm sm:text-xl md:text-xl text-gray-200 font-mono font-bold mt-[1.3rem] w-[14rem] text-center"
         >
           {project.desc}
+        </p>
+        <p
+          class="text-gray-200 text-xs sm:text-sm md:text-sm font-mono font-bold mt-[1.3rem] w-[14rem] text-center"
+        >
+          {project.type}
         </p>
       </div>
       <div
@@ -59,7 +64,7 @@
 <style>
   .flip-card {
     width: 22rem;
-    height: 12rem;
+    height: 13rem;
     border-radius: 1rem;
     transition: transform 0.5s;
     transform-style: preserve-3d;
@@ -69,7 +74,7 @@
     /* Set different width and height for smaller screens */
     .flip-card {
       width: 17rem;
-      height: 10rem;
+      height: 11rem;
     }
   }
 
