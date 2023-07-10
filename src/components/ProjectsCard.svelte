@@ -8,9 +8,7 @@
 {#each projects as project (project.id)}
   <div class="flip-container move-container mt-[1rem]">
     <div class="flip-card">
-      <div
-        class="flip-front bg-[#2E4599] rounded-tl-2xl rounded-br-2xl justify-center items-center flex flex-col"
-      >
+      <div class="flip-front justify-center items-center flex flex-col">
         <h1
           class="text-gray-200 text-2xl sm:text-3xl md:text-3xl font-mono font-bold"
         >
@@ -28,7 +26,7 @@
         </p>
       </div>
       <div
-        class="flip-back rounded-tl-2xl rounded-br-2xl justify-center items-center flex flex-col gap-[2rem]"
+        class="flip-back justify-center items-center flex flex-col gap-[2rem]"
       >
         <div
           class=" text-gray-300 flex flex-row gap-[0.5rem] text-[0.8rem] sm:text-xl md:text-xl font-semibold font-mono"
@@ -63,10 +61,17 @@
 {/each}
 
 <style>
+  .flip-container {
+  }
   .flip-card {
+    background-image: url("../images/bg1.jpeg");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    border-radius: 1rem 0 1rem 0;
     width: 22rem;
     height: 13rem;
-    border-radius: 1rem;
     transition: transform 0.5s;
     transform-style: preserve-3d;
   }
@@ -93,7 +98,8 @@
 
   .flip-back {
     transform: rotateY(180deg);
-    background-color: #142a66;
+    background-color: #1a2c50;
+    border-radius: 0 1rem 0 1rem;
   }
 
   .move-container {
