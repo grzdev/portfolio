@@ -66,7 +66,7 @@
     transition: transform 0.5s;
     transform-style: preserve-3d;
     background-image: url("../images/bg1.jpeg");
-    background-position: 50% 50%;
+    background-position: 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
