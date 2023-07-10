@@ -118,10 +118,10 @@
             </li>
             <li>
               <a
-                href="https://github.com/grzdev"
+                href="https://www.linkedin.com/in/damilola-oyeniyi-97805b23a/"
                 class="text-white font-bold text-2xl"
               >
-                <Icon icon="teenyicons:github-solid" />
+                <Icon icon="uiw:linkedin" />
               </a>
             </li>
           </ul></button
