@@ -41,7 +41,7 @@
       class="text-gray-200 text-xl sm:text-3xl md:text-3xl font-mono font-bold mt-[1rem]"
       in:fade
     >
-      work projects
+      work related projects
     </h1>
     <divy
       class="flex flex-row gap-[1.3rem] sm:gap-[2rem] md:gap-[2rem] overflow-x-auto custom-scrollbar"

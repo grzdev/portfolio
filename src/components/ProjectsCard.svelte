@@ -22,7 +22,7 @@
           {project.desc}
         </p>
         <p
-          class="text-gray-200 text-[0.5rem] sm:text-[0.8rem] md:text-[0.9rem] font-mono font-black mt-[1.3rem] w-[14rem] text-center"
+          class="text-gray-200 text-[0.5rem] sm:text-[0.7rem] md:text-[0.8rem] font-mono font-black mt-[1.3rem] w-[14rem] text-center"
         >
           {project.type}
         </p>
