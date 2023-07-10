@@ -30,13 +30,13 @@
       personal projects
     </h1>
     <div
-      class="flex flex-row gap-[1.3rem] sm:gap-[2rem] md:gap-[2rem] overflow-x-auto custom-scrollbar"
+      class="flex flex-row mt-[0.8rem] gap-[1.3rem] sm:gap-[2rem] md:gap-[2rem] overflow-x-auto custom-scrollbar"
       class:slide-in={showDiv}
     >
       <ProjectsCard {projects} />
     </div>
   </div>
-  <div class="flex flex-col mt-[2rem] sm:mt-[2rem] md:mt-[2rem]">
+  <div class="flex flex-col mt-[1.5rem] sm:mt-[2rem] md:mt-[2rem]">
     <h1
       class="text-gray-200 text-xl sm:text-3xl md:text-3xl font-mono font-bold mt-[1rem]"
       in:fade
@@ -44,7 +44,7 @@
       work related projects
     </h1>
     <divy
-      class="flex flex-row gap-[1.3rem] sm:gap-[2rem] md:gap-[2rem] overflow-x-auto custom-scrollbar"
+      class="flex flex-row mt-[0.8rem] gap-[1.3rem] sm:gap-[2rem] md:gap-[2rem] overflow-x-auto custom-scrollbar"
       class:slide-in2={showDiv}
     >
       <WorkProjectsCard {projects2} />

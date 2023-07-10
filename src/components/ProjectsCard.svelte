@@ -6,7 +6,7 @@
 
 <!-- personal projects -->
 {#each projects as project (project.id)}
-  <div class="flip-container mt-[1rem]">
+  <div class="flip-container move-container mt-[1rem]">
     <div class="flip-card">
       <div
         class="flip-front bg-[#142A66] rounded-tl-2xl rounded-br-2xl justify-center items-center flex flex-col"
@@ -17,12 +17,12 @@
           {project.name}
         </h1>
         <p
-          class="text-gray-200 text-sm sm:text-xl md:text-xl font-mono font-bold mt-[1.3rem] w-[14rem] sm:w-[16rem] md:w-[16rem] text-center"
+          class="text-gray-200 text-sm sm:text-xl md:text-xl font-mono font-bold mt-[1rem] w-[14rem] sm:w-[16rem] md:w-[16rem] text-center"
         >
           {project.desc}
         </p>
         <p
-          class="text-gray-200 text-[0.5rem] sm:text-[0.7rem] md:text-[0.8rem] font-mono font-black mt-[1.3rem] w-[14rem] text-center"
+          class="text-gray-200 text-[0.5rem] sm:text-[0.7rem] md:text-[0.8rem] font-mono font-bold mt-[2.5rem] w-[14rem] text-center"
         >
           {project.type}
         </p>
@@ -96,22 +96,17 @@
     background-color: #051133;
   }
 
-  .container {
-    display: flex;
+  .move-container {
+    animation: move 2s ease-in-out infinite;
   }
 
-  .box {
-    flex: 1;
-    border: 1px solid #ccc;
-    text-align: center;
-    transition: transform 0.3s;
-  }
-
-  .flipped {
-    transform: rotateY(180deg);
-  }
-
-  .button {
-    margin-top: 20px;
+  @keyframes move {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-8px);
+    }
   }
 </style>
