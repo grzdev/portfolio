@@ -20,7 +20,7 @@
 
 <!-- HTML -->
 <div
-  class="flex flex-col px-[1rem] sm:px-[4rem] md:px-[4rem] mt-[2rem] sm:mt-[1rem] md:mt-[1rem] overflow-x-hidden"
+  class="flex flex-col px-[1rem] sm:px-[2rem] md:px-[4rem] mt-[2rem] sm:mt-[1rem] md:mt-[1rem] overflow-x-hidden"
 >
   <div class="flex flex-col">
     <h1
