@@ -61,16 +61,11 @@
 
 <style>
   .flip-card {
+    position: relative;
     width: 22rem;
     height: 13rem;
     transition: transform 0.5s;
     transform-style: preserve-3d;
-    background-image: url("../images/bg1.jpeg");
-    background-position: 100%;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    border-radius: 1rem 0 1rem 0;
   }
 
   @media (max-width: 640px) {
@@ -92,11 +87,18 @@
     height: 100%;
     backface-visibility: hidden;
   }
+  .flip-front {
+    background-image: url("../images/bg1.jpeg"); /* Move background image to flip-front */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 1rem 0 1rem 0;
+  }
 
   .flip-back {
     transform: rotateY(180deg);
     background-color: #1a2c50;
-    border-radius: 0 1rem 0 1rem;
+    border-radius: 1rem 0 1rem 0;
   }
   .move-container {
     animation: move 2s ease-in-out infinite;
