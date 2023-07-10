@@ -8,7 +8,7 @@
   <div class="flip-container move-container mt-[1rem]">
     <div class="flip-card">
       <div
-        class="flip-front bg-[#142A66] rounded-tl-2xl rounded-br-2xl justify-center items-center flex flex-col"
+        class="flip-front bg-[#2E4599] rounded-tl-2xl rounded-br-2xl justify-center items-center flex flex-col"
       >
         <h1
           class="text-2xl sm:text-3xl md:text-3xl text-gray-200 font-mono font-bold"
@@ -92,7 +92,7 @@
 
   .flip-back {
     transform: rotateY(180deg);
-    background-color: #051133;
+    background-color: #142a66;
   }
   .move-container {
     animation: move 2s ease-in-out infinite;

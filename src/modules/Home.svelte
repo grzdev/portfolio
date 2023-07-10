@@ -154,7 +154,7 @@
     height: 4.2em;
     background-color: #212121;
     border: 0.08em solid #fff;
-    border-radius: 0.3em;
+    border-radius: 1rem 0 1rem 0;
     font-size: 12px;
   }
 
@@ -174,7 +174,7 @@
       rgba(57, 167, 254, 1) 100%
     );
 
-    border-radius: 0.2em;
+    border-radius: 0.8rem 0 0.8rem 0;
     font-size: 1.5em;
     color: #fff;
     border: 0.08em solid #fff;
