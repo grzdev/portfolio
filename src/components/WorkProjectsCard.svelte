@@ -99,7 +99,6 @@
     transform: rotateY(180deg);
     background-color: #1a2c50;
     border-radius: 1rem 0 1rem 0;
-    height: 13rem;
   }
   .move-container {
     animation: move 2.5s ease-in-out infinite;
