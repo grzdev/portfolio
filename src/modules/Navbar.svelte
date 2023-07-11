@@ -51,7 +51,7 @@
 
       <!-- Navbar button -->
       {#if isMobileView && !menuOpen}
-        <div class="md:hidden mt-[1rem]">
+        <div class="md:hidden mt-[1.2rem]">
           <button on:click={toggleMenu}>
             <Icon
               icon="line-md:close-to-menu-alt-transition"
@@ -60,7 +60,7 @@
           </button>
         </div>
       {:else}
-        <div class="md:hidden">
+        <div class="md:hidden mt-[1.2rem]">
           <button on:click={toggleMenu}>
             <Icon
               icon="line-md:menu-to-close-alt-transition"
@@ -176,14 +176,14 @@
                 out:fly={{ y: 200, duration: 500 }}>contact</a
               >
             </div>
-            <div class="mt-[4rem] flex flex-row gap-[2rem]">
+            <div class="mt-[4rem] font-mono flex flex-row gap-[2rem]">
               <button
-                class="downloadCV"
+                class="downloadCV font-mono"
                 in:fly={{ y: 200, duration: 1900 }}
                 out:fly={{ y: 200, duration: 300 }}>Get CV</button
               >
               <button
-                class="downloadCV2 text-gray-100"
+                class="downloadCV2 text-gray-200 font-mono"
                 in:fly={{ y: 200, duration: 1900 }}
                 out:fly={{ y: 200, duration: 300 }}>Hire me</button
               >
@@ -316,10 +316,7 @@
     color: #65abff;
     cursor: pointer;
     display: inline-block;
-    font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI",
-      Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-      "Segoe UI Symbol";
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 700;
     line-height: normal;
     margin: 0;
@@ -361,10 +358,7 @@
 
     cursor: pointer;
     display: inline-block;
-    font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI",
-      Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-      "Segoe UI Symbol";
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 700;
     line-height: normal;
     margin: 0;
