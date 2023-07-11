@@ -30,7 +30,7 @@
   </div>
   <!-- <div class="w-[30rem] h-[20rem] bg-white" /> -->
   <div
-    class="flip-container move-container mt-[-6rem] sm:mt-[-5rem] md:mt-[1rem] mb-[3rem] sm:mb-[3rem] md:mb-[]"
+    class=" move-container mt-[-6rem] sm:mt-[-5rem] md:mt-[1rem] mb-[3rem] sm:mb-[3rem] md:mb-[]"
     transition:fly={{ y: "100%", duration: 1000 }}
   >
     <div class="flip-card">
