@@ -1,12 +1,17 @@
 <!-- Javascript -->
 <script>
+  import { onMount } from "svelte";
   import Avatar from "../images/Avatar2.png";
+  import { fade, fly } from "svelte/transition";
 </script>
 
 <div
   class="flex justify-center items-center flex-col sm:flex-col md:flex-row mt-[1rem] sm:mt-[1rem] md:mt-[3rem] gap-[8rem] sm:gap-[8rem] md:gap-[12rem]"
 >
-  <div class="flex justify-center items-center flex-col">
+  <div
+    class=" flex justify-center items-center flex-col fade-transition"
+    in:fade={{ duration: 800 }}
+  >
     <img
       src={Avatar}
       alt=""
@@ -26,11 +31,12 @@
   <!-- <div class="w-[30rem] h-[20rem] bg-white" /> -->
   <div
     class="flip-container move-container mt-[-6rem] sm:mt-[-5rem] md:mt-[1rem] mb-[3rem] sm:mb-[3rem] md:mb-[]"
+    transition:fly={{ y: "100%", duration: 1000 }}
   >
     <div class="flip-card">
       <div class="flip-front justify-center items-center flex flex-col">
         <p
-          class="text-gray-200 text-xl mt-[-4rem] font-mono font-bold text-center w-[18rem] sm:w-[30rem] md:w-[30rem]"
+          class="text-gray-200 text-lg sm:text-xl md:text-xl mt-[-4rem] font-mono font-bold text-center w-[17rem] sm:w-[30rem] md:w-[30rem]"
         >
           I started developing websites in March 2022, and to be honest, I'm
           proud of how far I've come in such a short space of time. I pick
@@ -61,8 +67,8 @@
   @media (max-width: 640px) {
     /* Set different width and height for smaller screens */
     .flip-card {
-      width: 21rem;
-      height: 40rem;
+      width: 20rem;
+      height: 38rem;
     }
   }
 
