@@ -136,7 +136,7 @@
 <!-- CSS -->
 <style>
   .move-container {
-    animation: move 2s ease-in-out infinite;
+    animation: move 3s ease-in-out infinite;
   }
 
   @keyframes move {

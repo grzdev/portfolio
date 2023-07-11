@@ -54,7 +54,7 @@
         <div class="md:hidden">
           <button on:click={toggleMenu}>
             <Icon
-              icon="ci:menu-alt-02"
+              icon="line-md:close-to-menu-alt-transition"
               class="text-white cursor-pointer text-3xl"
             />
           </button>
@@ -63,7 +63,7 @@
         <div class="md:hidden">
           <button on:click={toggleMenu}>
             <Icon
-              icon="ep:close-bold"
+              icon="line-md:menu-to-close-alt-transition"
               class="text-white cursor-pointer text-3xl"
             />
           </button>
@@ -183,7 +183,7 @@
                 out:fly={{ y: 200, duration: 300 }}>Get CV</button
               >
               <button
-                class="downloadCV2"
+                class="downloadCV2 text-gray-100"
                 in:fly={{ y: 200, duration: 1900 }}
                 out:fly={{ y: 200, duration: 300 }}>Hire me</button
               >
@@ -358,7 +358,7 @@
     border: 0.125em solid #245da1;
     border-radius: 1rem 0 1rem 0;
     box-sizing: border-box;
-    color: white;
+
     cursor: pointer;
     display: inline-block;
     font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI",

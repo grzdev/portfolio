@@ -30,7 +30,7 @@
       personal projects
     </h1>
     <div
-      class="flex flex-row mt-[0.8rem] gap-[1.3rem] sm:gap-[2rem] md:gap-[2rem] overflow-x-auto custom-scrollbar"
+      class="flex flex-row mt-[0.3rem] gap-[1.3rem] sm:gap-[2rem] md:gap-[2rem] overflow-x-auto custom-scrollbar"
       class:slide-in={showDiv}
     >
       <ProjectsCard {projects} />
@@ -44,7 +44,7 @@
       work related projects
     </h1>
     <divy
-      class="flex flex-row mt-[0.8rem] gap-[1.3rem] sm:gap-[2rem] md:gap-[2rem] overflow-x-auto custom-scrollbar"
+      class="flex flex-row mt-[0.3rem] gap-[1.3rem] sm:gap-[2rem] md:gap-[2rem] overflow-x-auto custom-scrollbar"
       class:slide-in2={showDiv}
     >
       <WorkProjectsCard {projects2} />
@@ -78,7 +78,7 @@
 
   @keyframes slide-in {
     from {
-      transform: translateX(30%);
+      transform: translateX(60%);
     }
     to {
       transform: translateX(0);
@@ -90,7 +90,7 @@
 
   @keyframes slide-in2 {
     from {
-      transform: translateX(30%);
+      transform: translateX(60%);
     }
     to {
       transform: translateX(0);
