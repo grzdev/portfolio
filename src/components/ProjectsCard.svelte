@@ -105,7 +105,7 @@
   }
 
   .move-container {
-    animation: move 2s ease-in-out infinite;
+    animation: move 2.5s ease-in-out infinite;
   }
 
   @keyframes move {
@@ -114,7 +114,7 @@
       transform: translateY(0);
     }
     50% {
-      transform: translateY(-8px);
+      transform: translateY(-9px);
     }
   }
 </style>
