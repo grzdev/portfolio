@@ -18,6 +18,7 @@
   <LoadScreen />
 {:else}
   <div>
+    <title>Dami Oyeniyi | About</title>
     <Navbar {menuOpen} on:toggleMenu={() => (menuOpen = !menuOpen)} />
     <About />
   </div>
