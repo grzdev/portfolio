@@ -61,8 +61,6 @@
 {/each}
 
 <style>
-  .flip-container {
-  }
   .flip-card {
     position: relative;
     width: 22rem;
