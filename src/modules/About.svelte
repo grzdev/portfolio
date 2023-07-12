@@ -39,7 +39,7 @@
         <h1
           class="text-gray-200 text-sm sm:text-lg md:text-xl mt-[-3rem] sm:mt-[-1rem] md:mt-[-1rem] font-mono font-bold text-center w-[17rem] sm:w-[30rem] md:w-[30rem]"
         >
-          I build beautiful and easy to use interfaces using the latest web
+          I build eye catching and easy to use interfaces using the latest web
           design technology.
         </h1>
         <p
