@@ -153,10 +153,10 @@
   }
 
   button {
-    padding: 1em 0.45em;
-    width: 11.6em;
-    height: 4.3em;
-    background-color: #0a1220;
+    padding: 0.1em 0.25em;
+    width: 11.2em;
+    height: 3.7em;
+    background-color: #212121;
     border: 0.08em solid #fff;
     border-radius: 1rem 0 1rem 0;
     font-size: 12px;
@@ -169,7 +169,7 @@
     justify-content: center;
     align-items: center;
     font-weight: 700;
-    bottom: 0.7em;
+    bottom: 0.4em;
     width: 7em;
     height: 2em;
     background: rgb(12, 32, 56);
