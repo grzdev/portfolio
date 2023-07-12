@@ -3,6 +3,7 @@
   import { onMount } from "svelte";
   import Avatar from "../images/Avatar2.png";
   import { fade, fly } from "svelte/transition";
+  import Icon from "@iconify/svelte";
 </script>
 
 <div
@@ -36,7 +37,7 @@
     <div class="flip-card">
       <div class="flip-front justify-center items-center flex flex-col">
         <h1
-          class="text-gray-200 text-lg sm:text-2xl md:text-2xl mt-[-1rem] font-mono font-bold text-center w-[17rem] sm:w-[30rem] md:w-[30rem]"
+          class="text-gray-200 text-lg sm:text-2xl md:text-2xl mt-[-2rem] sm:mt-[-1rem] md:mt-[-1rem] font-mono font-bold text-center w-[17rem] sm:w-[30rem] md:w-[30rem]"
         >
           I build beautiful and easy to use interfaces using the latest web
           design technology.
@@ -56,7 +57,7 @@
           </h1>
           <a href="">
             <button class="mt-[1rem]">
-              <span> view my resume </span>
+              <span class=""> resume <Icon icon="ic:sharp-play-arrow" /></span>
             </button>
           </a>
         </div>
@@ -74,7 +75,7 @@
   .flip-card {
     position: relative;
     width: 37rem;
-    height: 30rem;
+    height: 32rem;
     transition: transform 0.5s;
     transform-style: preserve-3d;
   }
@@ -83,7 +84,7 @@
     /* Set different width and height for smaller screens */
     .flip-card {
       width: 20rem;
-      height: 35rem;
+      height: 33rem;
     }
   }
 
