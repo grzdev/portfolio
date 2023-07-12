@@ -35,16 +35,31 @@
   >
     <div class="flip-card">
       <div class="flip-front justify-center items-center flex flex-col">
-        <p
-          class="text-gray-200 text-lg sm:text-xl md:text-xl mt-[-4rem] font-mono font-bold text-center w-[17rem] sm:w-[30rem] md:w-[30rem]"
+        <h1
+          class="text-gray-200 text-lg sm:text-2xl md:text-2xl mt-[-1rem] font-mono font-bold text-center w-[17rem] sm:w-[30rem] md:w-[30rem]"
         >
-          I started developing websites in March 2022, and to be honest, I'm
-          proud of how far I've come in such a short space of time. I pick
-          things up quickly and go out of my way to make my work stand out. <br
-          /> <br />I believe the design of a site is as important as the
-          funtionality, what’s the use of a site being functional if it’s not
-          easy to use and vice versa.
+          I build beautiful and easy to use interfaces using the latest web
+          design technology.
+        </h1>
+        <p
+          class="text-gray-200 text-sm sm:text-lg md:text-lg mt-[2rem] font-mono font-bold text-center w-[17rem] sm:w-[30rem] md:w-[30rem]"
+        >
+          I'm a frontend developer with about two years of experience. My
+          obsession with offering a smooth and unique user interface and
+          experience is what sets me apart.
         </p>
+        <div class="mt-[3rem] flex flex-col justify-center items-center">
+          <h1
+            class="text-gray-200 text-lg sm:text-xl md:text-xl mt-[-1rem] font-mono font-bold text-center"
+          >
+            Want to know more?
+          </h1>
+          <a href="">
+            <button class="mt-[1rem]">
+              <span> view my resume </span>
+            </button>
+          </a>
+        </div>
       </div>
       <div
         class="flip-back justify-center items-center flex flex-col gap-[2rem]"
@@ -59,7 +74,7 @@
   .flip-card {
     position: relative;
     width: 37rem;
-    height: 32rem;
+    height: 30rem;
     transition: transform 0.5s;
     transform-style: preserve-3d;
   }
@@ -68,7 +83,7 @@
     /* Set different width and height for smaller screens */
     .flip-card {
       width: 20rem;
-      height: 38rem;
+      height: 35rem;
     }
   }
 
@@ -109,5 +124,49 @@
     50% {
       transform: translateY(-9px);
     }
+  }
+
+  button {
+    padding: 0.1em 0.25em;
+    width: 13em;
+    height: 4.2em;
+    background-color: #212121;
+    border: 0.08em solid #fff;
+    border-radius: 1rem 0 1rem 0;
+    font-size: 12px;
+    font-family: monospace;
+  }
+
+  button span {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    bottom: 0.4em;
+    width: 8.25em;
+    height: 2.5em;
+    background: rgb(12, 32, 56);
+    background: linear-gradient(
+      304deg,
+      rgba(12, 32, 56, 1) 0%,
+      rgba(57, 167, 254, 1) 100%
+    );
+
+    border-radius: 0.8rem 0 0.8rem 0;
+    font-size: 1.5em;
+    color: #fff;
+    border: 0.08em solid #fff;
+    box-shadow: 0 0.4em 0.1em 0.019em #d3d1d1;
+  }
+
+  button span:hover {
+    transition: all 0.5s;
+    transform: translate(0, 0.4em);
+    box-shadow: 0 0 0 0 #d3d1d1;
+  }
+
+  button span:not(hover) {
+    transition: all 1s;
   }
 </style>
