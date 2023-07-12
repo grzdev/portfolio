@@ -31,7 +31,7 @@
   </div>
   <!-- <div class="w-[30rem] h-[20rem] bg-white" /> -->
   <div
-    class="flip-container move-container mt-[-6rem] sm:mt-[-6rem] md:mt-[1rem] mb-[3rem] sm:mb-[3rem] md:mb-[]"
+    class="move-container mt-[-6rem] sm:mt-[-6rem] md:mt-[1rem] mb-[3rem] sm:mb-[3rem] md:mb-[]"
     transition:fly={{ y: "100%", duration: 1000 }}
   >
     <div class="flip-card">
@@ -153,10 +153,10 @@
   }
 
   button {
-    padding: 0.1em 0.25em;
-    width: 11.2em;
-    height: 3.7em;
-    background-color: #212121;
+    padding: 1em 0.45em;
+    width: 11.6em;
+    height: 4.3em;
+    background-color: #0a1220;
     border: 0.08em solid #fff;
     border-radius: 1rem 0 1rem 0;
     font-size: 12px;
@@ -169,7 +169,7 @@
     justify-content: center;
     align-items: center;
     font-weight: 700;
-    bottom: 0.4em;
+    bottom: 0.7em;
     width: 7em;
     height: 2em;
     background: rgb(12, 32, 56);
