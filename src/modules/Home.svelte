@@ -84,7 +84,7 @@
         >
           <a href="/projects">
             <button>
-              <span> Explore</span>
+              <span> Explore </span>
             </button>
           </a>
         </div>

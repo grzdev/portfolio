@@ -78,7 +78,7 @@
 
   @keyframes slide-in {
     from {
-      transform: translateX(60%);
+      transform: translateX(100%);
     }
     to {
       transform: translateX(0);
@@ -90,7 +90,7 @@
 
   @keyframes slide-in2 {
     from {
-      transform: translateX(60%);
+      transform: translateX(100%);
     }
     to {
       transform: translateX(0);

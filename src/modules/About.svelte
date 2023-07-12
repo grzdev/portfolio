@@ -19,7 +19,7 @@
       class="rounded-full w-[8rem] sm:w-[13rem] md:w-[13rem] mt-[] sm:mt-[] md:mt-[-4rem]"
     />
     <h1
-      class="text-4xl sm:text-5xl md:text-5xl text-gray-200 font-mono font-bold mt-[0.5rem] sm:mt-[2rem] md:mt-[2rem]"
+      class="text-4xl sm:text-5xl md:text-5xl text-gray-200 font-mono font-bold mt-[0.5rem] sm:mt-[1rem] md:mt-[1rem]"
     >
       Dami
     </h1>
@@ -31,7 +31,7 @@
   </div>
   <!-- <div class="w-[30rem] h-[20rem] bg-white" /> -->
   <div
-    class=" move-container mt-[-6rem] sm:mt-[-5rem] md:mt-[1rem] mb-[3rem] sm:mb-[3rem] md:mb-[]"
+    class="flip-container move-container mt-[-6rem] sm:mt-[-6rem] md:mt-[1rem] mb-[3rem] sm:mb-[3rem] md:mb-[]"
     transition:fly={{ y: "100%", duration: 1000 }}
   >
     <div class="flip-card">
@@ -57,7 +57,9 @@
           </h1>
           <a href="">
             <button class="mt-[0.5rem]">
-              <span class=""> resume <Icon icon="ic:sharp-play-arrow" /></span>
+              <span class="text-sm">
+                resume <Icon icon="ic:sharp-play-arrow" /></span
+              >
             </button>
           </a>
         </div>
@@ -65,7 +67,30 @@
       <div
         class="flip-back justify-center items-center flex flex-col gap-[2rem]"
       >
-        <h1>back</h1>
+        <div class="mb-auto w-[17rem] sm:w-[30rem] md:w-[30rem] mt-[4rem]">
+          <h1
+            class="text-gray-200 text-sm sm:text-xl md:text-xl font-mono font-semibold text-center"
+          >
+            Here's a few keywords to know more about me
+          </h1>
+          <p
+            class="text-gray-200 text-sm sm:text-lg md:text-xl mt-[2rem] font-mono font-bold text-center"
+          >
+            frontend, frontend, frontend, frontend, frontend, frontend,
+            frontend, frontend, frontend, frontend, frontend, frontend,
+            frontend, fronte, frontend
+          </p>
+          <p
+            class="text-gray-200 text-sm sm:text-lg md:text-xl mt-[2rem] font-mono font-bold text-center"
+          >
+            frontend, frontend, frontend, frontend, frontend, frontend,
+            frontend, frontend, frontend, frontend, frontend, frontend,
+            frontend, fronte, frontend
+          </p>
+        </div>
+        <h1 class="text-gray-200 text-sm font-mono font-semibold mb-[2rem]">
+          tap an empty space to flip
+        </h1>
       </div>
     </div>
   </div>
