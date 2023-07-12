@@ -37,13 +37,13 @@
     <div class="flip-card">
       <div class="flip-front justify-center items-center flex flex-col">
         <h1
-          class="text-gray-200 text-lg sm:text-2xl md:text-2xl mt-[-2rem] sm:mt-[-1rem] md:mt-[-1rem] font-mono font-bold text-center w-[17rem] sm:w-[30rem] md:w-[30rem]"
+          class="text-gray-200 text-sm sm:text-lg md:text-xl mt-[-3rem] sm:mt-[-1rem] md:mt-[-1rem] font-mono font-bold text-center w-[17rem] sm:w-[30rem] md:w-[30rem]"
         >
           I build beautiful and easy to use interfaces using the latest web
           design technology.
         </h1>
         <p
-          class="text-gray-200 text-sm sm:text-lg md:text-lg mt-[2rem] font-mono font-bold text-center w-[17rem] sm:w-[30rem] md:w-[30rem]"
+          class="text-gray-200 text-sm sm:text-lg md:text-xl mt-[2rem] font-mono font-bold text-center w-[17rem] sm:w-[30rem] md:w-[30rem]"
         >
           I'm a frontend developer with about two years of experience. My
           obsession with offering a smooth and unique user interface and
@@ -51,12 +51,12 @@
         </p>
         <div class="mt-[3rem] flex flex-col justify-center items-center">
           <h1
-            class="text-gray-200 text-lg sm:text-xl md:text-xl mt-[-1rem] font-mono font-bold text-center"
+            class="text-gray-200 text-sm sm:text-lg md:text-xl mt-[-1rem] font-mono font-bold text-center"
           >
             Want to know more?
           </h1>
           <a href="">
-            <button class="mt-[1rem]">
+            <button class="mt-[0.5rem]">
               <span class=""> resume <Icon icon="ic:sharp-play-arrow" /></span>
             </button>
           </a>
@@ -84,7 +84,7 @@
     /* Set different width and height for smaller screens */
     .flip-card {
       width: 20rem;
-      height: 33rem;
+      height: 32rem;
     }
   }
 
@@ -129,8 +129,8 @@
 
   button {
     padding: 0.1em 0.25em;
-    width: 13em;
-    height: 4.2em;
+    width: 11.2em;
+    height: 3.7em;
     background-color: #212121;
     border: 0.08em solid #fff;
     border-radius: 1rem 0 1rem 0;
@@ -145,8 +145,8 @@
     align-items: center;
     font-weight: 700;
     bottom: 0.4em;
-    width: 8.25em;
-    height: 2.5em;
+    width: 7em;
+    height: 2em;
     background: rgb(12, 32, 56);
     background: linear-gradient(
       304deg,
