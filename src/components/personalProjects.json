@@ -59,7 +59,7 @@
             "type": "website",
             "tools": {
                 "first": "svelte",
-                "second": "typescript",
+                "second": "javascript",
                 "third": "tailwind"
             },
             "link": "https://damioyeniyi.netlify.app/",

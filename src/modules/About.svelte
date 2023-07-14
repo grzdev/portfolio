@@ -16,7 +16,7 @@
     <img
       src={Avatar}
       alt=""
-      class="rounded-full w-[8rem] sm:w-[13rem] md:w-[13rem] mt-[] sm:mt-[] md:mt-[-4rem]"
+      class="rounded-full w-[8rem] sm:w-[13rem] md:w-[13rem] mt-[] sm:mt-[] md:mt-[-6rem]"
     />
     <h1
       class="text-4xl sm:text-5xl md:text-5xl text-gray-200 font-mono font-bold mt-[0.5rem] sm:mt-[1rem] md:mt-[1rem]"
@@ -40,16 +40,21 @@
           class="text-gray-200 text-sm sm:text-lg md:text-xl mt-[-3rem] sm:mt-[-1rem] md:mt-[-1rem] font-mono font-bold text-center w-[17rem] sm:w-[30rem] md:w-[30rem]"
         >
           I build eye catching and easy to use interfaces using the latest web
-          design technology.
+          design tools.
         </h1>
         <p
-          class="text-gray-200 text-sm sm:text-lg md:text-xl mt-[2rem] font-mono font-bold text-center w-[17rem] sm:w-[30rem] md:w-[30rem]"
+          class="text-gray-200 text-sm sm:text-lg md:text-xl mt-[1rem] font-mono font-bold text-center w-[17rem] sm:w-[30rem] md:w-[30rem]"
         >
-          I'm a frontend developer with about two years of experience. My
-          obsession with offering a smooth and unique user interface and
+          I'm a self taught frontend developer with about two years of
+          experience, with my focus in react and typescript.
+        </p>
+        <p
+          class="text-gray-200 text-sm sm:text-lg md:text-xl mt-[1rem] font-mono font-bold text-center w-[17rem] sm:w-[30rem] md:w-[30rem]"
+        >
+          My obsession with offering a smooth and unique user interface and
           experience is what sets me apart.
         </p>
-        <div class="mt-[3rem] flex flex-col justify-center items-center">
+        <div class="mt-[2.5rem] flex flex-col justify-center items-center">
           <h1
             class="text-gray-200 text-sm sm:text-lg md:text-xl mt-[-1rem] font-mono font-bold text-center"
           >
@@ -64,34 +69,6 @@
           </a>
         </div>
       </div>
-      <div
-        class="flip-back justify-center items-center flex flex-col gap-[2rem]"
-      >
-        <div class="mb-auto w-[17rem] sm:w-[30rem] md:w-[30rem] mt-[4rem]">
-          <h1
-            class="text-gray-200 text-sm sm:text-xl md:text-xl font-mono font-semibold text-center"
-          >
-            Here's a few keywords to know more about me
-          </h1>
-          <p
-            class="text-gray-200 text-sm sm:text-lg md:text-xl mt-[2rem] font-mono font-bold text-center"
-          >
-            frontend, frontend, frontend, frontend, frontend, frontend,
-            frontend, frontend, frontend, frontend, frontend, frontend,
-            frontend, fronte, frontend
-          </p>
-          <p
-            class="text-gray-200 text-sm sm:text-lg md:text-xl mt-[2rem] font-mono font-bold text-center"
-          >
-            frontend, frontend, frontend, frontend, frontend, frontend,
-            frontend, frontend, frontend, frontend, frontend, frontend,
-            frontend, fronte, frontend
-          </p>
-        </div>
-        <h1 class="text-gray-200 text-sm font-mono font-semibold mb-[2rem]">
-          tap an empty space to flip
-        </h1>
-      </div>
     </div>
   </div>
 </div>
@@ -100,7 +77,7 @@
   .flip-card {
     position: relative;
     width: 37rem;
-    height: 32rem;
+    height: 33rem;
     transition: transform 0.5s;
     transform-style: preserve-3d;
   }
