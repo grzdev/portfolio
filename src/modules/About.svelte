@@ -60,7 +60,9 @@
           >
             Want to know more?
           </h1>
-          <a href="">
+          <a
+            href="https://docs.google.com/document/d/1klpcXN4S0oWium8_XpZba-EBpF3v-rv2/edit?usp=drive_link&ouid=109286662353454941381&rtpof=true&sd=true"
+          >
             <button class="mt-[0.5rem]">
               <span class="text-sm">
                 resume <Icon icon="ic:sharp-play-arrow" /></span

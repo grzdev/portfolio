@@ -5,6 +5,7 @@
   import { onMount } from "svelte";
   import { createEventDispatcher } from "svelte";
   import { fade, fly } from "svelte/transition";
+  import CV from "../components/CV.pdf";
 
   //  navbar function
   export let menuOpen: boolean;
@@ -31,7 +32,13 @@
     }
   }
 
-  //animation
+  //download CV function
+  function handleDownload() {
+    const link = document.createElement("a");
+    link.href = CV;
+    link.setAttribute("download", "CV.pdf"); // Replace with the desired filename
+    link.click();
+  }
 </script>
 
 <!-- HTML -->
@@ -179,14 +186,17 @@
             <div class="mt-[4rem] font-mono flex flex-row gap-[2rem]">
               <button
                 class="downloadCV font-mono"
+                on:click={handleDownload}
                 in:fly={{ y: 200, duration: 1900 }}
                 out:fly={{ y: 200, duration: 300 }}>Get CV</button
               >
-              <button
-                class="downloadCV2 text-gray-200 font-mono"
-                in:fly={{ y: 200, duration: 1900 }}
-                out:fly={{ y: 200, duration: 300 }}>Hire me</button
-              >
+              <a href="mailto:damilolaoyeniyi13@gmail.com">
+                <button
+                  class="downloadCV2 text-gray-200 font-mono"
+                  in:fly={{ y: 200, duration: 1900 }}
+                  out:fly={{ y: 200, duration: 300 }}>Hire me</button
+                >
+              </a>
             </div>
             <div />
           </div>
