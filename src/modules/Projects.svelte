@@ -85,7 +85,7 @@
     }
   }
   .slide-in2 {
-    animation: slide-in 1.8s;
+    animation: slide-in 1.6s;
   }
 
   @keyframes slide-in2 {

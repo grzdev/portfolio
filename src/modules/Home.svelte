@@ -80,7 +80,7 @@
       {/if}
       {#if showText3}
         <div
-          class="fly-in flex flex-row mt-[1.3rem] sm:mt-[1.5rem] md:mt-[2rem] gap-[2rem]"
+          class="fly-in flex flex-row mt-[1.2rem] sm:mt-[1.5rem] md:mt-[1.5rem] gap-[2rem]"
         >
           <a href="/projects">
             <button>
