@@ -1,23 +1,24 @@
 <script>
   import Icon from "@iconify/svelte";
   import Image from "../images/together.png";
-  import { fade } from "svelte/transition";
+  import { fade, fly } from "svelte/transition";
 </script>
 
 <div
-  class="flex flex-col sm:flex-col md:flex-col text-white justify-center items-center mt-[1rem] sm:mt-[] md:mt-[1rem] gap-[-1rem] sm:gap-[1rem] md:gap-[1rem]"
+  class="flex flex-col sm:flex-col md:flex-col text-gray-200 justify-center items-center mt-[1rem] sm:mt-[] md:mt-[1rem] gap-[-1rem] sm:gap-[1rem] md:gap-[1rem]"
 >
   <div class="flex justify-center items-center flex-col">
     <h1
+      in:fade
       class="text-3xl sm:text-5xl md:text-5xl font-bold font-mono w-[20rem] sm:w-[35rem] md:w-[35rem] text-center mt-[1rem]"
     >
       Let's make great stuff together!
     </h1>
   </div>
   <div
-    class="flex flex-col mt-[1rem] mb-[3rem] sm:mb-[3rem] md:mb-[0rem] move-container"
+    class="flex flex-col mt-[2rem] sm:mt-[1rem] md:mt-[1rem] mb-[3rem] sm:mb-[3rem] md:mb-[0rem] move-container"
   >
-    <div class="flip-card">
+    <div class="flip-card" transition:fly={{ y: "100%", duration: 1000 }}>
       <div class="flip-front justify-center items-center flex flex-col">
         <h1
           class="text-gray-200 text-sm sm:text-xl md:text-xl mt-[-1rem] sm:mt-[-2rem] md:mt-[-3rem] font-mono font-bold text-center w-[14rem] sm:w-[20rem] md:w-[20rem]"
@@ -27,27 +28,27 @@
         <div
           class="w-[20rem] sm:w-[30rem] md:w-[30rem] gap-[2rem] mt-[2rem] flex flex-wrap justify-center items-center"
         >
-          <a href="">
+          <a href="mailto:damilolaoyeniyi13@gmail.com">
             <button class="">
               <span class="text-sm"> gmail </span>
             </button>
           </a>
-          <a href="">
+          <a href="https://twitter.com/grzdev_">
             <button class="">
               <span class="text-sm"> twitter </span>
             </button>
           </a>
-          <a href="">
+          <a href="https://www.linkedin.com/in/damilola-oyeniyi-97805b23a/">
             <button class="">
               <span class="text-sm"> linkedin </span>
             </button>
           </a>
-          <a href="">
+          <a href="https://github.com/grzdev">
             <button class="">
               <span class="text-sm"> github </span>
             </button>
           </a>
-          <a href="">
+          <a href="https://www.instagram.com/grzdev_/">
             <button class="">
               <span class="text-sm"> instagram </span>
             </button>
@@ -71,7 +72,7 @@
     /* Set different width and height for smaller screens */
     .flip-card {
       width: 21rem;
-      height: 25rem;
+      height: 20rem;
     }
   }
 
