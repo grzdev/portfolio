@@ -5,7 +5,7 @@
 </script>
 
 <div
-  class="flex flex-col sm:flex-col md:flex-row text-white justify-center items-center mt-[] sm:mt-[] md:mt-[4rem] gap-[-1rem] sm:gap-[1rem] md:gap-[4rem]"
+  class="flex flex-col sm:flex-col md:flex-row text-white justify-center items-center mt-[1rem] sm:mt-[] md:mt-[4rem] gap-[-1rem] sm:gap-[1rem] md:gap-[4rem]"
 >
   <div class="flex justify-center items-center flex-col">
     <img
@@ -15,15 +15,15 @@
       in:fade
     />
     <h1
-      class="text-2xl sm:text-5xl md:text-5xl font-bold font-mono w-[20rem] sm:w-[35rem] md:w-[35rem] text-center mt-[1rem]"
+      class="text-3xl sm:text-5xl md:text-5xl font-bold font-mono w-[20rem] sm:w-[35rem] md:w-[35rem] text-center mt-[1rem]"
     >
       Let's make great stuff together!
     </h1>
     <h1
-      class="text-md sm:text-xl md:text-xl font-semibold font-mono w-[20rem] sm:w-[35rem] md:w-[30rem] text-center mt-[1rem]"
+      class="text-md sm:text-xl md:text-xl font-semibold font-mono w-[18rem] sm:w-[35rem] md:w-[30rem] text-center mt-[1rem]"
     >
-      Get in touch with me if you wish to share ideas or collaborate on a
-      project.
+      Don't hesitate to get in touch with me if you wish to share ideas or
+      collaborate on a project.
     </h1>
   </div>
   <div
@@ -77,8 +77,8 @@
   @media (max-width: 640px) {
     /* Set different width and height for smaller screens */
     .flip-card {
-      width: 20rem;
-      height: 32rem;
+      width: 21rem;
+      height: 25rem;
     }
   }
 
