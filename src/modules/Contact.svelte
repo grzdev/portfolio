@@ -10,9 +10,9 @@
   <div class="flex justify-center items-center flex-col">
     <h1
       in:fade
-      class="text-3xl sm:text-5xl md:text-5xl font-bold font-mono w-[20rem] sm:w-[35rem] md:w-[35rem] text-center mt-[1rem]"
+      class="text-2xl sm:text-5xl md:text-5xl font-bold font-mono w-[20rem] sm:w-[35rem] md:w-[35rem] text-center mt-[1rem]"
     >
-      Let's make great stuff together!
+      let's make great stuff together!
     </h1>
   </div>
   <div
@@ -21,9 +21,9 @@
     <div class="flip-card" transition:fly={{ y: "100%", duration: 1000 }}>
       <div class="flip-front justify-center items-center flex flex-col">
         <h1
-          class="text-gray-200 text-sm sm:text-xl md:text-xl mt-[-1rem] sm:mt-[-2rem] md:mt-[-3rem] font-mono font-bold text-center w-[14rem] sm:w-[20rem] md:w-[20rem]"
+          class="text-gray-200 text-sm sm:text-xl md:text-xl mt-[-2rem] sm:mt-[-2rem] md:mt-[-3rem] font-mono font-bold text-center w-[14rem] sm:w-[20rem] md:w-[20rem]"
         >
-          Feel free to connect with me on any of my socials
+          feel free to connect with me on any of my socials
         </h1>
         <div
           class="w-[20rem] sm:w-[30rem] md:w-[30rem] gap-[2rem] mt-[2rem] flex flex-wrap justify-center items-center"
@@ -72,7 +72,7 @@
     /* Set different width and height for smaller screens */
     .flip-card {
       width: 21rem;
-      height: 20rem;
+      height: 22rem;
     }
   }
 
