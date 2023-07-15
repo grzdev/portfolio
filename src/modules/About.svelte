@@ -9,21 +9,21 @@
 <div
   class="flex justify-center items-center flex-col sm:flex-col md:flex-row mt-[1rem] sm:mt-[1rem] md:mt-[3rem] gap-[8rem] sm:gap-[8rem] md:gap-[12rem]"
 >
-  <div
-    class=" flex justify-center items-center flex-col fade-transition"
-    in:fade={{ duration: 800 }}
-  >
+  <div class=" flex justify-center items-center flex-col fade-transition">
     <img
       src={Avatar}
+      in:fade
       alt=""
       class="rounded-full w-[8rem] sm:w-[13rem] md:w-[13rem] mt-[] sm:mt-[] md:mt-[-6rem]"
     />
     <h1
+      in:fade
       class="text-4xl sm:text-5xl md:text-5xl text-gray-200 font-mono font-bold mt-[0.5rem] sm:mt-[1rem] md:mt-[1rem]"
     >
       Dami
     </h1>
     <h1
+      in:fade
       class="text-4xl sm:text-5xl md:text-5xl text-gray-200 font-mono font-bold"
     >
       Oyeniyi
@@ -61,7 +61,7 @@
             Want to know more?
           </h1>
           <a
-            href="https://docs.google.com/document/d/1klpcXN4S0oWium8_XpZba-EBpF3v-rv2/edit?usp=drive_link&ouid=109286662353454941381&rtpof=true&sd=true"
+            href="https://drive.google.com/file/d/1MdLGofZUqaWFCSiHRrUZsooXSRHXBdIo/view?usp=sharing"
           >
             <button class="mt-[0.5rem]">
               <span class="text-sm">
