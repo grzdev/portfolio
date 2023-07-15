@@ -23,8 +23,8 @@
         <h1
           class="text-gray-200 text-sm sm:text-xl md:text-xl mt-[-2rem] sm:mt-[-2rem] md:mt-[-3rem] font-mono font-bold text-center w-[17rem] sm:w-[25rem] md:w-[25rem]"
         >
-          feel free to connect with me if you want to work with me or
-          collaborate on a project.
+          feel free to get in touch if you want to work with me or collaborate
+          on a project.
         </h1>
         <div
           class="w-[20rem] sm:w-[30rem] md:w-[30rem] gap-[2rem] mt-[2rem] flex flex-wrap justify-center items-center"
@@ -73,7 +73,7 @@
     /* Set different width and height for smaller screens */
     .flip-card {
       width: 21rem;
-      height: 23rem;
+      height: 24rem;
     }
   }
 
