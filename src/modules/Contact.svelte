@@ -21,9 +21,10 @@
     <div class="flip-card" transition:fly={{ y: "100%", duration: 1000 }}>
       <div class="flip-front justify-center items-center flex flex-col">
         <h1
-          class="text-gray-200 text-sm sm:text-xl md:text-xl mt-[-2rem] sm:mt-[-2rem] md:mt-[-3rem] font-mono font-bold text-center w-[14rem] sm:w-[20rem] md:w-[20rem]"
+          class="text-gray-200 text-sm sm:text-xl md:text-xl mt-[-2rem] sm:mt-[-2rem] md:mt-[-3rem] font-mono font-bold text-center w-[17rem] sm:w-[25rem] md:w-[25rem]"
         >
-          feel free to connect with me on any of my socials
+          feel free to connect with me if you want to work with me or
+          collaborate on a project.
         </h1>
         <div
           class="w-[20rem] sm:w-[30rem] md:w-[30rem] gap-[2rem] mt-[2rem] flex flex-wrap justify-center items-center"
@@ -63,7 +64,7 @@
   .flip-card {
     position: relative;
     width: 37rem;
-    height: 27rem;
+    height: 28rem;
     transition: transform 0.5s;
     transform-style: preserve-3d;
   }
@@ -72,7 +73,7 @@
     /* Set different width and height for smaller screens */
     .flip-card {
       width: 21rem;
-      height: 22rem;
+      height: 23rem;
     }
   }
 
