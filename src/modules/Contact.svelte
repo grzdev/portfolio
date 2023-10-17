@@ -27,7 +27,7 @@
           on a project.
         </h1>
         <div
-          class="w-[20rem] sm:w-[25rem] md:w-[25rem] gap-[2rem] mt-[2rem] flex flex-wrap justify-center items-center"
+          class="w-[14rem] sm:w-[25rem] md:w-[25rem] gap-[2rem] mt-[2rem] flex flex-wrap justify-center items-center"
         >
           <a href="mailto:damilolaoyeniyi13@gmail.com">
             <button class="">
@@ -88,7 +88,7 @@
     /* Set different width and height for smaller screens */
     .flip-card {
       width: 21rem;
-      height: 24rem;
+      height: 28rem;
     }
   }
 
