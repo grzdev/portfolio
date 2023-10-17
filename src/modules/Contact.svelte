@@ -27,31 +27,46 @@
           on a project.
         </h1>
         <div
-          class="w-[20rem] sm:w-[30rem] md:w-[30rem] gap-[2rem] mt-[2rem] flex flex-wrap justify-center items-center"
+          class="w-[20rem] sm:w-[25rem] md:w-[25rem] gap-[2rem] mt-[2rem] flex flex-wrap justify-center items-center"
         >
           <a href="mailto:damilolaoyeniyi13@gmail.com">
             <button class="">
-              <span class="text-sm"> gmail </span>
+              <span>
+                <!-- gmail  -->
+                <Icon icon="simple-icons:gmail" />
+              </span>
             </button>
           </a>
           <a href="https://twitter.com/grzdev_">
             <button class="">
-              <span class="text-sm"> twitter </span>
+              <span>
+                <!-- twitter  -->
+                <Icon icon="icon-park-twotone:big-x" />
+              </span>
             </button>
           </a>
           <a href="https://www.linkedin.com/in/damilola-oyeniyi-97805b23a/">
             <button class="">
-              <span class="text-sm"> linkedin </span>
+              <span>
+                <!-- linkedin  -->
+                <Icon icon="fa:linkedin" />
+              </span>
             </button>
           </a>
           <a href="https://github.com/grzdev">
             <button class="">
-              <span class="text-sm"> github </span>
+              <span>
+                <!-- github  -->
+                <Icon icon="teenyicons:github-solid" />
+              </span>
             </button>
           </a>
           <a href="https://www.instagram.com/grzdev_/">
             <button class="">
-              <span class="text-sm"> instagram </span>
+              <span>
+                <!-- instagram  -->
+                <Icon icon="teenyicons:instagram-solid" />
+              </span>
             </button>
           </a>
         </div>
@@ -117,12 +132,12 @@
 
   button {
     padding: 0.1em 0.25em;
-    width: 11.2em;
-    height: 3.7em;
+    width: 6.2em;
+    height: 4.2em;
     background-color: #212121;
     border: 0.08em solid #fff;
-    border-radius: 1rem 0 1rem 0;
-    font-size: 12px;
+    border-radius: 2rem;
+    font-size: 13px;
     font-family: monospace;
   }
 
@@ -133,8 +148,8 @@
     align-items: center;
     font-weight: 700;
     bottom: 0.4em;
-    width: 7em;
-    height: 2em;
+    width: 3.7em;
+    height: 2.2em;
     background: rgb(12, 32, 56);
     background: linear-gradient(
       304deg,
@@ -142,7 +157,7 @@
       rgba(57, 167, 254, 1) 100%
     );
 
-    border-radius: 0.8rem 0 0.8rem 0;
+    border-radius: 1.4rem;
     font-size: 1.5em;
     color: #fff;
     border: 0.08em solid #fff;

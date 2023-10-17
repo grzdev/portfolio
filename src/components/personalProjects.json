@@ -2,6 +2,19 @@
     "personal":[
         {
             "id": 1,
+            "name": "hatstore",
+            "desc": "an e-commerce app for hats",
+            "type": "mobile-app",
+            "tools": {
+                "first": "react-native",
+                "second": "mongo-db",
+                "third": "stripe"
+            },
+            "link": "",
+            "repo": ""
+        },
+        {
+            "id": 2,
             "name": "pennywise",
             "desc": "a daily expense tracker",
             "type": "website/webapp",
@@ -14,7 +27,7 @@
             "repo": "https://github.com/grzdev/pennywise"
         },
         {
-            "id": 2,
+            "id": 3,
             "name": "shpair",
             "desc": "an e-commerce site for sneakers",
             "type": "webapp",
@@ -27,7 +40,7 @@
             "repo": "https://github.com/grzdev/shpair"
         },
         {
-            "id": 3,
+            "id": 4,
             "name": "plnr",
             "desc": "a simple todo app",
             "type": "webapp",
@@ -40,7 +53,7 @@
             "repo": "https://github.com/grzdev/plnr"
         },
         {
-            "id": 4,
+            "id": 5,
             "name": "quizorb",
             "desc": "a quiz game",
             "type": "webapp",
@@ -53,7 +66,7 @@
             "repo": "https://github.com/grzdev/quizorb"
         },
         {
-            "id": 5,
+            "id": 6,
             "name": "damioyeniyi",
             "desc": "personal portfolio",
             "type": "website",
