@@ -75,7 +75,7 @@
         <h1
           class="fly-in font-mono text-[1.5rem] sm:text-[2rem] md:text-[2.5rem] font-bold"
         >
-          a <span id="options" class="text-[#76c3ff]">frontend</span> developer
+          a <span class="text-[#76c3ff]">software engineer</span>
         </h1>
       {/if}
       {#if showText3}
@@ -108,7 +108,7 @@
             class="text-3xl sm:text-4xl md:text-5xl text-[#76c3ff] absolute mt-[-19rem] ml-[4rem] sm:mt-[-23rem] sm:ml-[4rem] md:mt-[-28rem] md:ml-[5rem] move"
           />
           <Icon
-            icon="mdi:react"
+            icon="tabler:brand-react-native"
             class="text-3xl sm:text-4xl md:text-5xl text-[#76c3ff]  absolute mt-[-17.5rem] ml-[14rem] sm:mt-[-20rem] sm:ml-[18rem] md:mt-[-26rem] md:ml-[24rem]"
           />
           <Icon
@@ -116,15 +116,15 @@
             class="text-3xl sm:text-4xl md:text-5xl text-[#76c3ff] absolute mt-[-10rem] ml-[1.5rem] sm:mt-[-12rem] sm:ml-[1rem] md:mt-[-16rem] md:ml-[2rem]"
           />
           <Icon
-            icon="teenyicons:firebase-solid"
+            icon="bxl:typescript"
             class="text-3xl sm:text-4xl md:text-5xl text-[#76c3ff] absolute mt-[-9rem] ml-[16rem] sm:mt-[-10rem] sm:ml-[21rem] md:mt-[-13rem] md:ml-[27rem]"
           />
           <Icon
-            icon="bxl:typescript"
+            icon="simple-icons:mongodb"
             class="text-3xl sm:text-4xl md:text-5xl text-[#76c3ff] absolute mt-[-2rem] ml-[0.6rem] sm:mt-[-3rem] sm:ml-[-1rem] md:mt-[-3rem] md:ml-[1rem]"
           />
           <Icon
-            icon="simple-icons:css3"
+            icon="mdi:firebase"
             class="text-3xl sm:text-4xl md:text-5xl text-[#76c3ff]  absolute mt-[-1rem] ml-[16rem] sm:mt-[-2rem] sm:ml-[21rem] md:mt-[-2rem] md:ml-[27rem]"
           />
         </div>

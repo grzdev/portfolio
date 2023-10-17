@@ -51,7 +51,7 @@
           <span
             class="text-white text-3xl sm:text-4xl font-bold font-mono lg:text-4xl"
           >
-            grz.
+            DO.
           </span>
         </a>
       </div>

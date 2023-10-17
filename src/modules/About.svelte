@@ -4,6 +4,13 @@
   import Avatar from "../images/Avatar2.png";
   import { fade, fly } from "svelte/transition";
   import Icon from "@iconify/svelte";
+
+  let fadeIn = false;
+  onMount(() => {
+    setTimeout(() => {
+      fadeIn = true;
+    }, 200);
+  });
 </script>
 
 <div
@@ -12,18 +19,18 @@
   <div class=" flex justify-center items-center flex-col fade-transition">
     <img
       src={Avatar}
-      in:fade
+      in:fade={{ duration: 1500 }}
       alt=""
       class="rounded-full w-[8rem] sm:w-[13rem] md:w-[13rem] mt-[] sm:mt-[] md:mt-[-6rem]"
     />
     <h1
-      in:fade
+      in:fade={{ duration: 1500 }}
       class="text-4xl sm:text-5xl md:text-5xl text-gray-200 font-mono font-bold mt-[0.5rem] sm:mt-[1rem] md:mt-[1rem]"
     >
       Dami
     </h1>
     <h1
-      in:fade
+      in:fade={{ duration: 1500 }}
       class="text-4xl sm:text-5xl md:text-5xl text-gray-200 font-mono font-bold"
     >
       Oyeniyi
@@ -39,20 +46,20 @@
         <h1
           class="text-gray-200 text-sm sm:text-lg md:text-xl mt-[-3rem] sm:mt-[-1rem] md:mt-[-1rem] font-mono font-bold text-center w-[17rem] sm:w-[30rem] md:w-[30rem]"
         >
-          I build eye catching and easy to use interfaces using the latest web
-          design tools.
+          I build eye-catching and easy-to-use applications using the latest
+          programming tools on mobile and the web.
         </h1>
         <p
           class="text-gray-200 text-sm sm:text-lg md:text-xl mt-[1rem] font-mono font-bold text-center w-[17rem] sm:w-[30rem] md:w-[30rem]"
         >
-          I'm a self taught frontend developer with about two years of
-          experience, with my focus in react and typescript.
+          I'm a self-taught software engineer with around two years of expertise
+          in both frontend and backend development.
         </p>
         <p
           class="text-gray-200 text-sm sm:text-lg md:text-xl mt-[1rem] font-mono font-bold text-center w-[17rem] sm:w-[30rem] md:w-[30rem]"
         >
-          My obsession with offering a smooth and unique user interface and
-          experience is what sets me apart.
+          What separates me is my fixation on providing a seamless yet distinct
+          user-centric design.
         </p>
         <div class="mt-[2.5rem] flex flex-col justify-center items-center">
           <h1
