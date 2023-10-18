@@ -3,15 +3,15 @@
         {
             "id": 1,
             "name": "hatstore",
-            "desc": "an e-commerce app for hats",
+            "desc": "an mobile app that sells hats",
             "type": "mobile-app",
             "tools": {
                 "first": "react-native",
                 "second": "mongo-db",
-                "third": "stripe"
+                "third": "node.js"
             },
-            "link": "",
-            "repo": ""
+            "link": "https://linktr.ee/grzdev",
+            "repo": "https://github.com/grzdev/hatstore"
         },
         {
             "id": 2,
@@ -19,7 +19,7 @@
             "desc": "a daily expense tracker",
             "type": "website/webapp",
             "tools": {
-                "first": "nextjs",
+                "first": "next.js",
                 "second": "typescript",
                 "third": "firebase"
             },
@@ -32,7 +32,7 @@
             "desc": "an e-commerce site for sneakers",
             "type": "webapp",
             "tools": {
-                "first": "nextjs",
+                "first": "next.js",
                 "second": "react",
                 "third": "chakra-ui"
             },

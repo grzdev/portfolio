@@ -68,7 +68,7 @@
             Want to know more?
           </h1>
           <a
-            href="https://drive.google.com/file/d/1MdLGofZUqaWFCSiHRrUZsooXSRHXBdIo/view?usp=sharing"
+            href="https://drive.google.com/file/d/1iqlVhJikyk7iAO9GIPInKJh4ft_wQmgz/view?usp=sharing"
           >
             <button class="mt-[0.5rem]">
               <span class="text-sm">

@@ -58,20 +58,20 @@
 
       <!-- Navbar button -->
       {#if isMobileView && !menuOpen}
-        <div class="md:hidden mt-[1.2rem]">
+        <div class="md:hidden mt-[0.3rem]">
           <button on:click={toggleMenu}>
             <Icon
               icon="line-md:close-to-menu-alt-transition"
-              class="text-white cursor-pointer text-2xl sm:text-3xl"
+              class="text-white cursor-pointer text-3xl sm:text-3xl"
             />
           </button>
         </div>
       {:else}
-        <div class="md:hidden mt-[1.2rem]">
+        <div class="md:hidden mt-[0.3rem]">
           <button on:click={toggleMenu}>
             <Icon
               icon="line-md:menu-to-close-alt-transition"
-              class="text-white cursor-pointer text-2xl sm:text-3xl"
+              class="text-white cursor-pointer text-3xl sm:text-3xl"
             />
           </button>
         </div>
