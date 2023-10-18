@@ -3,7 +3,7 @@
         {
             "id": 1,
             "name": "hatstore",
-            "desc": "an e-commerce app for hats",
+            "desc": "an mobile app that sells hats",
             "type": "mobile-app",
             "tools": {
                 "first": "react-native",
