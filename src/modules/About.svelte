@@ -49,7 +49,7 @@
   </div>
 
   <div
-    class="flip-container move-container mt-[-5rem] sm:mt-[-4rem] md:mt-[1rem]"
+    class="flip-container move-container mt-[-6rem] sm:mt-[-4rem] md:mt-[1rem]"
     transition:fly={{ y: "100%", duration: 1000 }}
   >
     <div class="flip-card">
@@ -158,7 +158,7 @@
     </div>
   </div>
 
-  <div class="flex md:hidden mt-[-5rem] mb-[3rem] sm:mb-[3rem] md:mb-[]">
+  <div class="flex md:hidden mt-[-7rem] mb-[3rem] sm:mb-[3rem] md:mb-[]">
     <a
       href="https://drive.google.com/file/d/1iqlVhJikyk7iAO9GIPInKJh4ft_wQmgz/view?usp=sharing"
     >

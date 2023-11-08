@@ -10,7 +10,7 @@
   <div class="flex justify-center items-center flex-col">
     <h1
       in:fade
-      class="text-2xl sm:text-5xl md:text-5xl font-bold font-mono w-[20rem] sm:w-[35rem] md:w-[35rem] text-center mt-[1rem]"
+      class="text-gray-300 font-mono hover:text-white transition duration-500 ease-in-out text-2xl sm:text-5xl md:text-5xl font-bold font-mono w-[20rem] sm:w-[35rem] md:w-[35rem] text-center mt-[1rem]"
     >
       let's make great stuff together!
     </h1>
