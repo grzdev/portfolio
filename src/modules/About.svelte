@@ -78,7 +78,7 @@
         class="flip-back justify-center items-center flex flex-col gap-[2rem]"
       >
         <h1
-          class="text-gray-200 text-xl sm:text-3xl md:text-3xl font-mono font-bold"
+          class="text-gray-200 text-xl sm:text-3xl md:text-3xl font-mono font-bold mt-[-2rem] sm:mt-[] md:mt-[]"
         >
           stack
         </h1>
