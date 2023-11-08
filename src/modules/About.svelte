@@ -21,24 +21,35 @@
       src={Avatar}
       in:fade={{ duration: 1500 }}
       alt=""
-      class="rounded-full w-[8rem] sm:w-[13rem] md:w-[13rem] mt-[] sm:mt-[] md:mt-[-6rem]"
+      class="rounded-full w-[8rem] sm:w-[13rem] md:w-[13rem] mt-[] sm:mt-[] md:mt-[-1rem]"
     />
     <h1
       in:fade={{ duration: 1500 }}
-      class="text-4xl sm:text-5xl md:text-5xl text-gray-200 font-mono font-bold mt-[0.5rem] sm:mt-[1rem] md:mt-[1rem]"
+      class="text-4xl sm:text-5xl md:text-5xl text-gray-300 font-mono hover:text-white transition duration-500 ease-in-out font-mono font-bold mt-[0.5rem] sm:mt-[1rem] md:mt-[1rem]"
     >
       Dami
     </h1>
     <h1
       in:fade={{ duration: 1500 }}
-      class="text-4xl sm:text-5xl md:text-5xl text-gray-200 font-mono font-bold"
+      class="text-4xl sm:text-5xl md:text-5xl text-gray-300 font-mono hover:text-white transition duration-500 ease-in-out font-mono font-bold"
     >
       Oyeniyi
     </h1>
+    <div class="hidden md:flex mt-[2rem]">
+      <a
+        href="https://drive.google.com/file/d/1iqlVhJikyk7iAO9GIPInKJh4ft_wQmgz/view?usp=sharing"
+      >
+        <button class="mt-[0.5rem]">
+          <span class="text-sm">
+            resume <Icon icon="ic:sharp-play-arrow" /></span
+          >
+        </button>
+      </a>
+    </div>
   </div>
-  <!-- <div class="w-[30rem] h-[20rem] bg-white" /> -->
+
   <div
-    class="move-container mt-[-6rem] sm:mt-[-6rem] md:mt-[1rem] mb-[3rem] sm:mb-[3rem] md:mb-[]"
+    class="flip-container move-container mt-[-5rem] sm:mt-[-4rem] md:mt-[1rem]"
     transition:fly={{ y: "100%", duration: 1000 }}
   >
     <div class="flip-card">
@@ -46,8 +57,8 @@
         <h1
           class="text-gray-200 text-sm sm:text-lg md:text-xl mt-[-3rem] sm:mt-[-1rem] md:mt-[-1rem] font-mono font-bold text-center w-[17rem] sm:w-[30rem] md:w-[30rem]"
         >
-          I build eye-catching and easy-to-use applications using the latest
-          programming tools on mobile and the web.
+          I build interactive applications using frontend technology, mainly on
+          the web and also on mobile.
         </h1>
         <p
           class="text-gray-200 text-sm sm:text-lg md:text-xl mt-[1rem] font-mono font-bold text-center w-[17rem] sm:w-[30rem] md:w-[30rem]"
@@ -61,24 +72,100 @@
           What separates me is my fixation on providing a seamless yet distinct
           user-centric design.
         </p>
-        <div class="mt-[2.5rem] flex flex-col justify-center items-center">
-          <h1
-            class="text-gray-200 text-sm sm:text-lg md:text-xl mt-[-1rem] font-mono font-bold text-center"
-          >
-            Want to know more?
-          </h1>
-          <a
-            href="https://drive.google.com/file/d/1iqlVhJikyk7iAO9GIPInKJh4ft_wQmgz/view?usp=sharing"
-          >
-            <button class="mt-[0.5rem]">
-              <span class="text-sm">
-                resume <Icon icon="ic:sharp-play-arrow" /></span
-              >
-            </button>
-          </a>
+      </div>
+
+      <div
+        class="flip-back justify-center items-center flex flex-col gap-[2rem]"
+      >
+        <h1
+          class="text-gray-200 text-xl sm:text-3xl md:text-3xl font-mono font-bold"
+        >
+          stack
+        </h1>
+        <div class="grid grid-cols-3 gap-[2rem]">
+          <div>
+            <Icon
+              icon="logos:html-5"
+              class="text-4xl sm:text-6xl md:text-6xl"
+            />
+          </div>
+          <div>
+            <Icon
+              icon="vscode-icons:file-type-css"
+              class="text-4xl sm:text-6xl md:text-6xl"
+            />
+          </div>
+          <div>
+            <Icon
+              icon="devicon:tailwindcss"
+              class="text-4xl sm:text-6xl md:text-6xl"
+            />
+          </div>
+          <div>
+            <Icon
+              icon="skill-icons:javascript"
+              class="text-4xl sm:text-6xl md:text-6xl"
+            />
+          </div>
+          <div>
+            <Icon
+              icon="devicon:react"
+              class="text-4xl sm:text-6xl md:text-6xl"
+            />
+          </div>
+          <div>
+            <Icon
+              icon="skill-icons:typescript"
+              class="text-4xl sm:text-6xl md:text-6xl"
+            />
+          </div>
+          <div>
+            <Icon
+              icon="devicon:svelte"
+              class="text-4xl sm:text-6xl md:text-6xl"
+            />
+          </div>
+          <div>
+            <Icon
+              icon="logos:nextjs-icon"
+              class="text-4xl sm:text-6xl md:text-6xl"
+            />
+          </div>
+          <div>
+            <Icon
+              icon="devicon:mongodb"
+              class="text-4xl sm:text-6xl md:text-6xl"
+            />
+          </div>
+
+          <div>
+            <Icon
+              icon="devicon:nodejs"
+              class="text-4xl sm:text-6xl md:text-6xl"
+            />
+          </div>
+          <div>
+            <Icon icon="bi:github" class="text-4xl sm:text-6xl md:text-6xl" />
+          </div>
+          <div>
+            <Icon
+              icon="logos:postman-icon"
+              class="text-4xl sm:text-6xl md:text-6xl"
+            />
+          </div>
         </div>
       </div>
     </div>
+  </div>
+
+  <div class="flex md:hidden mt-[-5rem] mb-[3rem] sm:mb-[3rem] md:mb-[]">
+    <a
+      href="https://drive.google.com/file/d/1iqlVhJikyk7iAO9GIPInKJh4ft_wQmgz/view?usp=sharing"
+    >
+      <button class="mt-[0.5rem]">
+        <span class="text-sm"> resume <Icon icon="ic:sharp-play-arrow" /></span>
+      </button>
+    </a>
   </div>
 </div>
 
@@ -95,7 +182,7 @@
     /* Set different width and height for smaller screens */
     .flip-card {
       width: 20rem;
-      height: 32rem;
+      height: 27rem;
     }
   }
 

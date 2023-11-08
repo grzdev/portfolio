@@ -1,30 +1,43 @@
 {
     "work":[ 
         {
-        "id": 1,
-        "name": "clinic api",
-        "desc": "list of clinics with medispark's emr",
-        "type": "website",
-        "tools": {
-            "first": "nextjs",
-            "second": "react",
-            "third": "redux"
-        },
-        "link": "https://swiftmedispark-clinics.netlify.app/",
-        "repo": "https://github.com/grzdev/clinic-directories"
+            "id": 1,
+            "name": "plnr",
+            "desc": "a simple todo app",
+            "type": "webapp",
+            "tools": {
+                "first": "react",
+                "second": "redux",
+                "third": "chakra-ui"
+            },
+            "link": "https://plnr.netlify.app/",
+            "repo": "https://github.com/grzdev/plnr"
         },
         {
             "id": 2,
-            "name": "VENNDO task",
-            "desc": "interview task",
+            "name": "shpair",
+            "desc": "an e-commerce site for sneakers",
             "type": "webapp",
             "tools": {
-                "first": "typescript",
-                "second": "nextjs",
+                "first": "next.js",
+                "second": "react",
+                "third": "chakra-ui"
+            },
+            "link": "https://shpair.netlify.app/",
+            "repo": "https://github.com/grzdev/shpair"
+        },
+        {
+            "id": 3,
+            "name": "quizorb",
+            "desc": "a quiz game",
+            "type": "webapp",
+            "tools": {
+                "first": "react",
+                "second": "redux",
                 "third": "rest-api"
             },
-            "link": "https://venndo-ui.netlify.app/",
-            "repo": "https://github.com/grzdev/venndo-ui"
+            "link": "https://quizorb.netlify.app/",
+            "repo": "https://github.com/grzdev/quizorb"
         }
     ]
 }

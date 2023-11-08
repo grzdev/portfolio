@@ -3,14 +3,14 @@
         {
             "id": 1,
             "name": "hatstore",
-            "desc": "an mobile app that sells hats",
+            "desc": "an e-commerce app that sells hats/caps",
             "type": "mobile-app",
             "tools": {
                 "first": "react-native",
                 "second": "mongo-db",
                 "third": "node.js"
             },
-            "link": "https://linktr.ee/grzdev",
+            "link": "https://drive.google.com/drive/folders/1gvxBYwzbbtuv5pby8dEI1DCS7nfWmbf0?usp=sharing",
             "repo": "https://github.com/grzdev/hatstore"
         },
         {
@@ -26,47 +26,9 @@
             "link": "https://pennywiise.netlify.app/",
             "repo": "https://github.com/grzdev/pennywise"
         },
+       
         {
             "id": 3,
-            "name": "shpair",
-            "desc": "an e-commerce site for sneakers",
-            "type": "webapp",
-            "tools": {
-                "first": "next.js",
-                "second": "react",
-                "third": "chakra-ui"
-            },
-            "link": "https://shpair.netlify.app/",
-            "repo": "https://github.com/grzdev/shpair"
-        },
-        {
-            "id": 4,
-            "name": "plnr",
-            "desc": "a simple todo app",
-            "type": "webapp",
-            "tools": {
-                "first": "react",
-                "second": "redux",
-                "third": "chakra-ui"
-            },
-            "link": "https://plnr.netlify.app/",
-            "repo": "https://github.com/grzdev/plnr"
-        },
-        {
-            "id": 5,
-            "name": "quizorb",
-            "desc": "a quiz game",
-            "type": "webapp",
-            "tools": {
-                "first": "react",
-                "second": "redux",
-                "third": "rest-api"
-            },
-            "link": "https://quizorb.netlify.app/",
-            "repo": "https://github.com/grzdev/quizorb"
-        },
-        {
-            "id": 6,
             "name": "damioyeniyi",
             "desc": "personal portfolio",
             "type": "website",

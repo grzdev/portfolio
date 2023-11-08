@@ -39,6 +39,13 @@
     link.setAttribute("download", "CV.pdf"); // Replace with the desired filename
     link.click();
   }
+
+  // logo switch
+  let currentPath = "";
+
+  onMount(() => {
+    currentPath = window.location.pathname;
+  });
 </script>
 
 <!-- HTML -->
@@ -49,9 +56,9 @@
         <!-- Logo -->
         <a href="/">
           <span
-            class="text-white text-3xl sm:text-4xl font-bold font-mono lg:text-4xl"
+            class="text-gray-300 font-mono hover:text-white transition duration-500 ease-in-out text-3xl sm:text-4xl font-bold font-mono lg:text-4xl"
           >
-            DO.
+            .do
           </span>
         </a>
       </div>
@@ -81,23 +88,21 @@
       <div class="hidden md:block">
         <div class="ml-10 flex items-baseline space-x-4">
           <a
-            href="/"
-            class="text-gray-300 font-mono hover:text-white text-bounce px-3 py-2 rounded-md text-2xl font-semibold"
-            >home</a
-          >
-          <a
             href="/projects"
-            class="text-gray-300 font-mono hover:text-white text-bounce px-3 py-2 rounded-md text-2xl font-semibold"
+            class:active={currentPath === "/projects"}
+            class="text-gray-300 font-mono hover:text-white text-bounce transition duration-500 ease-in-out px-3 py-2 text-2xl font-semibold"
             >projects</a
           >
           <a
             href="/about"
-            class="text-gray-300 font-mono hover:text-white text-bounce px-3 py-2 rounded-md text-2xl font-semibold"
+            class:active={currentPath === "/about"}
+            class="text-gray-300 font-mono hover:text-white text-bounce transition duration-500 ease-in-out px-3 py-2 text-2xl font-semibold"
             >about</a
           >
           <a
             href="/contact"
-            class="text-gray-300 font-mono hover:text-white text-bounce px-3 py-2 rounded-md text-2xl font-semibold"
+            class:active={currentPath === "/contact"}
+            class="text-gray-300 font-mono hover:text-white text-bounce transition duration-500 ease-in-out px-3 py-2 text-2xl font-semibold"
             >contact</a
           >
         </div>
@@ -160,30 +165,30 @@
             <div class="flex flex-col gap-[2rem] items-center justify-center">
               <a
                 href="/"
-                class="text-gray-300 font-mono hover:text-white mt-[3rem] px-3 py-2 rounded-md text-3xl sm:text-4xl font-semibold"
+                class="text-gray-300 font-mono hover:text-white transition duration-500 ease-in-out mt-[3rem] px-3 py-2 rounded-md text-3xl sm:text-4xl font-semibold"
                 in:fly={{ y: 200, duration: 700 }}
                 out:fly={{ y: 200, duration: 2000 }}>home</a
               >
               <a
                 href="/projects"
-                class="text-gray-300 font-mono hover:text-white px-3 py-2 rounded-md text-3xl sm:text-4xl font-semibold"
+                class="text-gray-300 font-mono hover:text-white transition duration-500 ease-in-out px-3 py-2 rounded-md text-3xl sm:text-4xl font-semibold"
                 in:fly={{ y: 200, duration: 1000 }}
                 out:fly={{ y: 200, duration: 1500 }}>projects</a
               >
               <a
                 href="/about"
-                class="text-gray-300 font-mono hover:text-white px-3 py-2 rounded-md text-3xl sm:text-4xl font-semibold"
+                class="text-gray-300 font-mono hover:text-white transition duration-500 ease-in-out px-3 py-2 rounded-md text-3xl sm:text-4xl font-semibold"
                 in:fly={{ y: 200, duration: 1300 }}
                 out:fly={{ y: 200, duration: 1000 }}>about</a
               >
               <a
                 href="/contact"
-                class="text-gray-300 font-mono hover:text-white px-3 py-2 rounded-md text-3xl sm:text-4xl font-semibold"
+                class="text-gray-300 font-mono hover:text-white transition duration-500 ease-in-out px-3 py-2 rounded-md text-3xl sm:text-4xl font-semibold"
                 in:fly={{ y: 200, duration: 1600 }}
                 out:fly={{ y: 200, duration: 500 }}>contact</a
               >
             </div>
-            <div class="mt-[4rem] font-mono flex flex-row gap-[2rem]">
+            <!-- <div class="mt-[4rem] font-mono flex flex-row gap-[2rem]">
               <button
                 class="downloadCV font-mono"
                 on:click={handleDownload}
@@ -197,7 +202,7 @@
                   out:fly={{ y: 200, duration: 300 }}>Hire me</button
                 >
               </a>
-            </div>
+            </div> -->
             <div />
           </div>
         </div>
@@ -208,6 +213,22 @@
 
 <!-- CSS -->
 <style>
+  a.active {
+    position: relative;
+  }
+
+  a.active::before {
+    content: "";
+    position: absolute;
+    bottom: 1px; /* Adjust the vertical position of the circle */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 7px; /* Adjust the size of the circle */
+    height: 7px;
+    background-color: #76c3ff; /* Adjust the color of the circle */
+    border-radius: 50%; /* Makes it a circle */
+  }
+
   .text-bounce {
     transition: transform 0.2s ease-in-out;
   }
