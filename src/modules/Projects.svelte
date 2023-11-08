@@ -27,7 +27,7 @@
       class="text-gray-200 text-xl sm:text-3xl md:text-3xl font-mono font-bold"
       in:fade
     >
-      personal projects
+      featured
     </h1>
     <div
       class="flex flex-row mt-[0.3rem] gap-[1.3rem] sm:gap-[2rem] md:gap-[2rem] overflow-x-auto custom-scrollbar"
@@ -41,14 +41,14 @@
       class="text-gray-200 text-xl sm:text-3xl md:text-3xl font-mono font-bold mt-[1rem]"
       in:fade
     >
-      work related projects
+      others
     </h1>
-    <divy
+    <div
       class="flex flex-row mt-[0.3rem] gap-[1.3rem] sm:gap-[2rem] md:gap-[2rem] overflow-x-auto custom-scrollbar"
       class:slide-in2={showDiv}
     >
       <WorkProjectsCard {projects2} />
-    </divy>
+    </div>
   </div>
 </div>
 
