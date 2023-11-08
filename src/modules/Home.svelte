@@ -66,7 +66,7 @@
     >
       {#if showText1}
         <h1
-          class="text-gray-300 font-mono hover:text-white transition duration-500 ease-in-out fly-in font-mono text-[2.4rem] mt-[-0.5rem] sm:mt-[-0.5rem] md:mt-[3rem] sm:text-[3rem] md:text-[3rem] font-bold"
+          class="text-gray-300 font-mono hover:text-white transition duration-500 ease-in-out fly-in font-mono text-[1.8rem] mt-[-0.5rem] sm:mt-[-0.5rem] md:mt-[3rem] sm:text-[3rem] md:text-[3rem] font-bold"
         >
           hello, i'm dami
         </h1>
