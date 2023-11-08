@@ -342,7 +342,7 @@
   .btn-cssbuttons:hover ul li:nth-child(3) a {
     transition-delay: 0.25s;
   }
-  .downloadCV {
+  /* .downloadCV {
     appearance: none;
     background-color: transparent;
     border: 0.125em solid #245da1;
@@ -366,9 +366,9 @@
     -webkit-user-select: none;
     touch-action: manipulation;
     will-change: transform;
-  }
+  } */
 
-  .downloadCV:disabled {
+  /* .downloadCV:disabled {
     pointer-events: none;
   }
 
@@ -424,5 +424,5 @@
   .downloadCV2:active {
     box-shadow: none;
     transform: translateY(0);
-  }
+  } */
 </style>
