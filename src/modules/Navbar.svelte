@@ -165,24 +165,28 @@
             <div class="flex flex-col gap-[2rem] items-center justify-center">
               <a
                 href="/"
+                class:active={currentPath === "/"}
                 class="text-gray-300 font-mono hover:text-white transition duration-500 ease-in-out mt-[3rem] px-3 py-2 rounded-md text-3xl sm:text-4xl font-semibold"
                 in:fly={{ y: 200, duration: 700 }}
                 out:fly={{ y: 200, duration: 2000 }}>home</a
               >
               <a
                 href="/projects"
+                class:active={currentPath === "/projects"}
                 class="text-gray-300 font-mono hover:text-white transition duration-500 ease-in-out px-3 py-2 rounded-md text-3xl sm:text-4xl font-semibold"
                 in:fly={{ y: 200, duration: 1000 }}
                 out:fly={{ y: 200, duration: 1500 }}>projects</a
               >
               <a
                 href="/about"
+                class:active={currentPath === "/about"}
                 class="text-gray-300 font-mono hover:text-white transition duration-500 ease-in-out px-3 py-2 rounded-md text-3xl sm:text-4xl font-semibold"
                 in:fly={{ y: 200, duration: 1300 }}
                 out:fly={{ y: 200, duration: 1000 }}>about</a
               >
               <a
                 href="/contact"
+                class:active={currentPath === "/contact"}
                 class="text-gray-300 font-mono hover:text-white transition duration-500 ease-in-out px-3 py-2 rounded-md text-3xl sm:text-4xl font-semibold"
                 in:fly={{ y: 200, duration: 1600 }}
                 out:fly={{ y: 200, duration: 500 }}>contact</a

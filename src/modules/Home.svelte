@@ -66,16 +66,19 @@
     >
       {#if showText1}
         <h1
-          class="fly-in font-mono text-[2.4rem] mt-[-0.5rem] sm:mt-[-0.5rem] md:mt-[3rem] sm:text-[3rem] md:text-[3rem] font-bold"
+          class="text-gray-300 font-mono hover:text-white transition duration-500 ease-in-out fly-in font-mono text-[2.4rem] mt-[-0.5rem] sm:mt-[-0.5rem] md:mt-[3rem] sm:text-[3rem] md:text-[3rem] font-bold"
         >
           hey, i'm Dami
         </h1>
       {/if}
       {#if showText2}
         <h1
-          class="fly-in font-mono text-[1.5rem] sm:text-[2rem] md:text-[2.5rem] font-bold"
+          class="text-gray-300 font-mono hover:text-white transition duration-500 ease-in-out fly-in font-mono text-[1.5rem] sm:text-[2rem] md:text-[2.5rem] font-bold"
         >
-          a <span class="text-[#76c3ff]">software engineer</span>
+          a <span
+            class="text-[#76c3ff] font-mono hover:text-[#a5d8ff] transition duration-500 ease-in-out"
+            >software engineer</span
+          >
         </h1>
       {/if}
       {#if showText3}
