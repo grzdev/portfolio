@@ -29,7 +29,7 @@
         <div
           class="w-[14rem] sm:w-[25rem] md:w-[25rem] gap-[2rem] mt-[2rem] flex flex-wrap justify-center items-center"
         >
-          <a href="https://api.whatsapp.com/send?phone=09036818841">
+          <a href="whatsapp://send?phone=09036818841">
             <button class="">
               <span>
                 <!-- whatsapp  -->
