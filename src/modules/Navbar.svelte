@@ -130,7 +130,7 @@
             </li>
             <li>
               <a
-                href="https://www.linkedin.com/in/damilola-oyeniyi-97805b23a/"
+                href="https://www.linkedin.com/in/dami-oyeniyi-97805b23a/"
                 class="text-white font-bold text-2xl"
               >
                 <Icon icon="uiw:linkedin" />
