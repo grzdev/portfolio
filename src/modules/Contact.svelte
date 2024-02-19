@@ -45,7 +45,7 @@
               </span>
             </button>
           </a>
-          <a href="https://twitter.com/grzdev_">
+          <a href="https://twitter.com/damioyeniyi">
             <button class="">
               <span>
                 <!-- twitter  -->
@@ -53,7 +53,7 @@
               </span>
             </button>
           </a>
-          <a href="https://www.linkedin.com/in/damilola-oyeniyi-97805b23a/">
+          <a href="https://www.linkedin.com/in/dami-oyeniyi-97805b23a/">
             <button class="">
               <span>
                 <!-- linkedin  -->
@@ -69,7 +69,7 @@
               </span>
             </button>
           </a>
-          <a href="https://www.instagram.com/grzdev_/">
+          <a href="https://www.instagram.com/dmidev_/?next=%2F">
             <button class="">
               <span>
                 <!-- instagram  -->
