@@ -37,22 +37,22 @@
               </span>
             </button>
           </a>
-          <a href="mailto:damilolaoyeniyi13@gmail.com">
+          <a href="https://docs.google.com/document/d/1-uH3fALtNXvl1HbSjqLyRce0pkWXDjvO-Lg_kum4K_I/edit?usp=sharing">
             <button class="">
               <span>
                 <!-- gmail  -->
-                <Icon icon="simple-icons:gmail" />
+                <Icon icon="pepicons-pop:cv" />
               </span>
             </button>
           </a>
-          <a href="https://twitter.com/damioyeniyi">
+          <!-- <a href="https://twitter.com/damioyeniyi">
             <button class="">
               <span>
-                <!-- twitter  -->
+                 twitter  
                 <Icon icon="icon-park-twotone:big-x" />
               </span>
             </button>
-          </a>
+          </a> -->
           <a href="https://www.linkedin.com/in/dami-oyeniyi-97805b23a/">
             <button class="">
               <span>

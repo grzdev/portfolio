@@ -37,7 +37,7 @@
     </h1>
     <div class="hidden md:flex mt-[2rem]">
       <a
-        href="https://drive.google.com/file/d/1iqlVhJikyk7iAO9GIPInKJh4ft_wQmgz/view?usp=sharing"
+        href="https://docs.google.com/document/d/1-uH3fALtNXvl1HbSjqLyRce0pkWXDjvO-Lg_kum4K_I/edit?usp=sharing"
       >
         <button class="mt-[0.5rem]">
           <span class="text-sm">

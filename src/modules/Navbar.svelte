@@ -116,16 +116,16 @@
           <ul>
             <li>
               <a
-                href="https://twitter.com/grzdev_"
+                href="https://www.instagram.com/dmidev_/"
                 class="text-white font-bold text-2xl"
-                ><Icon icon="bi:twitter" /></a
+                ><Icon icon="ri:instagram-fill" /></a
               >
             </li>
             <li>
               <a
-                href="mailto:damilolaoyeniyi13@gmail.com"
+                href="https://docs.google.com/document/d/1-uH3fALtNXvl1HbSjqLyRce0pkWXDjvO-Lg_kum4K_I/edit?usp=sharing"
                 class="text-white font-bold text-2xl"
-                ><Icon icon="bxl:gmail" /></a
+                ><Icon icon="pepicons-pop:cv" /></a
               >
             </li>
             <li>
