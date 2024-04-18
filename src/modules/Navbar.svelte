@@ -110,17 +110,10 @@
 
       <!-- Reach me button -->
       <div class="hidden md:block mt-[1rem]">
-        <button class="btn-cssbuttons">
+        <button class="btn-cssbuttons flex flex-row items-center">
           <span class="text-gray-200 font-mono font-bold text-xl">reach me</span
           ><span />
           <ul>
-            <li>
-              <a
-                href="https://www.instagram.com/dmidev_/"
-                class="text-white font-bold text-2xl"
-                ><Icon icon="ri:instagram-fill" /></a
-              >
-            </li>
             <li>
               <a
                 href="https://docs.google.com/document/d/1-uH3fALtNXvl1HbSjqLyRce0pkWXDjvO-Lg_kum4K_I/edit?usp=sharing"
@@ -131,13 +124,20 @@
             <li>
               <a
                 href="https://www.linkedin.com/in/dami-oyeniyi-97805b23a/"
-                class="text-white font-bold text-2xl"
+                class="text-white font-bold text-[1.4rem]"
               >
                 <Icon icon="uiw:linkedin" />
               </a>
             </li>
-          </ul></button
-        >
+            <li>
+              <a
+                href="https://www.instagram.com/dmidev_/"
+                class="text-white font-bold text-2xl"
+                ><Icon icon="ri:instagram-fill" /></a
+              >
+            </li>
+          </ul>
+        </button>
       </div>
     </div>
   </div>
