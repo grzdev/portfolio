@@ -1,5 +1,4 @@
-<!-- Javascript -->
-<script>
+<script lang="ts">
   import { onMount } from "svelte";
   import Avatar from "../images/Avatar2.png";
   import { fade, fly } from "svelte/transition";
@@ -11,16 +10,27 @@
       fadeIn = true;
     }, 200);
   });
+
+  let flippedCardId: number | null = null; // Track the flipped card
+  const toggleFlip = (id: number) => {
+    flippedCardId = flippedCardId === id ? null : id;
+  };
+
+  const handleKeyDown = (event: KeyboardEvent, id: number) => {
+    if (event.key === "Enter" || event.key === " ") {
+      toggleFlip(id);
+    }
+  };
 </script>
 
 <div
   class="flex justify-center items-center flex-col sm:flex-col md:flex-row mt-[1rem] sm:mt-[1rem] md:mt-[3rem] gap-[8rem] sm:gap-[8rem] md:gap-[12rem]"
 >
-  <div class=" flex justify-center items-center flex-col fade-transition">
+  <div class="flex justify-center items-center flex-col fade-transition">
     <img
       src={Avatar}
       in:fade={{ duration: 1500 }}
-      alt=""
+      alt="Avatar"
       class="rounded-full w-[8rem] sm:w-[13rem] md:w-[13rem] mt-[] sm:mt-[] md:mt-[-1rem]"
     />
     <h1
@@ -52,7 +62,7 @@
     class="flip-container move-container mt-[-6rem] sm:mt-[-4rem] md:mt-[1rem]"
     transition:fly={{ y: "100%", duration: 1000 }}
   >
-    <div class="flip-card">
+    <div class="flip-card {flippedCardId === 1 ? 'flipped' : ''}" on:click={() => toggleFlip(1)} on:keydown={(e) => handleKeyDown(e, 1)} role="button" tabindex="0" >
       <div class="flip-front justify-center items-center flex flex-col">
         <h1
           class="text-gray-200 text-sm sm:text-lg md:text-xl mt-[-3rem] sm:mt-[-1rem] md:mt-[-1rem] font-mono font-bold text-center w-[17rem] sm:w-[30rem] md:w-[30rem]"
@@ -178,16 +188,15 @@
     transform-style: preserve-3d;
   }
 
+  .flip-container .flip-card.flipped {
+    transform: rotateY(-180deg);
+  }
+
   @media (max-width: 640px) {
-    /* Set different width and height for smaller screens */
     .flip-card {
       width: 20rem;
       height: 27rem;
     }
-  }
-
-  .flip-container:hover .flip-card {
-    transform: rotateY(-180deg);
   }
 
   .flip-front,
@@ -227,7 +236,8 @@
 
   button {
     padding: 0.1em 0.25em;
-    width: 11.2em;
+    width:
+ 11.2em;
     height: 3.7em;
     background-color: #212121;
     border: 0.08em solid #fff;

@@ -87,24 +87,26 @@
       <!-- Navbar (Bigger sccreens) -->
       <div class="hidden md:block">
         <div class="ml-10 flex items-baseline space-x-4">
-          <a
-            href="/projects"
-            class:active={currentPath === "/projects"}
-            class="text-gray-300 font-mono hover:text-white text-bounce transition duration-500 ease-in-out px-3 py-2 text-2xl font-semibold"
-            >projects</a
-          >
-          <a
-            href="/about"
-            class:active={currentPath === "/about"}
-            class="text-gray-300 font-mono hover:text-white text-bounce transition duration-500 ease-in-out px-3 py-2 text-2xl font-semibold"
-            >about</a
-          >
-          <a
-            href="/contact"
-            class:active={currentPath === "/contact"}
-            class="text-gray-300 font-mono hover:text-white text-bounce transition duration-500 ease-in-out px-3 py-2 text-2xl font-semibold"
-            >contact</a
-          >
+          <a href="/projects" 
+          class={`${
+            currentPath === "/projects" ? "border-b-4 border-blue-500 text-gray-200" : "text-gray-300 hover:text-gray-200"
+          } font-mono text-bounce transition duration-500 ease-in-out px-3 py-2 text-2xl font-semibold`}>
+         projects
+       </a>
+       
+       <a href="/about" 
+          class={`${
+            currentPath === "/about" ? "border-b-4 border-blue-500 text-gray-200" : "text-gray-300 hover:text-gray-200"
+          } font-mono text-bounce transition duration-500 ease-in-out px-3 py-2 text-2xl font-semibold`}>
+         about
+       </a>
+       
+       <a href="/contact" 
+          class={`${
+            currentPath === "/contact" ? "border-b-4 border-blue-500 text-gray-200" : "text-gray-300 hover:text-gray-200"
+          } font-mono text-bounce transition duration-500 ease-in-out px-3 py-2 text-2xl font-semibold`}>
+         contact
+       </a>
         </div>
       </div>
 
@@ -163,50 +165,33 @@
         <div class="block md:hidden">
           <div class="flex flex-col gap-[2rem] items-center justify-center">
             <div class="flex flex-col gap-[2rem] items-center justify-center">
-              <a
-                href="/"
-                class:active={currentPath === "/"}
-                class="text-gray-300 font-mono hover:text-white transition duration-500 ease-in-out mt-[3rem] px-3 py-2 rounded-md text-3xl sm:text-4xl font-semibold"
-                in:fly={{ y: 200, duration: 700 }}
-                out:fly={{ y: 200, duration: 2000 }}>home</a
-              >
-              <a
-                href="/projects"
-                class:active={currentPath === "/projects"}
-                class="text-gray-300 font-mono hover:text-white transition duration-500 ease-in-out px-3 py-2 rounded-md text-3xl sm:text-4xl font-semibold"
-                in:fly={{ y: 200, duration: 1000 }}
-                out:fly={{ y: 200, duration: 1500 }}>projects</a
-              >
-              <a
-                href="/about"
-                class:active={currentPath === "/about"}
-                class="text-gray-300 font-mono hover:text-white transition duration-500 ease-in-out px-3 py-2 rounded-md text-3xl sm:text-4xl font-semibold"
-                in:fly={{ y: 200, duration: 1300 }}
-                out:fly={{ y: 200, duration: 1000 }}>about</a
-              >
-              <a
-                href="/contact"
-                class:active={currentPath === "/contact"}
-                class="text-gray-300 font-mono hover:text-white transition duration-500 ease-in-out px-3 py-2 rounded-md text-3xl sm:text-4xl font-semibold"
-                in:fly={{ y: 200, duration: 1600 }}
-                out:fly={{ y: 200, duration: 500 }}>contact</a
-              >
+              <a href="/"
+              class={`${
+                currentPath === "/" ? "border-b-2 border-blue-500 text-gray-200" : "text-gray-300 hover:text-gray-200"
+              } block font-mono text-bounce transition duration-500 ease-in-out px-3 py-2 text-2xl font-semibold`}>
+             home
+           </a>
+              <a href="/projects"
+              class={`${
+                currentPath === "/projects" ? "border-b-2 border-blue-500 text-gray-200" : "text-gray-300 hover:text-gray-200"
+              } block font-mono text-bounce transition duration-500 ease-in-out px-3 py-2 text-2xl font-semibold`}>
+             projects
+           </a>
+         
+           <a href="/about"
+              class={`${
+                currentPath === "/about" ? "border-b-2 border-blue-500 text-gray-200" : "text-gray-300 hover:text-gray-200"
+              } block font-mono text-bounce transition duration-500 ease-in-out px-3 py-2 text-2xl font-semibold`}>
+             about
+           </a>
+         
+           <a href="/contact"
+              class={`${
+                currentPath === "/contact" ? "border-b-2 border-blue-500 text-gray-200" : "text-gray-300 hover:text-gray-200"
+              } block font-mono text-bounce transition duration-500 ease-in-out px-3 py-2 text-2xl font-semibold`}>
+             contact
+           </a>
             </div>
-            <!-- <div class="mt-[4rem] font-mono flex flex-row gap-[2rem]">
-              <button
-                class="downloadCV font-mono"
-                on:click={handleDownload}
-                in:fly={{ y: 200, duration: 1900 }}
-                out:fly={{ y: 200, duration: 300 }}>Get CV</button
-              >
-              <a href="mailto:damilolaoyeniyi13@gmail.com">
-                <button
-                  class="downloadCV2 text-gray-200 font-mono"
-                  in:fly={{ y: 200, duration: 1900 }}
-                  out:fly={{ y: 200, duration: 300 }}>Hire me</button
-                >
-              </a>
-            </div> -->
             <div />
           </div>
         </div>
