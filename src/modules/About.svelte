@@ -24,7 +24,7 @@
 </script>
 
 <div
-  class="flex justify-center items-center flex-col sm:flex-col md:flex-row mt-[1rem] sm:mt-[1rem] md:mt-[3rem] gap-[8rem] sm:gap-[8rem] md:gap-[12rem]"
+  class="flex justify-center items-center flex-col sm:flex-col md:flex-row mt-[1rem] sm:mt-[1rem] md:mt-[1rem] gap-[8rem] sm:gap-[8rem] md:gap-[12rem]"
 >
   <div class="flex justify-center items-center flex-col fade-transition">
     <img

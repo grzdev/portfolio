@@ -1,16 +1,17 @@
-<!-- JAVASCRIPT -->
 <script lang="ts">
-  // imports
   import Icon from "@iconify/svelte";
   import { onMount } from "svelte";
   import { createEventDispatcher } from "svelte";
-  import { fade, fly } from "svelte/transition";
+  import { fade } from "svelte/transition";
+  import { page } from "$app/stores"; // Import page store to track current route
   import CV from "../components/CV.pdf";
 
-  //  navbar function
   export let menuOpen: boolean;
   const dispatch = createEventDispatcher();
   let isMobileView = false;
+  let currentPath = "";
+
+  $: currentPath = $page.url.pathname; // Update path on route change
 
   onMount(() => {
     const checkViewport = () => {
@@ -32,20 +33,12 @@
     }
   }
 
-  //download CV function
   function handleDownload() {
     const link = document.createElement("a");
     link.href = CV;
     link.setAttribute("download", "CV.pdf"); // Replace with the desired filename
     link.click();
   }
-
-  // logo switch
-  let currentPath = "";
-
-  onMount(() => {
-    currentPath = window.location.pathname;
-  });
 </script>
 
 <!-- HTML -->
@@ -55,9 +48,7 @@
       <div class="flex-shrink-0">
         <!-- Logo -->
         <a href="/">
-          <span
-            class="text-gray-300 font-mono hover:text-white transition duration-500 ease-in-out text-3xl sm:text-4xl font-bold font-mono lg:text-4xl"
-          >
+          <span class="text-gray-300 font-mono hover:text-white transition duration-500 ease-in-out text-3xl sm:text-4xl font-bold font-mono lg:text-4xl">
             .do
           </span>
         </a>
@@ -84,7 +75,7 @@
         </div>
       {/if}
 
-      <!-- Navbar (Bigger sccreens) -->
+      <!-- Navbar (Bigger screens) -->
       <div class="hidden md:block">
         <div class="ml-10 flex items-baseline space-x-4">
           <a href="/projects" 
@@ -164,7 +155,7 @@
       >
         <div class="block md:hidden">
           <div class="flex flex-col gap-[2rem] items-center justify-center">
-            <div class="flex flex-col gap-[2rem] items-center justify-center">
+            <div class="flex flex-col gap-[2rem] items-center mt-[4rem]  justify-center">
               <a href="/"
               class={`${
                 currentPath === "/" ? "border-b-2 border-blue-500 text-gray-200" : "text-gray-300 hover:text-gray-200"
@@ -200,23 +191,9 @@
   {/if}
 {/if}
 
+
 <!-- CSS -->
 <style>
-  a.active {
-    position: relative;
-  }
-
-  a.active::before {
-    content: "";
-    position: absolute;
-    bottom: 1px; /* Adjust the vertical position of the circle */
-    left: 50%;
-    transform: translateX(-50%);
-    width: 7px; /* Adjust the size of the circle */
-    height: 7px;
-    background-color: #76c3ff; /* Adjust the color of the circle */
-    border-radius: 50%; /* Makes it a circle */
-  }
 
   .text-bounce {
     transition: transform 0.2s ease-in-out;
@@ -239,7 +216,6 @@
     outline: none;
     overflow: hidden;
     cursor: pointer;
-    /* filter: drop-shadow(0 2px 8px rgba(255, 255, 255, 0.32)); */
     transition: 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
   }
 
@@ -327,87 +303,5 @@
   .btn-cssbuttons:hover ul li:nth-child(3) a {
     transition-delay: 0.25s;
   }
-  /* .downloadCV {
-    appearance: none;
-    background-color: transparent;
-    border: 0.125em solid #245da1;
-    border-radius: 1rem 0 1rem 0;
-    box-sizing: border-box;
-    color: #65abff;
-    cursor: pointer;
-    display: inline-block;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: normal;
-    margin: 0;
-    min-height: 3em;
-    min-width: 0;
-    outline: none;
-    padding: 0.6em 1.5em;
-    text-align: center;
-    text-decoration: none;
-    transition: all 300ms cubic-bezier(0.23, 1, 0.32, 1);
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    will-change: transform;
-  } */
-
-  /* .downloadCV:disabled {
-    pointer-events: none;
-  }
-
-  .downloadCV:hover {
-    color: #fff;
-    background-color: #245da1;
-    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
-    transform: translateY(-2px);
-  }
-
-  .downloadCV:active {
-    box-shadow: none;
-    transform: translateY(0);
-  }
-
-  .downloadCV2 {
-    appearance: none;
-    background-color: #245da1;
-    border: 0.125em solid #245da1;
-    border-radius: 1rem 0 1rem 0;
-    box-sizing: border-box;
-
-    cursor: pointer;
-    display: inline-block;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: normal;
-    margin: 0;
-    min-height: 3em;
-    min-width: 0;
-    outline: none;
-    padding: 0.6em 1.5em;
-    text-align: center;
-    text-decoration: none;
-    transition: all 300ms cubic-bezier(0.23, 1, 0.32, 1);
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    will-change: transform;
-  }
-
-  .downloadCV2:disabled {
-    pointer-events: none;
-  }
-
-  .downloadCV2:hover {
-    color: #65abff;
-    background-color: transparent;
-    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
-    transform: translateY(-2px);
-  }
-
-  .downloadCV2:active {
-    box-shadow: none;
-    transform: translateY(0);
-  } */
+  
 </style>
