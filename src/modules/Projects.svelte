@@ -20,7 +20,7 @@
 
 <!-- HTML -->
 <div
-  class="flex flex-col px-[1rem] sm:px-[2rem] md:px-[4rem] mt-[1rem] sm:mt-[1rem] md:mt-[1rem] overflow-x-hidden"
+  class="flex flex-col px-[1rem] sm:px-[2rem] md:px-[4rem] mt-[1rem] sm:mt-[1rem] md:mt-[0.5rem] overflow-x-hidden"
 >
   <div class="flex flex-col">
     <h1
@@ -36,7 +36,7 @@
       <ProjectsCard {projects} />
     </div>
   </div>
-  <div class="flex flex-col mt-[1rem] sm:mt-[2rem] md:mt-[2rem]">
+  <div class="flex flex-col mt-[1rem] sm:mt-[2rem] md:mt-[1rem]">
     <h1
       class="text-gray-300 font-mono hover:text-white transition duration-500 ease-in-out text-xl sm:text-3xl md:text-3xl font-mono font-bold mt-[1rem]"
       in:fade

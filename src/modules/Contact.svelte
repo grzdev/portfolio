@@ -5,7 +5,7 @@
 </script>
 
 <div
-  class="flex flex-col sm:flex-col md:flex-col text-gray-200 justify-center items-center mt-[1rem] sm:mt-[] md:mt-[1rem] gap-[-1rem] sm:gap-[1rem] md:gap-[1rem]"
+  class="flex flex-col sm:flex-col md:flex-col text-gray-200 justify-center items-center mt-[1rem] sm:mt-[] md:mt-[0rem] gap-[-1rem] sm:gap-[1rem] md:gap-[1rem]"
 >
   <div class="flex justify-center items-center flex-col">
     <h1
@@ -45,14 +45,6 @@
               </span>
             </button>
           </a>
-          <!-- <a href="https://twitter.com/damioyeniyi">
-            <button class="">
-              <span>
-                 twitter  
-                <Icon icon="icon-park-twotone:big-x" />
-              </span>
-            </button>
-          </a> -->
           <a href="https://www.linkedin.com/in/dami-oyeniyi-97805b23a/">
             <button class="">
               <span>
