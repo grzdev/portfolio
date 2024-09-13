@@ -3,7 +3,7 @@
   import { onMount } from "svelte";
   import { createEventDispatcher } from "svelte";
   import { fade } from "svelte/transition";
-  import { page } from "$app/stores"; // Import page store to track current route
+  import { page } from "$app/stores"; 
   import CV from "../components/CV.pdf";
 
   export let menuOpen: boolean;
@@ -11,7 +11,8 @@
   let isMobileView = false;
   let currentPath = "";
 
-  $: currentPath = $page.url.pathname; // Update path on route change
+  $: currentPath = $page.url.pathname;
+  $: console.log('Current Path:', currentPath);
 
   onMount(() => {
     const checkViewport = () => {
@@ -78,23 +79,29 @@
       <!-- Navbar (Bigger screens) -->
       <div class="hidden md:block">
         <div class="ml-10 flex items-baseline space-x-4">
-          <a href="/projects" 
+          <a href="/projects/" 
           class={`${
-            currentPath === "/projects" ? "border-b-4 border-blue-500 text-gray-200" : "text-gray-300 hover:text-gray-200"
+            currentPath === "/projects/" 
+            ? "border-b-4 border-blue-500 text-gray-200" 
+            : "text-gray-300 hover:text-gray-200"
           } font-mono text-bounce transition duration-500 ease-in-out px-3 py-2 text-2xl font-semibold`}>
          projects
        </a>
        
-       <a href="/about" 
+       <a href="/about/" 
           class={`${
-            currentPath === "/about" ? "border-b-4 border-blue-500 text-gray-200" : "text-gray-300 hover:text-gray-200"
+            currentPath === "/about/" 
+            ? "border-b-4 border-blue-500 text-gray-200" 
+            : "text-gray-300 hover:text-gray-200"
           } font-mono text-bounce transition duration-500 ease-in-out px-3 py-2 text-2xl font-semibold`}>
          about
        </a>
        
-       <a href="/contact" 
+       <a href="/contact/" 
           class={`${
-            currentPath === "/contact" ? "border-b-4 border-blue-500 text-gray-200" : "text-gray-300 hover:text-gray-200"
+            currentPath === "/contact/" 
+            ? "border-b-4 border-blue-500 text-gray-200" 
+            : "text-gray-300 hover:text-gray-200"
           } font-mono text-bounce transition duration-500 ease-in-out px-3 py-2 text-2xl font-semibold`}>
          contact
        </a>
@@ -158,27 +165,35 @@
             <div class="flex flex-col gap-[2rem] items-center mt-[4rem]  justify-center">
               <a href="/"
               class={`${
-                currentPath === "/" ? "border-b-2 border-blue-500 text-gray-200" : "text-gray-300 hover:text-gray-200"
+                currentPath === "/" 
+                ? "border-b-2 border-blue-500 text-gray-200" 
+                : "text-gray-300 hover:text-gray-200"
               } block font-mono text-bounce transition duration-500 ease-in-out px-3 py-2 text-2xl font-semibold`}>
              home
            </a>
-              <a href="/projects"
+              <a href="/projects/"
               class={`${
-                currentPath === "/projects" ? "border-b-2 border-blue-500 text-gray-200" : "text-gray-300 hover:text-gray-200"
+                currentPath === "/projects/" 
+                ? "border-b-2 border-blue-500 text-gray-200" 
+                : "text-gray-300 hover:text-gray-200"
               } block font-mono text-bounce transition duration-500 ease-in-out px-3 py-2 text-2xl font-semibold`}>
              projects
            </a>
          
-           <a href="/about"
+           <a href="/about/"
               class={`${
-                currentPath === "/about" ? "border-b-2 border-blue-500 text-gray-200" : "text-gray-300 hover:text-gray-200"
+                currentPath === "/about/" 
+                ? "border-b-2 border-blue-500 text-gray-200" 
+                : "text-gray-300 hover:text-gray-200"
               } block font-mono text-bounce transition duration-500 ease-in-out px-3 py-2 text-2xl font-semibold`}>
              about
            </a>
          
-           <a href="/contact"
+           <a href="/contact/"
               class={`${
-                currentPath === "/contact" ? "border-b-2 border-blue-500 text-gray-200" : "text-gray-300 hover:text-gray-200"
+                currentPath === "/contact/" 
+                ? "border-b-2 border-blue-500 text-gray-200" 
+                : "text-gray-300 hover:text-gray-200"
               } block font-mono text-bounce transition duration-500 ease-in-out px-3 py-2 text-2xl font-semibold`}>
              contact
            </a>
@@ -194,6 +209,9 @@
 
 <!-- CSS -->
 <style>
+  .active {
+  border-bottom: 4px solid #1f8ef1; /* Adjust color as needed */
+}
 
   .text-bounce {
     transition: transform 0.2s ease-in-out;
