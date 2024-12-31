@@ -65,19 +65,19 @@
     <div class="flip-card {flippedCardId === 1 ? 'flipped' : ''}" on:click={() => toggleFlip(1)} on:keydown={(e) => handleKeyDown(e, 1)} role="button" tabindex="0" >
       <div class="flip-front justify-center items-center flex flex-col">
         <h1
-          class="text-gray-200 text-sm sm:text-lg md:text-xl mt-[-3rem] sm:mt-[-1rem] md:mt-[-1rem] font-mono font-bold text-center w-[17rem] sm:w-[30rem] md:w-[30rem]"
+          class="text-gray-200 text-sm sm:text-lg md:text-xl mt-[-3rem] sm:mt-[-1rem] md:mt-[-3rem] font-mono font-bold text-center w-[17rem] sm:w-[30rem] md:w-[30rem]"
         >
           I build interactive applications using frontend technology, mainly on
           the web and also on mobile.
         </h1>
         <p
-          class="text-gray-200 text-sm sm:text-lg md:text-xl mt-[1rem] font-mono font-bold text-center w-[17rem] sm:w-[30rem] md:w-[30rem]"
+          class="text-gray-200 text-sm sm:text-lg md:text-xl mt-[1rem] md:mt-[2rem] font-mono font-bold text-center w-[17rem] sm:w-[30rem] md:w-[30rem]"
         >
-          I'm a self-taught software engineer with around two years of expertise
-          in both frontend and backend development.
+          I'm self-taught, and i've been building mainly with frontend tech for 2 years. I've also dabbled into ui design with figma, 
+          mobile app dev with react native and backend api integration with nodejs.
         </p>
         <p
-          class="text-gray-200 text-sm sm:text-lg md:text-xl mt-[1rem] font-mono font-bold text-center w-[17rem] sm:w-[30rem] md:w-[30rem]"
+          class="text-gray-200 text-sm sm:text-lg md:text-xl mt-[1rem] md:mt-[2rem] font-mono font-bold text-center w-[17rem] sm:w-[30rem] md:w-[30rem]"
         >
           What separates me is my fixation on providing a seamless yet distinct
           user-centric design.

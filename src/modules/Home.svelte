@@ -73,7 +73,7 @@
       {/if}
       {#if showText2}
         <h1
-          class="text-gray-300 cursor-pointer font-mono hover:text-white transition duration-500 ease-in-out fly-in font-mono text-[1.5rem] sm:text-[2rem] md:text-[2.5rem] font-bold"
+          class="text-gray-300 cursor-pointer font-mono hover:text-white transition duration-500 ease-in-out md:mt-[-0.7rem] fly-in font-mono text-[1.5rem] sm:text-[2rem] md:text-[2.5rem] font-bold"
         >
           a <span
             class="text-[#76c3ff] cursor-pointer font-mono hover:text-[#31a4fe] transition duration-500 ease-in-out"

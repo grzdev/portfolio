@@ -11,9 +11,12 @@
   let isMobileView = false;
   let currentPath = "";
 
-  $: currentPath = $page.url.pathname;
-  $: console.log('Current Path:', currentPath);
+  // Update currentPath when $page store changes
+  $: currentPath = $page.url.pathname.endsWith('/')
+    ? $page.url.pathname.slice(0, -1) // Remove trailing slash
+    : $page.url.pathname;
 
+    
   onMount(() => {
     const checkViewport = () => {
       isMobileView = window.innerWidth <= 768;
@@ -81,7 +84,7 @@
         <div class="ml-10 flex items-baseline space-x-4">
           <a href="/projects/" 
           class={`${
-            currentPath === "/projects/" 
+            currentPath === "/projects" 
             ? "border-b-4 border-blue-500 text-gray-200" 
             : "text-gray-300 hover:text-gray-200"
           } font-mono text-bounce transition duration-500 ease-in-out px-3 py-2 text-2xl font-semibold`}>
@@ -90,7 +93,7 @@
        
        <a href="/about/" 
           class={`${
-            currentPath === "/about/" 
+            currentPath === "/about" 
             ? "border-b-4 border-blue-500 text-gray-200" 
             : "text-gray-300 hover:text-gray-200"
           } font-mono text-bounce transition duration-500 ease-in-out px-3 py-2 text-2xl font-semibold`}>
@@ -99,7 +102,7 @@
        
        <a href="/contact/" 
           class={`${
-            currentPath === "/contact/" 
+            currentPath === "/contact" 
             ? "border-b-4 border-blue-500 text-gray-200" 
             : "text-gray-300 hover:text-gray-200"
           } font-mono text-bounce transition duration-500 ease-in-out px-3 py-2 text-2xl font-semibold`}>
@@ -173,7 +176,7 @@
            </a>
               <a href="/projects/"
               class={`${
-                currentPath === "/projects/" 
+                currentPath === "/projects" 
                 ? "border-b-2 border-blue-500 text-gray-200" 
                 : "text-gray-300 hover:text-gray-200"
               } block font-mono text-bounce transition duration-500 ease-in-out px-3 py-2 text-2xl font-semibold`}>
@@ -182,7 +185,7 @@
          
            <a href="/about/"
               class={`${
-                currentPath === "/about/" 
+                currentPath === "/about" 
                 ? "border-b-2 border-blue-500 text-gray-200" 
                 : "text-gray-300 hover:text-gray-200"
               } block font-mono text-bounce transition duration-500 ease-in-out px-3 py-2 text-2xl font-semibold`}>
@@ -191,7 +194,7 @@
          
            <a href="/contact/"
               class={`${
-                currentPath === "/contact/" 
+                currentPath === "/contact" 
                 ? "border-b-2 border-blue-500 text-gray-200" 
                 : "text-gray-300 hover:text-gray-200"
               } block font-mono text-bounce transition duration-500 ease-in-out px-3 py-2 text-2xl font-semibold`}>
@@ -209,9 +212,10 @@
 
 <!-- CSS -->
 <style>
-  .active {
-  border-bottom: 4px solid #1f8ef1; /* Adjust color as needed */
-}
+  a.active {
+    border-bottom: 4px solid #3bc26a;
+    color: #3bc26a;
+  }
 
   .text-bounce {
     transition: transform 0.2s ease-in-out;
