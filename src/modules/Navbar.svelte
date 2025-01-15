@@ -119,25 +119,28 @@
           <ul>
             <li>
               <a
-                href="https://docs.google.com/document/d/1-uH3fALtNXvl1HbSjqLyRce0pkWXDjvO-Lg_kum4K_I/edit?usp=sharing"
+                href="https://docs.google.com/document/d/1-uH3fALtNXvl1HbSjqLyRce0pkWXDjvO-Lg_kum4K_I/edit?usp=sharing" 
                 class="text-white font-bold text-2xl"
+                target="_blank" rel="noopener noreferrer"
                 ><Icon icon="pepicons-pop:cv" /></a
+              >
+            </li>
+            <li>
+              <a
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=damilolaoyeniyi13@gmail.com"
+                class="text-white font-bold text-2xl"
+                target="_blank" rel="noopener noreferrer"
+                ><Icon icon="bxl:gmail" /></a
               >
             </li>
             <li>
               <a
                 href="https://www.linkedin.com/in/dami-oyeniyi-97805b23a/"
                 class="text-white font-bold text-[1.4rem]"
+                target="_blank" rel="noopener noreferrer"
               >
                 <Icon icon="uiw:linkedin" />
               </a>
-            </li>
-            <li>
-              <a
-                href="https://www.instagram.com/dmidev_/"
-                class="text-white font-bold text-2xl"
-                ><Icon icon="ri:instagram-fill" /></a
-              >
             </li>
           </ul>
         </button>

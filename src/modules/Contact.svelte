@@ -27,48 +27,79 @@
           together.
         </h1>
         <div
-          class="w-[14rem] sm:w-[25rem] md:w-[25rem] gap-[2rem] mt-[2rem] flex flex-wrap justify-center items-center"
+          class="w-[14rem] sm:w-[25rem] md:w-[26rem] gap-[2rem] mt-[2rem] flex flex-wrap justify-center items-center"
         >
-          <a href="whatsapp://send?phone=+2349036818841">
-            <button class="">
-              <span>
-                <!-- whatsapp  -->
-                <Icon icon="cib:whatsapp" />
-              </span>
-            </button>
-          </a>
-          <a href="https://docs.google.com/document/d/1-uH3fALtNXvl1HbSjqLyRce0pkWXDjvO-Lg_kum4K_I/edit?usp=sharing">
-            <button class="">
-              <span>
-                <!-- gmail  -->
-                <Icon icon="pepicons-pop:cv" />
-              </span>
-            </button>
-          </a>
-          <a href="https://www.linkedin.com/in/dami-oyeniyi-97805b23a/">
-            <button class="">
-              <span>
-                <!-- linkedin  -->
-                <Icon icon="fa:linkedin" />
-              </span>
-            </button>
-          </a>
-          <a href="https://github.com/grzdev">
-            <button class="">
-              <span>
-                <!-- github  -->
-                <Icon icon="teenyicons:github-solid" />
-              </span>
-            </button>
-          </a>
-          <a href="https://www.instagram.com/dmidev_/?next=%2F">
-            <button class="">
-              <span>
-                <!-- instagram  -->
-                <Icon icon="teenyicons:instagram-solid" />
-              </span>
-            </button>
-          </a>
+          <div class="flex flex-col gap-[0.4rem] justify-center items-center">
+            <a href="whatsapp://send?phone=+2349036818841" target="_blank" rel="noopener noreferrer">
+              <button class="">
+                <span>
+                  <!-- whatsapp  -->
+                  <Icon icon="cib:whatsapp" />
+                </span>
+              </button>
+            </a>
+            <h1 class="text-gray-200 text-sm sm:text-lg md:text-lg font-mono font-bold">whatsapp</h1>
+          </div>
+
+          <div class="flex flex-col gap-[0.4rem] justify-center items-center">
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=damilolaoyeniyi13@gmail.com" target="_blank" rel="noopener noreferrer">
+              <button class="">
+                <span>
+                  <!-- gmail  -->
+                  <Icon icon="bxl:gmail" />
+                </span>
+              </button>
+            </a>
+            <h1 class="text-gray-200 text-sm sm:text-lg md:text-lg font-mono font-bold">gmail</h1>
+          </div>
+
+          <div class="flex flex-col gap-[0.4rem] justify-center items-center">
+            <a href="https://docs.google.com/document/d/1-uH3fALtNXvl1HbSjqLyRce0pkWXDjvO-Lg_kum4K_I/edit?usp=sharing" target="_blank" rel="noopener noreferrer">
+              <button class="">
+                <span>
+                  <!-- cv  -->
+                  <Icon icon="pepicons-pop:cv" />
+                </span>
+              </button>
+            </a>
+            <h1 class="text-gray-200 text-sm sm:text-lg md:text-lg font-mono font-bold">cv</h1>
+          </div>
+
+          <div class="flex flex-col gap-[0.4rem] justify-center items-center">
+            <a href="https://github.com/grzdev" target="_blank" rel="noopener noreferrer">
+              <button class="">
+                <span>
+                  <!-- github  -->
+                  <Icon icon="teenyicons:github-solid" />
+                </span>
+              </button>
+            </a>
+            <h1 class="text-gray-200 text-sm sm:text-lg md:text-lg font-mono font-bold">github</h1>
+          </div>
+
+          <div class="flex flex-col gap-[0.4rem] justify-center items-center">
+            <a href="https://www.linkedin.com/in/dami-oyeniyi-97805b23a/" target="_blank" rel="noopener noreferrer">
+              <button class="">
+                <span>
+                  <!-- linkedin  -->
+                  <Icon icon="fa:linkedin" />
+                </span>
+              </button>
+            </a>
+            <h1 class="text-gray-200 text-sm sm:text-lg md:text-lg font-mono font-bold">linkedin</h1>
+          </div>
+
+          <div class="flex flex-col gap-[0.4rem] justify-center items-center">
+            <a href="https://www.instagram.com/dmidev_/?next=%2F" target="_blank" rel="noopener noreferrer">
+              <button class="">
+                <span>
+                  <!-- instagram  -->
+                  <Icon icon="teenyicons:instagram-solid" />
+                </span>
+              </button>
+            </a>
+            <h1 class="text-gray-200 text-sm sm:text-lg md:text-lg font-mono font-bold">instagram</h1>
+          </div>
         </div>
       </div>
     </div>
@@ -88,7 +119,7 @@
     /* Set different width and height for smaller screens */
     .flip-card {
       width: 21rem;
-      height: 28rem;
+      height: 32rem;
     }
   }
 
