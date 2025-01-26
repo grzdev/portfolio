@@ -2,6 +2,19 @@
     "personal":[
         {
             "id": 1,
+            "name": "yezir hasan",
+            "desc": "a portfolio for yezir hasan",
+            "type": "website",
+            "tools": {
+                "first": "svelte",
+                "second": "javascript",
+                "third": "tailwind-css"
+            },
+            "link": "https://yezirhasan.netlify.app/",
+            "repo": "https://github.com/grzdev/yezirhasan.git"
+        },
+        {
+            "id": 2,
             "name": "hatstore",
             "desc": "an e-commerce app that sells hats/caps",
             "type": "mobile-app",
@@ -14,7 +27,7 @@
             "repo": "https://github.com/grzdev/hatstore"
         },
         {
-            "id": 2,
+            "id": 3,
             "name": "pennywise",
             "desc": "a daily expense tracker",
             "type": "website/webapp",
@@ -28,14 +41,14 @@
         },
        
         {
-            "id": 3,
+            "id": 4,
             "name": "damioyeniyi",
             "desc": "personal portfolio",
             "type": "website",
             "tools": {
                 "first": "svelte",
                 "second": "javascript",
-                "third": "tailwind"
+                "third": "tailwind-css"
             },
             "link": "https://damioyeniyi.netlify.app/",
             "repo": "https://github.com/grzdev/portfolio"
