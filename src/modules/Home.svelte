@@ -1,7 +1,7 @@
 <!-- Javascript -->
 <script lang="ts">
   import { onMount } from "svelte";
-  import Avatar from "../images/avatar.png";
+  import Avatar from "../images/3dPortraitt.png";
   import { fade } from "svelte/transition";
   import Icon from "@iconify/svelte";
   const options = ["javascript", "react", "typescript", "frontend"];
@@ -57,7 +57,7 @@
 
 <!-- HTML -->
 <div
-  class="flex flex-col-reverse sm:flex-col-reverse md:flex-row justify-center items-center text-white mt-[3rem] sm:mt-[1rem] md:mt-[1.5rem] gap-[2rem] sm:gap-[2rem] md:gap-[3rem] lg:gap-[6rem]"
+  class="flex flex-col-reverse sm:flex-col-reverse md:flex-row justify-center items-center text-white mt-[1rem] sm:mt-[1rem] md:mt-[3rem] gap-[2rem] sm:gap-[2rem] md:gap-[3rem] lg:gap-[6rem]"
 >
   <!-- Name/Job -->
   <div class="w-[] sm:w-[35rem] md:w-[35rem]">
@@ -73,7 +73,7 @@
       {/if}
       {#if showText2}
         <h1
-          class="text-gray-300 cursor-pointer font-mono hover:text-white transition duration-500 ease-in-out md:mt-[-0.7rem] fly-in font-mono text-[1.5rem] sm:text-[2rem] md:text-[2.5rem] font-bold"
+          class="text-gray-300 cursor-pointer font-mono hover:text-white transition duration-500 ease-in-out md:mt-[-0.1rem] fly-in font-mono text-[1.5rem] sm:text-[2rem] md:text-[2.5rem] font-bold"
         >
           a <span
             class="text-[#76c3ff] cursor-pointer font-mono hover:text-[#31a4fe] transition duration-500 ease-in-out"
@@ -83,7 +83,7 @@
       {/if}
       {#if showText3}
         <div
-          class="fly-in flex flex-row mt-[1.2rem] sm:mt-[1.5rem] md:mt-[1.5rem] gap-[2rem]"
+          class="fly-in flex flex-row mt-[1.5rem] sm:mt-[1.5rem] md:mt-[2rem] gap-[2rem]"
         >
           <a href="/projects">
             <button>
@@ -103,32 +103,33 @@
           src={Avatar}
           alt=""
           in:fade
-          class="fade-transition w-[18rem] sm:w-[23rem] md:w-[30rem]"
+          class="fade-transition w-[15rem] sm:w-[23rem] md:w-[25rem]"
         />
         <div class="move-container fade-transition" in:fade>
           <Icon
-            icon="teenyicons:tailwind-solid"
-            class="text-3xl sm:text-4xl md:text-5xl text-[#76c3ff] absolute mt-[-19rem] ml-[4rem] sm:mt-[-23rem] sm:ml-[4rem] md:mt-[-28rem] md:ml-[5rem] move"
+            
+            icon="bxl:typescript"
+            class="text-3xl sm:text-4xl md:text-5xl text-[#76c3ff] absolute mt-[-19rem] ml-[1rem] sm:mt-[-23rem] sm:ml-[4rem] md:mt-[-32rem] md:ml-[2rem] move"
           />
           <Icon
-            icon="tabler:brand-react-native"
-            class="text-3xl sm:text-4xl md:text-5xl text-[#76c3ff]  absolute mt-[-17.5rem] ml-[14rem] sm:mt-[-20rem] sm:ml-[18rem] md:mt-[-26rem] md:ml-[24rem]"
+            icon="ri:javascript-fill"
+            class="text-3xl sm:text-4xl md:text-5xl text-[#76c3ff]  absolute mt-[-17.5rem] ml-[12rem] sm:mt-[-20rem] sm:ml-[18rem] md:mt-[-29rem] md:ml-[20rem]"
           />
           <Icon
             icon="nonicons:svelte-16"
-            class="text-3xl sm:text-4xl md:text-5xl text-[#76c3ff] absolute mt-[-10rem] ml-[1.5rem] sm:mt-[-12rem] sm:ml-[1rem] md:mt-[-16rem] md:ml-[2rem]"
+            class="text-3xl sm:text-4xl md:text-5xl text-[#76c3ff] absolute mt-[-10rem] ml-[-0.5rem] sm:mt-[-12rem] sm:ml-[1rem] md:mt-[-16rem] md:ml-[-1rem]"
           />
           <Icon
-            icon="bxl:typescript"
-            class="text-3xl sm:text-4xl md:text-5xl text-[#76c3ff] absolute mt-[-9rem] ml-[16rem] sm:mt-[-10rem] sm:ml-[21rem] md:mt-[-13rem] md:ml-[27rem]"
+            icon="tabler:brand-react-native"
+            class="text-3xl sm:text-4xl md:text-5xl text-[#76c3ff] absolute mt-[-9rem] ml-[13.5rem] sm:mt-[-10rem] sm:ml-[21rem] md:mt-[-14rem] md:ml-[22.5rem]"
           />
           <Icon
-            icon="simple-icons:mongodb"
-            class="text-3xl sm:text-4xl md:text-5xl text-[#76c3ff] absolute mt-[-2rem] ml-[0.6rem] sm:mt-[-3rem] sm:ml-[-1rem] md:mt-[-3rem] md:ml-[1rem]"
+            icon="teenyicons:tailwind-solid"
+            class="text-3xl sm:text-4xl md:text-5xl text-[#76c3ff] absolute mt-[-2rem] ml-[-2rem] sm:mt-[-3rem] sm:ml-[-1rem] md:mt-[-3rem] md:ml-[-3.5rem]"
           />
           <Icon
-            icon="mdi:firebase"
-            class="text-3xl sm:text-4xl md:text-5xl text-[#76c3ff]  absolute mt-[-1rem] ml-[16rem] sm:mt-[-2rem] sm:ml-[21rem] md:mt-[-2rem] md:ml-[27rem]"
+            icon="cib:blender"
+            class="text-3xl sm:text-4xl md:text-5xl text-[#76c3ff]  absolute mt-[-1rem] ml-[14rem] sm:mt-[-2rem] sm:ml-[21rem] md:mt-[-2rem] md:ml-[24rem]"
           />
         </div>
       </div>
