@@ -21,17 +21,13 @@
     aria-label="Work project card flip"
   >
     <div class="flip-card" class:flipped={flippedCardId === project.id}>
+
+      <!-- front page -->
       <div class="flip-front justify-center items-center flex flex-col">
-        <h1 class="text-2xl sm:text-3xl md:text-3xl text-gray-200 font-mono font-bold">
-          {project.name}
-        </h1>
-        <p class="text-sm sm:text-xl md:text-xl text-gray-200 font-mono font-bold mt-[1rem] w-[14rem] text-center">
-          {project.desc}
-        </p>
-        <p class="text-gray-200 text-[0.7rem] sm:text-[0.9rem] md:text-[1rem] font-mono font-bold mt-[2.5rem] w-[14rem] text-center">
-          {project.type}
-        </p>
+        
       </div>
+
+      <!-- back oage -->
       <div class="flip-back justify-center items-center flex flex-col gap-[2rem]">
         <div class="flex flex-row gap-[0.5rem] text-[0.8rem] sm:text-xl md:text-xl text-gray-300 font-semibold font-mono">
           <h1>{project.tools.first}</h1>
@@ -87,11 +83,12 @@
   }
 
   .flip-front {
-    background-image: url("../images/bg1.jpeg");
+    /* background-image: url("../images/bg1.jpeg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    border-radius: 1rem 0 1rem 0;
+    border-radius: 1rem 0 1rem 0; */
+    background: #1A2C50;
   }
 
   .flip-back {
