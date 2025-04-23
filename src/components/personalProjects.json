@@ -3,7 +3,7 @@
         {
             "id": 1,
             "name": "yezir hasan",
-            "desc": "a portfolio for yezir hasan",
+            "desc": "yezir hasan's portfolio",
             "type": "website",
             "tools": {
                 "first": "svelte",
@@ -29,7 +29,7 @@
         {
             "id": 3,
             "name": "hatstore",
-            "desc": "an e-commerce app that sells hats/caps",
+            "desc": "an app that sells caps",
             "type": "mobile-app",
             "tools": {
                 "first": "react-native",
