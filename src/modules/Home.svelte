@@ -15,6 +15,8 @@
   }
 
   function handleRelease() {
+    if (!isPressed) return;
+    
     isPressed = false;
     isReleased = true;
 
@@ -178,10 +180,6 @@
       transform: translateY(-15px);
     }
   }
-
-  .avatar-press {
-  animation: press 0.4s ease;
-}
 
 @keyframes press {
   0% {

@@ -33,19 +33,19 @@
         </p>
       </div>
       <div class="flip-back justify-center items-center flex flex-col gap-[2rem]">
-        <div class="text-gray-300 flex flex-row gap-[0.5rem] text-[0.8rem] sm:text-xl md:text-xl font-semibold font-mono">
+        <div class="text-gray-300 flex flex-row gap-[0.8rem] md:gap-[0.5rem] text-[0.8rem] sm:text-xl md:text-xl font-semibold font-mono">
           <h1>{project.tools.first}</h1>
           <h1>{project.tools.second}</h1>
           <h1>{project.tools.third}</h1>
         </div>
         <div class="flex flex-row gap-[1.9rem] text-[0.9rem] sm:text-xl md:text-xl font-semibold font-mono">
-          <a href={project.link}>
+          <a href={project.link} target="_blank" rel="noopener noreferrer">
             <div class="flex flex-row justify-center items-center gap-[0.4rem] font-semibold text-gray-300">
               <h1><Icon icon="octicon:link-16" /></h1>
               <h1 class="underline underline-offset-2">link</h1>
             </div>
           </a>
-          <a href={project.repo}>
+          <a href={project.repo} target="_blank" rel="noopener noreferrer">
             <div class="text-gray-300 flex flex-row justify-center items-center gap-[0.2rem] font-semibold">
               <h1><Icon icon="octicon:repo-forked-16" /></h1>
               <h1 class="underline underline-offset-2">repo</h1>
@@ -72,8 +72,8 @@
 
   @media (max-width: 640px) {
     .flip-card {
-      width: 17rem;
-      height: 11rem;
+      width: 18rem;
+      height: 12rem;
     }
   }
 
