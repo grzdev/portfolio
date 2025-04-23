@@ -6,7 +6,25 @@
   import Icon from "@iconify/svelte";
   const options = ["javascript", "react", "typescript", "frontend"];
   let currentIndex = 0;
+  let isPressed = false;  
+  let isReleased = false;
 
+  function handlePress() {
+    isPressed = true;
+    isReleased = false;
+  }
+
+  function handleRelease() {
+    isPressed = false;
+    isReleased = true;
+
+    setTimeout(() => {
+      isReleased = false;
+    }, 200); // clear the animation class
+  }
+
+
+  // header text change
   function changeOption() {
     // header text change
     const optionsElement = document.getElementById("options");
@@ -53,6 +71,7 @@
       showText3 = true;
     }, 1300);
   });
+  
 </script>
 
 <!-- HTML -->
@@ -100,11 +119,18 @@
     {#if fadeIn}
       <div>
         <img
-          src={Avatar}
-          alt=""
-          in:fade
-          class="fade-transition w-[15rem] sm:w-[23rem] md:w-[25rem]"
-        />
+        src={Avatar}
+        alt=""
+        in:fade
+        class="fade-transition w-[15rem] sm:w-[23rem] md:w-[25rem] cursor-pointer 
+          {isPressed ? 'avatar-pressed' : ''} 
+          {isReleased ? 'avatar-release' : ''}"
+        on:mousedown={handlePress}
+        on:mouseup={handleRelease}
+        on:mouseleave={handleRelease}
+        on:touchstart={handlePress}
+        on:touchend={handleRelease}
+      />
         <div class="move-container fade-transition" in:fade>
           <Icon
             
@@ -152,6 +178,41 @@
       transform: translateY(-15px);
     }
   }
+
+  .avatar-press {
+  animation: press 0.4s ease;
+}
+
+@keyframes press {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.9); /* press in */
+  }
+  100% {
+    transform: scale(1); /* bounce back */
+  }
+}
+.avatar-pressed {
+  transform: scale(0.9);
+  transition: transform 0.1s ease;
+}
+
+.avatar-release {
+  animation: popback 0.2s ease forwards;
+}
+
+@keyframes popback {
+  0% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
   button {
     padding: 0.1em 0.25em;
     width: 13em;
