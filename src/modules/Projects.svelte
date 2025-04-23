@@ -120,7 +120,7 @@
                   <h1 class="text-[1.2rem] md:text-[1.5rem] sm:text-xl md:text-xl text-gray-300 font-semibold font-mono">
                    yezir hasan
                   </h1>
-                  <a href="https://yezirhasan.netlify.app/" target="_blank" rel="noopener noreferrer" >
+                  <a href="https://www.instagram.com/share/BAFhXRU-ag" target="_blank" rel="noopener noreferrer" >
                     <div class="text-gray-300 flex flex-row flex justify-center items-center gap-[0.4rem] font-semibold">
                       <h1><Icon icon="octicon:link-16" /></h1>
                       <h1 class="underline underline-offset-2">link</h1>
