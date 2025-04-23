@@ -15,19 +15,6 @@
         },
         {
             "id": 2,
-            "name": "hatstore",
-            "desc": "an e-commerce app that sells hats/caps",
-            "type": "mobile-app",
-            "tools": {
-                "first": "react-native",
-                "second": "mongo-db",
-                "third": "node.js"
-            },
-            "link": "https://drive.google.com/drive/folders/1gvxBYwzbbtuv5pby8dEI1DCS7nfWmbf0?usp=sharing",
-            "repo": "https://github.com/grzdev/hatstore"
-        },
-        {
-            "id": 3,
             "name": "pennywise",
             "desc": "a daily expense tracker",
             "type": "website/webapp",
@@ -39,19 +26,18 @@
             "link": "https://pennywiise.netlify.app/",
             "repo": "https://github.com/grzdev/pennywise"
         },
-       
         {
-            "id": 4,
-            "name": "damioyeniyi",
-            "desc": "personal portfolio",
-            "type": "website",
+            "id": 3,
+            "name": "hatstore",
+            "desc": "an e-commerce app that sells hats/caps",
+            "type": "mobile-app",
             "tools": {
-                "first": "svelte",
-                "second": "javascript",
-                "third": "tailwind-css"
+                "first": "react-native",
+                "second": "mongo-db",
+                "third": "node.js"
             },
-            "link": "https://damioyeniyi.netlify.app/",
-            "repo": "https://github.com/grzdev/portfolio"
+            "link": "https://drive.google.com/drive/folders/1gvxBYwzbbtuv5pby8dEI1DCS7nfWmbf0?usp=sharing",
+            "repo": "https://github.com/grzdev/hatstore"
         }
     ]
 }

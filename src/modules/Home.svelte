@@ -57,7 +57,7 @@
 
 <!-- HTML -->
 <div
-  class="flex flex-col-reverse sm:flex-col-reverse md:flex-row justify-center items-center text-white mt-[1rem] sm:mt-[1rem] md:mt-[3rem] gap-[2rem] sm:gap-[2rem] md:gap-[3rem] lg:gap-[6rem]"
+  class="flex flex-col-reverse sm:flex-col-reverse md:flex-row justify-center items-center text-white mt-[2rem] sm:mt-[1rem] md:mt-[3rem] gap-[2rem] sm:gap-[2rem] md:gap-[3rem] lg:gap-[6rem] md:mb-[2rem]"
 >
   <!-- Name/Job -->
   <div class="w-[] sm:w-[35rem] md:w-[35rem]">
@@ -77,7 +77,7 @@
         >
           a <span
             class="text-[#76c3ff] cursor-pointer font-mono hover:text-[#31a4fe] transition duration-500 ease-in-out"
-            >software engineer</span
+            >software developer</span
           >
         </h1>
       {/if}
@@ -129,7 +129,7 @@
           />
           <Icon
             icon="cib:blender"
-            class="text-3xl sm:text-4xl md:text-5xl text-[#76c3ff]  absolute mt-[-1rem] ml-[14rem] sm:mt-[-2rem] sm:ml-[21rem] md:mt-[-2rem] md:ml-[24rem]"
+            class="text-3xl sm:text-4xl md:text-5xl text-[#76c3ff]  absolute mt-[-1rem] ml-[14.5rem] sm:mt-[-2rem] sm:ml-[21rem] md:mt-[-2rem] md:ml-[24rem]"
           />
         </div>
       </div>
