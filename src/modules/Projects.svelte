@@ -20,7 +20,7 @@
 
 <!-- HTML -->
 <div
-  class="flex flex-col px-[1rem] sm:px-[2rem] md:px-[4rem] mt-[1rem] sm:mt-[1rem] md:mt-[2rem] overflow-x-hidden md:mb-[1rem]"
+  class="flex flex-col px-[1rem] sm:px-[2rem] md:px-[4rem] mt-[1rem] sm:mt-[1rem] md:mt-[2rem] overflow-x-hidden md:mb-[0rem]"
 >
   <div class="flex flex-col">
     <h1
@@ -48,7 +48,7 @@
       class:slide-in2={showDiv}
     >
       <!-- others/> -->
-       <div class=" move-container mt-[1rem] flex flex-row gap-[2rem]">
+       <div class=" move-container mt-[1rem] flex flex-row gap-[1.4rem] md:gap-[2rem]">
         
         <!-- donut -->
          <div class="flip-card justify-center items-center flex flex-col ">
@@ -56,22 +56,22 @@
             <img
               src={Donut}
               alt=""
-              class="w-[14rem] md:w-[16rem] rounded-[1rem]"
+              class="w-[14rem] md:w-[16rem] rounded-[1rem] mt-[-3rem]"
             />
-            <Icon icon="logos:blender" class="absolute top-2 left-2 text-[1.1rem] md:text-[1.5rem]" />
+            <Icon icon="logos:blender" class="absolute top-[-2.5rem] left-2 text-[1rem] md:text-[1.5rem]" />
             <Icon 
               icon="skill-icons:instagram" 
-              class="absolute top-2 right-2 text-[1.1rem] md:text-[1.5rem]" 
+              class="absolute top-[-2.5rem] right-3 text-[1.1rem] md:text-[1.5rem]" 
             />
             </div>
-             <div class="flex flex-col justify-center items-center mt-[1rem] gap-[0.2rem]">
-              <h1 class="text-[1.2rem] md:text-[1.5rem] sm:text-xl md:text-xl text-gray-300 font-semibold font-mono">
+             <div class="flex flex-col justify-center items-center mt-[1rem] gap-[0.2rem] md:gap-[0.4rem]">
+              <h1 class="text-[1.2rem] md:text-[1.6rem] sm:text-xl md:text-xl text-gray-300 font-semibold font-mono">
                3d donut
               </h1>
               <a href="https://www.instagram.com/share/BAMGK-fYZ9" target="_blank" rel="noopener noreferrer" >
                 <div class="text-gray-300 flex flex-row flex justify-center items-center gap-[0.4rem] font-semibold">
-                  <h1><Icon icon="octicon:link-16" /></h1>
-                  <h1 class="underline underline-offset-2">link</h1>
+                  <h1><Icon icon="memory:eye-fill" class="text-[1.3rem] md:text-[1.5rem]" /></h1>
+                  <h1 class="underline underline-offset-2 text-[1rem] md:text-[1.2rem] text-gray-300 font-semibold font-mono">link</h1>
                 </div>
               </a>
            </div>
@@ -83,21 +83,21 @@
               <img
                 src={Pennywise}
                 alt=""
-                class="w-[14.5rem] md:w-[17.5rem]  rounded-[1rem]"
+                class="w-[14.5rem] md:w-[17.5rem]  rounded-[1rem] mt-[-3rem]"
               />
               <Icon 
                 icon="skill-icons:linkedin"
-                class="absolute top-2 right-2 text-[1.1rem] md:text-[1.5rem]" 
+                class="absolute top-[-2.5rem] right-3 text-[1.1rem] md:text-[1.5rem]" 
               />
             </div>
-              <div class="flex flex-col justify-center items-center mt-[1rem] gap-[0.2rem]">
-                <h1 class="text-[1.2rem] md:text-[1.5rem] sm:text-xl md:text-xl text-gray-300 font-semibold font-mono">
+              <div class="flex flex-col justify-center items-center mt-[1rem] gap-[0.2rem] md:gap-[0.4rem]">
+                <h1 class="text-[1.2rem] md:text-[1.6rem] sm:text-xl md:text-xl text-gray-300 font-semibold font-mono">
                  pennywise
                 </h1>
                 <a href="https://www.linkedin.com/posts/dami-oyeniyi-97805b23a_fintech-personalproject-react-ugcPost-7076183377304838144-b-pP?utm_medium=ios_app&rcm=ACoAADtzxKwBnNXukmm6xAG7XUw5ax_VVEvNlbk&utm_source=social_share_send&utm_campaign=copy_link " target="_blank" rel="noopener noreferrer" >
                   <div class="text-gray-300 flex flex-row flex justify-center items-center gap-[0.4rem] font-semibold">
-                    <h1><Icon icon="octicon:link-16" /></h1>
-                    <h1 class="underline underline-offset-2">link</h1>
+                    <h1><Icon icon="memory:eye-fill" class="text-[1.3rem] md:text-[1.5rem]" /></h1>
+                    <h1 class="underline underline-offset-2 text-[1rem] md:text-[1.2rem] text-gray-300 font-semibold font-mono">link</h1>
                   </div>
                 </a>
              </div>
@@ -109,21 +109,21 @@
                 <img
                   src={yezir}
                   alt=""
-                  class="w-[14.5rem] md:w-[17.5rem]  rounded-[1rem]"
+                  class="w-[14.5rem] md:w-[17.5rem]  rounded-[1rem] mt-[-3rem]"
                 />
                 <Icon 
                   icon="skill-icons:instagram" 
-                  class="absolute top-2 right-2 text-[1.1rem] md:text-[1.5rem]" 
+                  class="absolute top-[-2.5rem] right-3 text-[1.1rem] md:text-[1.5rem]" 
                 />
               </div>
-                 <div class="flex flex-col justify-center items-center mt-[1rem] gap-[0.2rem]">
-                  <h1 class="text-[1.2rem] md:text-[1.5rem] sm:text-xl md:text-xl text-gray-300 font-semibold font-mono">
+                 <div class="flex flex-col justify-center items-center mt-[1rem] gap-[0.2rem] md:gap-[0.4rem]">
+                  <h1 class="text-[1.2rem] md:text-[1.6rem] sm:text-xl md:text-xl text-gray-300 font-semibold font-mono">
                    yezir hasan
                   </h1>
                   <a href="https://www.instagram.com/share/BAFhXRU-ag" target="_blank" rel="noopener noreferrer" >
                     <div class="text-gray-300 flex flex-row flex justify-center items-center gap-[0.4rem] font-semibold">
-                      <h1><Icon icon="octicon:link-16" /></h1>
-                      <h1 class="underline underline-offset-2">link</h1>
+                      <h1><Icon icon="memory:eye-fill" class="text-[1.3rem] md:text-[1.5rem]" /></h1>
+                      <h1 class="underline underline-offset-2 text-[1rem] md:text-[1.2rem] text-gray-300 font-semibold font-mono">link</h1>
                     </div>
                   </a>
                </div>
@@ -198,7 +198,7 @@
   @media (max-width: 640px) {
     .flip-card {
       width: 18rem;
-      height: 16rem;
+      height: 19rem;
     }
   }
 

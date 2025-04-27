@@ -1,6 +1,6 @@
 <script lang="ts">
   import { onMount } from "svelte";
-  import Avatar from "../images/Avatar2.png";
+  import Avatar from "../images/3dPortraitt2.png";
   import { fade, fly } from "svelte/transition";
   import Icon from "@iconify/svelte";
 
@@ -24,18 +24,18 @@
 </script>
 
 <div
-  class="flex justify-center items-center flex-col sm:flex-col md:flex-row mt-[1rem] sm:mt-[1rem] md:mt-[1rem] gap-[8rem] sm:gap-[8rem] md:gap-[12rem]"
+  class="flex justify-center items-center flex-col sm:flex-col md:flex-row mt-[1rem] md:mt-[2rem] gap-[8rem] sm:gap-[8rem] md:gap-[12rem]"
 >
   <div class="flex justify-center items-center flex-col fade-transition">
     <img
       src={Avatar}
       in:fade={{ duration: 1500 }}
       alt="Avatar"
-      class="rounded-full w-[8rem] sm:w-[13rem] md:w-[13rem] mt-[] sm:mt-[] md:mt-[-1rem]"
+      class="rounded-full w-[12rem] md:w-[20rem] mt-[] sm:mt-[] md:mt-[-1rem]"
     />
     <h1
       in:fade={{ duration: 1500 }}
-      class="text-4xl sm:text-5xl md:text-5xl text-gray-300 font-mono hover:text-white transition duration-500 ease-in-out font-mono font-bold mt-[0.5rem] sm:mt-[1rem] md:mt-[1rem]"
+      class="text-4xl sm:text-5xl md:text-5xl text-gray-300 font-mono hover:text-white transition duration-500 ease-in-out font-mono font-bold mt-[1rem] sm:mt-[1rem] md:mt-[1rem]"
     >
       Dami
     </h1>
@@ -45,13 +45,13 @@
     >
       Oyeniyi
     </h1>
-    <div class="hidden md:flex mt-[2rem]">
+    <div class="mt-[1rem] md:mt-[1.5rem]">
       <a
-        href="https://docs.google.com/document/d/1-uH3fALtNXvl1HbSjqLyRce0pkWXDjvO-Lg_kum4K_I/edit?usp=sharing"
+        href="https://docs.google.com/document/d/1-uH3fALtNXvl1HbSjqLyRce0pkWXDjvO-Lg_kum4K_I/edit?usp=sharing" target="_blank" rel="noopener noreferrer"
       >
-        <button class="mt-[0.5rem]">
-          <span class="text-sm">
-            resume <Icon icon="ic:sharp-play-arrow" /></span
+        <button class="mt-[0.9rem] md:mt-[0.5rem] ">
+          <span class="flex justify-center items-center gap-[0.5rem]">
+            cv <Icon icon="memory:arrow-right" /></span
           >
         </button>
       </a>
@@ -59,7 +59,7 @@
   </div>
 
   <div
-    class="flip-container move-container mt-[-6rem] sm:mt-[-4rem] md:mt-[1rem]"
+    class="flip-container move-container mt-[-5rem] sm:mt-[-4rem] md:mt-[1rem] mb-[3rem] md:mb-[0]"
     transition:fly={{ y: "100%", duration: 1000 }}
   >
     <div class="flip-card {flippedCardId === 1 ? 'flipped' : ''}" on:click={() => toggleFlip(1)} on:keydown={(e) => handleKeyDown(e, 1)} role="button" tabindex="0" >
@@ -92,90 +92,83 @@
         >
           stack
         </h1>
-        <div class="grid grid-cols-3 gap-[2rem]">
-          <div>
-            <Icon
-              icon="logos:html-5"
-              class="text-4xl sm:text-6xl md:text-6xl"
-            />
-          </div>
-          <div>
-            <Icon
-              icon="vscode-icons:file-type-css"
-              class="text-4xl sm:text-6xl md:text-6xl"
-            />
-          </div>
-          <div>
-            <Icon
-              icon="devicon:tailwindcss"
-              class="text-4xl sm:text-6xl md:text-6xl"
-            />
-          </div>
-          <div>
+        <div class="grid grid-cols-3 gap-[1rem] md:gap-[2.5rem] gap-y-[2rem] md:sm:gap-y-[0]">
+          <div class="flex flex-col justify-center items-center gap-[0.5rem] md:gap-[0.6rem]">
             <Icon
               icon="skill-icons:javascript"
-              class="text-4xl sm:text-6xl md:text-6xl"
+              class="text-4xl md:text-5xl"
             />
-          </div>
-          <div>
-            <Icon
-              icon="devicon:react"
-              class="text-4xl sm:text-6xl md:text-6xl"
-            />
-          </div>
-          <div>
-            <Icon
-              icon="skill-icons:typescript"
-              class="text-4xl sm:text-6xl md:text-6xl"
-            />
-          </div>
-          <div>
-            <Icon
-              icon="devicon:svelte"
-              class="text-4xl sm:text-6xl md:text-6xl"
-            />
-          </div>
-          <div>
-            <Icon
-              icon="logos:nextjs-icon"
-              class="text-4xl sm:text-6xl md:text-6xl"
-            />
-          </div>
-          <div>
-            <Icon
-              icon="devicon:mongodb"
-              class="text-4xl sm:text-6xl md:text-6xl"
-            />
+            <h1 class=" text-[0.8rem] md:text-[1.2rem] text-gray-300 font-semibold font-mono">javascript</h1>
           </div>
 
-          <div>
+          <div class="flex flex-col justify-center items-center gap-[0.5rem] md:gap-[0.6rem]">
             <Icon
-              icon="devicon:nodejs"
-              class="text-4xl sm:text-6xl md:text-6xl"
+              icon="skill-icons:typescript"
+              class="text-4xl md:text-5xl"
             />
+            <h1 class=" text-[0.8rem] md:text-[1.2rem] text-gray-300 font-semibold font-mono">typescript</h1>
           </div>
-          <div>
-            <Icon icon="bi:github" class="text-4xl sm:text-6xl md:text-6xl" />
-          </div>
-          <div>
+
+          <div class="flex flex-col justify-center items-center gap-[0.5rem] md:gap-[0.6rem]">
             <Icon
-              icon="logos:postman-icon"
-              class="text-4xl sm:text-6xl md:text-6xl"
+              icon="devicon:react"
+              class="text-4xl md:text-5xl"
             />
+            <h1 class=" text-[0.8rem] md:text-[1.2rem] text-gray-300 font-semibold font-mono">react</h1>
           </div>
+
+          <div class="flex flex-col justify-center items-center gap-[0.5rem] md:gap-[0.6rem]">
+            <Icon
+              icon="devicon:tailwindcss"
+              class="text-4xl md:text-5xl"
+            />
+            <h1 class=" text-[0.8rem] md:text-[1.2rem] text-gray-300 font-semibold font-mono">tailwind css</h1>
+          </div>  
+
+          <div class="flex flex-col justify-center items-center gap-[0.5rem] md:gap-[0.6rem]">
+            <Icon
+              icon="devicon:chakraui" 
+              class="text-4xl md:text-5xl"
+            />
+            <h1 class=" text-[0.8rem] md:text-[1.2rem] text-gray-300 font-semibold font-mono">chakra ui</h1>
+          </div>  
+
+          <div class="flex flex-col justify-center items-center gap-[0.5rem] md:gap-[0.6rem]">
+            <Icon
+              icon="logos:figma"
+              class="text-4xl md:text-5xl"
+            />
+            <h1 class=" text-[0.8rem] md:text-[1.2rem] text-gray-300 font-semibold font-mono">figma</h1>
+          </div>  
+
+          <div class="flex flex-col justify-center items-center gap-[0.5rem] md:gap-[0.6rem]">
+            <Icon
+              icon="devicon:svelte"
+              class="text-4xl md:text-5xl"
+            />
+            <h1 class=" text-[0.8rem] md:text-[1.2rem] text-gray-300 font-semibold font-mono">svelte</h1>
+          </div>
+           
+          <div class="flex flex-col justify-center items-center gap-[0.5rem] md:gap-[0.6rem]">
+            <Icon
+              icon="logos:nextjs-icon"
+              class="text-4xl md:text-5xl"
+            />
+            <h1 class=" text-[0.8rem] md:text-[1.2rem] text-gray-300 font-semibold font-mono">next js</h1>
+          </div>
+
+          <div class="flex flex-col justify-center items-center gap-[0.5rem] md:gap-[0.6rem]">
+            <Icon
+              icon="logos:blender"
+              class="text-4xl md:text-5xl"
+            />
+            <h1 class=" text-[0.8rem] md:text-[1.2rem] text-gray-300 font-semibold font-mono">blender</h1>
+          </div>
+
+        
         </div>
       </div>
     </div>
-  </div>
-
-  <div class="flex md:hidden mt-[-7rem] mb-[3rem] sm:mb-[3rem] md:mb-[]">
-    <a
-      href="https://drive.google.com/file/d/1iqlVhJikyk7iAO9GIPInKJh4ft_wQmgz/view?usp=sharing"
-    >
-      <button class="mt-[0.5rem]">
-        <span class="text-sm"> resume <Icon icon="ic:sharp-play-arrow" /></span>
-      </button>
-    </a>
   </div>
 </div>
 
@@ -237,8 +230,8 @@
   button {
     padding: 0.1em 0.25em;
     width:
- 11.2em;
-    height: 3.7em;
+ 11.7em;
+    height: 5em;
     background-color: #212121;
     border: 0.08em solid #fff;
     border-radius: 1rem 0 1rem 0;
@@ -253,7 +246,7 @@
     align-items: center;
     font-weight: 700;
     bottom: 0.4em;
-    width: 7em;
+    width: 5em;
     height: 2em;
     background: rgb(12, 32, 56);
     background: linear-gradient(
@@ -263,7 +256,7 @@
     );
 
     border-radius: 0.8rem 0 0.8rem 0;
-    font-size: 1.5em;
+    font-size: 2.2em;
     color: #fff;
     border: 0.08em solid #fff;
     box-shadow: 0 0.4em 0.1em 0.019em #d3d1d1;

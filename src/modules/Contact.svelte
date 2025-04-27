@@ -21,7 +21,7 @@
     <div class="flip-card" transition:fly={{ y: "100%", duration: 1000 }}>
       <div class="flip-front justify-center items-center flex flex-col">
         <h1
-          class="text-gray-200 text-sm sm:text-xl md:text-xl mt-[-2rem] sm:mt-[-2rem] md:mt-[-3rem] font-mono font-bold text-center w-[17rem] sm:w-[25rem] md:w-[25rem]"
+          class="text-gray-200 text-sm sm:text-xl md:text-xl mt-[-4rem] sm:mt-[-2rem] md:mt-[-3rem] font-mono font-bold text-center w-[17rem] sm:w-[25rem] md:w-[25rem]"
         >
           feel free to get in touch with me on my socials if you wish to work
           together.
@@ -29,40 +29,17 @@
         <div
           class="w-[14rem] sm:w-[25rem] md:w-[26rem] gap-[2rem] mt-[2rem] flex flex-wrap justify-center items-center"
         >
+        
           <div class="flex flex-col gap-[0.4rem] justify-center items-center">
-            <a href="whatsapp://send?phone=+2349036818841" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/dami-oyeniyi-97805b23a/" target="_blank" rel="noopener noreferrer">
               <button class="">
                 <span>
-                  <!-- whatsapp  -->
-                  <Icon icon="cib:whatsapp" />
+                  <!-- linkedin  -->
+                  <Icon icon="fa:linkedin" />
                 </span>
               </button>
             </a>
-            <h1 class="text-gray-200 text-sm sm:text-lg md:text-lg font-mono font-bold">whatsapp</h1>
-          </div>
-
-          <div class="flex flex-col gap-[0.4rem] justify-center items-center">
-            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=damilolaoyeniyi13@gmail.com" target="_blank" rel="noopener noreferrer">
-              <button class="">
-                <span>
-                  <!-- gmail  -->
-                  <Icon icon="bxl:gmail" />
-                </span>
-              </button>
-            </a>
-            <h1 class="text-gray-200 text-sm sm:text-lg md:text-lg font-mono font-bold">gmail</h1>
-          </div>
-
-          <div class="flex flex-col gap-[0.4rem] justify-center items-center">
-            <a href="https://docs.google.com/document/d/1-uH3fALtNXvl1HbSjqLyRce0pkWXDjvO-Lg_kum4K_I/edit?usp=sharing" target="_blank" rel="noopener noreferrer">
-              <button class="">
-                <span>
-                  <!-- cv  -->
-                  <Icon icon="pepicons-pop:cv" />
-                </span>
-              </button>
-            </a>
-            <h1 class="text-gray-200 text-sm sm:text-lg md:text-lg font-mono font-bold">cv</h1>
+            <h1 class="text-gray-200 text-sm sm:text-lg md:text-lg font-mono font-bold">linkedin</h1>
           </div>
 
           <div class="flex flex-col gap-[0.4rem] justify-center items-center">
@@ -78,18 +55,6 @@
           </div>
 
           <div class="flex flex-col gap-[0.4rem] justify-center items-center">
-            <a href="https://www.linkedin.com/in/dami-oyeniyi-97805b23a/" target="_blank" rel="noopener noreferrer">
-              <button class="">
-                <span>
-                  <!-- linkedin  -->
-                  <Icon icon="fa:linkedin" />
-                </span>
-              </button>
-            </a>
-            <h1 class="text-gray-200 text-sm sm:text-lg md:text-lg font-mono font-bold">linkedin</h1>
-          </div>
-
-          <div class="flex flex-col gap-[0.4rem] justify-center items-center">
             <a href="https://www.instagram.com/dmidev_/?next=%2F" target="_blank" rel="noopener noreferrer">
               <button class="">
                 <span>
@@ -100,6 +65,43 @@
             </a>
             <h1 class="text-gray-200 text-sm sm:text-lg md:text-lg font-mono font-bold">instagram</h1>
           </div>
+
+          <div class="flex flex-col gap-[0.4rem] justify-center items-center">
+            <a href="mailto:damilolaoyeniyi13@gmail.com?subject=Let's%20Work%20Together!" target="_blank" rel="noopener noreferrer">
+              <button class="">
+                <span>
+                  <!-- gmail  -->
+                  <Icon icon="bxl:gmail" />
+                </span>
+              </button>
+            </a>
+            <h1 class="text-gray-200 text-sm sm:text-lg md:text-lg font-mono font-bold">gmail</h1>
+          </div>
+
+          <div class="flex flex-col gap-[0.4rem] justify-center items-center">
+            <a href="whatsapp://send?phone=+2349036818841" target="_blank" rel="noopener noreferrer">
+              <button class="">
+                <span>
+                  <!-- whatsapp  -->
+                  <Icon icon="cib:whatsapp" />
+                </span>
+              </button>
+            </a>
+            <h1 class="text-gray-200 text-sm sm:text-lg md:text-lg font-mono font-bold">whatsapp</h1>
+          </div>
+
+          <div class="flex flex-col gap-[0.4rem] justify-center items-center">
+            <a href="https://docs.google.com/document/d/1-uH3fALtNXvl1HbSjqLyRce0pkWXDjvO-Lg_kum4K_I/edit?usp=sharing" target="_blank" rel="noopener noreferrer">
+              <button class="">
+                <span>
+                  <!-- cv  -->
+                  <Icon icon="pepicons-pop:cv" />
+                </span>
+              </button>
+            </a>
+            <h1 class="text-gray-200 text-sm sm:text-lg md:text-lg font-mono font-bold">cv</h1>
+          </div>
+
         </div>
       </div>
     </div>
@@ -119,7 +121,7 @@
     /* Set different width and height for smaller screens */
     .flip-card {
       width: 21rem;
-      height: 32rem;
+      height: 34rem;
     }
   }
 
