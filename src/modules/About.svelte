@@ -122,7 +122,7 @@
               icon="devicon:tailwindcss"
               class="text-4xl md:text-5xl"
             />
-            <h1 class=" text-[0.8rem] md:text-[1.2rem] text-gray-300 font-semibold font-mono">tailwind css</h1>
+            <h1 class=" text-[0.8rem] md:text-[1.2rem] text-gray-300 font-semibold font-mono">tailwind</h1>
           </div>  
 
           <div class="flex flex-col justify-center items-center gap-[0.5rem] md:gap-[0.6rem]">
