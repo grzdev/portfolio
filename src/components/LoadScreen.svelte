@@ -1,4 +1,4 @@
-<div class="flex justify-center items-center min-h-screen">
+<div class="flex justify-center items-center h-screen">
   <div class="loadingspinner">
     <div id="square1" />
     <div id="square2" />
