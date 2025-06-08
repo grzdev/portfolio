@@ -98,7 +98,7 @@
         >
           a <span
             class="text-[#76c3ff] cursor-pointer font-mono hover:text-[#31a4fe] transition duration-500 ease-in-out"
-            >software developer</span
+            >software designer</span
           >
         </h1>
       {/if}
