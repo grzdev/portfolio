@@ -20,7 +20,7 @@
 
 <!-- HTML -->
 <div
-  class="flex flex-col px-[1rem] sm:px-[2rem] md:px-[4rem] mt-[1rem] sm:mt-[1rem] md:mt-[2rem] overflow-x-hidden md:mb-[0rem]"
+  class="flex flex-col px-[1rem] sm:px-[2rem] md:px-[4rem] mt-[1rem] sm:mt-[1rem] md:mt-[2rem] overflow-x-hidden mb-[3rem] md:mb-[0rem]"
 >
   <div class="flex flex-col">
     <h1
@@ -41,7 +41,7 @@
       class="text-gray-300 font-mono hover:text-white transition duration-500 ease-in-out text-xl sm:text-3xl md:text-3xl font-mono font-bold mt-[1rem]"
       in:fade
     >
-      others
+      socials
     </h1>
     <div
       class="flex flex-row mt-[0.3rem] gap-[1.3rem] sm:gap-[2rem] md:gap-[2rem] overflow-x-auto custom-scrollbar"
@@ -71,7 +71,7 @@
               <a href="https://www.instagram.com/share/BAMGK-fYZ9" target="_blank" rel="noopener noreferrer" >
                 <div class="text-gray-300 flex flex-row flex justify-center items-center gap-[0.4rem] font-semibold">
                   <h1><Icon icon="memory:eye-fill" class="text-[1.3rem] md:text-[1.5rem]" /></h1>
-                  <h1 class="underline underline-offset-2 text-[1rem] md:text-[1.2rem] text-gray-300 font-semibold font-mono">link</h1>
+                  <h1 class="underline underline-offset-2 text-[1rem] md:text-[1.2rem] text-gray-300 font-semibold font-mono">instagram link</h1>
                 </div>
               </a>
            </div>
@@ -97,7 +97,7 @@
                 <a href="https://www.linkedin.com/posts/dami-oyeniyi-97805b23a_fintech-personalproject-react-ugcPost-7076183377304838144-b-pP?utm_medium=ios_app&rcm=ACoAADtzxKwBnNXukmm6xAG7XUw5ax_VVEvNlbk&utm_source=social_share_send&utm_campaign=copy_link " target="_blank" rel="noopener noreferrer" >
                   <div class="text-gray-300 flex flex-row flex justify-center items-center gap-[0.4rem] font-semibold">
                     <h1><Icon icon="memory:eye-fill" class="text-[1.3rem] md:text-[1.5rem]" /></h1>
-                    <h1 class="underline underline-offset-2 text-[1rem] md:text-[1.2rem] text-gray-300 font-semibold font-mono">link</h1>
+                    <h1 class="underline underline-offset-2 text-[1rem] md:text-[1.2rem] text-gray-300 font-semibold font-mono">linkedin link</h1>
                   </div>
                 </a>
              </div>
@@ -123,7 +123,7 @@
                   <a href="https://www.instagram.com/share/BAFhXRU-ag" target="_blank" rel="noopener noreferrer" >
                     <div class="text-gray-300 flex flex-row flex justify-center items-center gap-[0.4rem] font-semibold">
                       <h1><Icon icon="memory:eye-fill" class="text-[1.3rem] md:text-[1.5rem]" /></h1>
-                      <h1 class="underline underline-offset-2 text-[1rem] md:text-[1.2rem] text-gray-300 font-semibold font-mono">link</h1>
+                      <h1 class="underline underline-offset-2 text-[1rem] md:text-[1.2rem] text-gray-300 font-semibold font-mono">instagram link</h1>
                     </div>
                   </a>
                </div>
