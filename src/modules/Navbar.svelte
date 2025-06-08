@@ -146,6 +146,7 @@
         </button>
       </div>
     </div>
+    
   </div>
 </nav>
 
@@ -171,17 +172,17 @@
             <div class="flex flex-col gap-[2rem] items-center mt-[4rem]  justify-center">
               <a href="/"
               class={`${
-                currentPath === "/" 
-                ? "border-b-2 border-blue-500 text-gray-200" 
-                : "text-gray-300 hover:text-gray-200"
+                currentPath === "" || currentPath === "/" 
+                ? "border-b-2 border-blue-500 text-white" 
+                : "text-gray-300 hover:text-white"
               } block font-mono text-bounce transition duration-500 ease-in-out px-3 py-2 text-2xl font-semibold`}>
              home
            </a>
               <a href="/projects/"
               class={`${
                 currentPath === "/projects" 
-                ? "border-b-2 border-blue-500 text-gray-200" 
-                : "text-gray-300 hover:text-gray-200"
+                ? "border-b-2 border-blue-500 text-white" 
+                : "text-gray-300 hover:text-white"
               } block font-mono text-bounce transition duration-500 ease-in-out px-3 py-2 text-2xl font-semibold`}>
              projects
            </a>
@@ -189,8 +190,8 @@
            <a href="/about/"
               class={`${
                 currentPath === "/about" 
-                ? "border-b-2 border-blue-500 text-gray-200" 
-                : "text-gray-300 hover:text-gray-200"
+                ? "border-b-2 border-blue-500 text-white" 
+                : "text-gray-300 hover:text-white"
               } block font-mono text-bounce transition duration-500 ease-in-out px-3 py-2 text-2xl font-semibold`}>
              about
            </a>
@@ -198,14 +199,18 @@
            <a href="/contact/"
               class={`${
                 currentPath === "/contact" 
-                ? "border-b-2 border-blue-500 text-gray-200" 
-                : "text-gray-300 hover:text-gray-200"
+                ? "border-b-2 border-blue-500 text-white" 
+                : "text-gray-300 hover:text-white"
               } block font-mono text-bounce transition duration-500 ease-in-out px-3 py-2 text-2xl font-semibold`}>
              contact
            </a>
             </div>
             <div />
           </div>
+
+            <div class="absolute bottom-4 w-full flex justify-center">
+            <h1 class="text-[white] block font-mono text-bounce px-3 py-2 text-2xl font-semibold">dami oyeniyi</h1>
+            </div>
         </div>
       </div>
     </div>
