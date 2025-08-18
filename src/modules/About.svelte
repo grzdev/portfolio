@@ -67,19 +67,18 @@
         <h1
           class="text-gray-200 text-sm sm:text-lg md:text-xl mt-[-3rem] sm:mt-[-1rem] md:mt-[-3rem] font-mono font-bold text-center w-[17rem] sm:w-[30rem] md:w-[30rem]"
         >
-          I build interactive site/apps using frontend tech, mainly on
-          the web and also on mobile.
+          I build interactive sites and apps for the web and mobile, with a strong focus on frontend development.
         </h1>
         <p
           class="text-gray-200 text-sm sm:text-lg md:text-xl mt-[1rem] md:mt-[2rem] font-mono font-bold text-center w-[17rem] sm:w-[30rem] md:w-[30rem]"
         >
-          I'm self-taught, and i've been building mainly with frontend tech for 2 years. I've also dabbled into ui design with figma, 
-          3d design with blender, and mobile app dev with react native.
+          I’m self-taught and have spent the past 4 years honing my craft, bringing ideas to life with clean, engaging interfaces.
+          Along the way, I’ve explored UI design with Figma, 3D modeling in Blender, and mobile development with React Native.
         </p>
         <p
           class="text-gray-200 text-sm sm:text-lg md:text-xl mt-[1rem] md:mt-[2rem] font-mono font-bold text-center w-[17rem] sm:w-[30rem] md:w-[30rem]"
         >
-          What separates me is my fixation in bringing a seamless yet beautiful design to life.
+          What drives me is a fixation on making design both seamless and beautiful.
         </p>
       </div>
 
