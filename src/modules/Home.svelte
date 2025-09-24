@@ -146,24 +146,19 @@
   <div>
     {#if isReady}
       <div>
-        <button
-          class="fade-transition w-[15rem] sm:w-[23rem] md:w-[20rem] cursor-pointer
-            {fadeIn ? 'fade-in-active' : ''}
-            {isPressed ? 'avatar-pressed' : ''}
-            {isReleased ? 'avatar-release' : ''}"
-          on:mousedown={handlePress}
-          on:mouseup={handleRelease}
-          on:mouseleave={handleRelease}
-          on:touchstart={handlePress}
-          on:touchend={handleRelease}
-          aria-label="Interactive avatar"
-        >
-          <img
-            src={Avatar}
-            alt=""
-            class="w-full h-full object-cover"
-          />
-        </button>
+       <img
+        src={Avatar}
+        alt=""
+        class="fade-transition w-[15rem] sm:w-[23rem] md:w-[20rem] cursor-pointer 
+          {fadeIn ? 'fade-in-active' : ''}
+          {isPressed ? 'avatar-pressed' : ''} 
+          {isReleased ? 'avatar-release' : ''}"
+        on:mousedown={handlePress}
+        on:mouseup={handleRelease}
+        on:mouseleave={handleRelease}
+        on:touchstart={handlePress}
+        on:touchend={handleRelease}
+      />
         <div class="move-container fade-transition {fadeIn ? 'fade-in-active' : ''}">
           <Icon
             
