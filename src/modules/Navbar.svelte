@@ -52,9 +52,11 @@
       <div class="flex-shrink-0">
         <!-- Logo -->
         <a href="/">
-          <span class="text-gray-300 font-mono hover:text-white transition duration-500 ease-in-out text-3xl sm:text-4xl font-bold font-mono lg:text-4xl">
-            .do
-          </span>
+          <img 
+            src="/src/Avatar3.png" 
+            alt="Logo" 
+            class="h-12 w-12 sm:h-14 sm:w-14 lg:h-16 lg:w-16 rounded-full object-cover hover:scale-110 transition-transform duration-300 ease-in-out"
+          />
         </a>
       </div>
 
