@@ -5,6 +5,7 @@
   import { fade } from "svelte/transition";
   import { page } from "$app/stores"; 
   import CV from "../components/CV.pdf";
+  import avatar from "../images/Avatar3.png"
 
   export let menuOpen: boolean;
   const dispatch = createEventDispatcher();
@@ -53,7 +54,7 @@
         <!-- Logo -->
         <a href="/">
           <img 
-            src="/src/Avatar3.png" 
+            src={avatar}
             alt="Logo" 
             class="h-12 w-12 sm:h-14 sm:w-14 lg:h-16 lg:w-16 rounded-full object-cover hover:scale-110 transition-transform duration-300 ease-in-out"
           />

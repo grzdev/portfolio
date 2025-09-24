@@ -7,6 +7,7 @@
   import Donut from "../images/content.jpg"
   import Pennywise from "../images/pennywise4.png"
   import yezir from "../images/yezir3.png"
+  import room14 from "../images/4krender.png"
   import { onMount } from "svelte";
   import { fade } from "svelte/transition";
   import Icon from "@iconify/svelte";
@@ -27,7 +28,7 @@
       class="text-gray-300 font-mono hover:text-white transition duration-500 ease-in-out text-xl sm:text-3xl md:text-3xl font-mono font-bold"
       in:fade
     >
-      featured
+      some work
     </h1>
     <div
       class="flex flex-row mt-[0.3rem] gap-[1.3rem] sm:gap-[2rem] md:gap-[2rem] overflow-x-auto custom-scrollbar"
@@ -49,6 +50,33 @@
     >
       <!-- others/> -->
        <div class=" move-container mt-[1rem] flex flex-row gap-[1.4rem] md:gap-[2rem]">
+
+        <!-- room 14 -->
+            <div class="flip-card justify-center items-center flex flex-col ">
+              <div class="relative">
+                <img
+                  src={room14}
+                  alt=""
+                  class="w-[14.5rem] md:w-[17.5rem]  rounded-[1rem] mt-[-3rem]"
+                />
+                <Icon icon="logos:blender" class="absolute top-[-2.5rem] left-2 text-[1rem] md:text-[1.5rem]" />
+                <Icon 
+                  icon="skill-icons:instagram" 
+                  class="absolute top-[-2.5rem] right-3 text-[1.1rem] md:text-[1.5rem]" 
+                />
+              </div>
+                 <div class="flex flex-col justify-center items-center mt-[1rem] gap-[0.2rem] md:gap-[0.4rem]">
+                  <h1 class="text-[1.2rem] md:text-[1.6rem] sm:text-xl md:text-xl text-gray-300 font-semibold font-mono">
+                   room 14
+                  </h1>
+                  <a href="https://www.instagram.com/share/BAFhXRU-ag" target="_blank" rel="noopener noreferrer" >
+                    <div class="text-gray-300 flex flex-row flex justify-center items-center gap-[0.4rem] font-semibold">
+                      <h1><Icon icon="memory:eye-fill" class="text-[1.3rem] md:text-[1.5rem]" /></h1>
+                      <h1 class="underline underline-offset-2 text-[1rem] md:text-[1.2rem] text-gray-300 font-semibold font-mono">instagram link</h1>
+                    </div>
+                  </a>
+               </div>
+             </div>
         
         <!-- donut -->
          <div class="flip-card justify-center items-center flex flex-col ">
@@ -102,32 +130,6 @@
                 </a>
              </div>
            </div>
-
-            <!-- yezir -->
-            <div class="flip-card justify-center items-center flex flex-col ">
-              <div class="relative">
-                <img
-                  src={yezir}
-                  alt=""
-                  class="w-[14.5rem] md:w-[17.5rem]  rounded-[1rem] mt-[-3rem]"
-                />
-                <Icon 
-                  icon="skill-icons:instagram" 
-                  class="absolute top-[-2.5rem] right-3 text-[1.1rem] md:text-[1.5rem]" 
-                />
-              </div>
-                 <div class="flex flex-col justify-center items-center mt-[1rem] gap-[0.2rem] md:gap-[0.4rem]">
-                  <h1 class="text-[1.2rem] md:text-[1.6rem] sm:text-xl md:text-xl text-gray-300 font-semibold font-mono">
-                   yezir hasan
-                  </h1>
-                  <a href="https://www.instagram.com/share/BAFhXRU-ag" target="_blank" rel="noopener noreferrer" >
-                    <div class="text-gray-300 flex flex-row flex justify-center items-center gap-[0.4rem] font-semibold">
-                      <h1><Icon icon="memory:eye-fill" class="text-[1.3rem] md:text-[1.5rem]" /></h1>
-                      <h1 class="underline underline-offset-2 text-[1rem] md:text-[1.2rem] text-gray-300 font-semibold font-mono">instagram link</h1>
-                    </div>
-                  </a>
-               </div>
-             </div>
 
        </div>
     </div>
