@@ -67,12 +67,12 @@
         <h1
           class="text-gray-200 text-sm sm:text-lg md:text-lg mt-[-2rem] sm:mt-[-1rem] md:mt-[-2.2rem] font-mono font-bold text-center w-[17rem] sm:w-[30rem] md:w-[30rem]"
         >
-          I build interactive sites and apps for the web and mobile, with a strong focus on frontend development.
+          I build interactive sites and apps for the web and mobile, with a expertise in frontend development.
         </h1>
         <p
           class="text-gray-200 text-sm sm:text-lg md:text-lg mt-[1rem] md:mt-[1.2rem] font-mono font-bold text-center w-[17rem] sm:w-[30rem] md:w-[30rem]"
         >
-          I’m self-taught and have spent the past 4 years honing my craft, bringing ideas to life with clean, engaging interfaces.
+          I’m self-taught and have spent the past 4 years honing my craft, bringing ideas to life with clean and engaging interfaces.
           Along the way, I’ve explored UI design with Figma, 3D modeling in Blender, and mobile development with React Native.
         </p>
         <p
