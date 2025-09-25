@@ -104,7 +104,7 @@
 
 <!-- HTML -->
 <div
-  class="flex flex-col-reverse sm:flex-col-reverse md:flex-row justify-center items-center text-white mt-[2rem] sm:mt-[1rem] md:mt-[3rem] gap-[2rem] sm:gap-[2rem] md:gap-[3rem] lg:gap-[6rem] md:mb-[2rem]"
+  class="flex flex-col-reverse sm:flex-col-reverse md:flex-row justify-center items-center text-white mt-[2rem] sm:mt-[1rem] md:mt-[2rem] gap-[2rem] sm:gap-[2rem] md:gap-[3rem] lg:gap-[6rem] md:mb-[2rem]"
 >
   <!-- Name/Job -->
   <div class="w-[] sm:w-[35rem] md:w-[35rem]">

@@ -42,7 +42,7 @@
       class="text-gray-300 font-mono hover:text-white transition duration-500 ease-in-out text-xl sm:text-3xl md:text-3xl font-mono font-bold mt-[1rem]"
       in:fade
     >
-      socials
+      social links
     </h1>
     <div
       class="flex flex-row mt-[0.3rem] gap-[1.3rem] sm:gap-[2rem] md:gap-[2rem] overflow-x-auto custom-scrollbar"
@@ -69,12 +69,19 @@
                   <h1 class="text-[1.2rem] md:text-[1.6rem] sm:text-xl md:text-xl text-gray-300 font-semibold font-mono">
                    room 14
                   </h1>
-                  <a href="https://www.instagram.com/share/BAFhXRU-ag" target="_blank" rel="noopener noreferrer" >
-                    <div class="text-gray-300 flex flex-row flex justify-center items-center gap-[0.4rem] font-semibold">
-                      <h1><Icon icon="memory:eye-fill" class="text-[1.3rem] md:text-[1.5rem]" /></h1>
-                      <h1 class="underline underline-offset-2 text-[1rem] md:text-[1.2rem] text-gray-300 font-semibold font-mono">instagram link</h1>
-                    </div>
-                  </a>
+                  <div class="flex flex-row justify-center items-center gap-[2rem]">
+                    <a href="https://www.instagram.com/share/BAFhXRU-ag" target="_blank" rel="noopener noreferrer" >
+                      <div class="text-gray-300 flex flex-row flex justify-center items-center gap-[0.4rem] font-semibold">
+                        <h1><Icon icon="memory:eye-fill" class="text-[1.3rem] md:text-[1.5rem]" /></h1>
+                        <h1 class="underline underline-offset-2 text-[1rem] md:text-[1.2rem] text-gray-300 font-semibold font-mono">instagram link</h1>
+                      </div>
+                    </a>
+                    <a href="https://drive.google.com/drive/folders/1xegAi_9utGxv2-UseHuNZ9nKRmYqUtxe" target="_blank" rel="noopener noreferrer">
+                      <div class="text-gray-300 flex flex-row flex justify-center items-center gap-[0.4rem] font-semibold cursor-pointer">
+                        <h1><Icon icon="material-symbols:hd-outline-rounded" class="text-[1.7rem] md:text-[2rem]" /></h1> 
+                      </div>
+                    </a>
+                  </div>
                </div>
              </div>
         
@@ -92,16 +99,24 @@
               class="absolute top-[-2.5rem] right-3 text-[1.1rem] md:text-[1.5rem]" 
             />
             </div>
-             <div class="flex flex-col justify-center items-center mt-[1rem] gap-[0.2rem] md:gap-[0.4rem]">
+            <div class="flex flex-col justify-center items-center mt-[1rem] gap-[0.2rem] md:gap-[0.4rem]">
               <h1 class="text-[1.2rem] md:text-[1.6rem] sm:text-xl md:text-xl text-gray-300 font-semibold font-mono">
                3d donut
               </h1>
+
+              <div class="flex flex-row justify-center items-center gap-[2rem]">
               <a href="https://www.instagram.com/share/BAMGK-fYZ9" target="_blank" rel="noopener noreferrer" >
                 <div class="text-gray-300 flex flex-row flex justify-center items-center gap-[0.4rem] font-semibold">
                   <h1><Icon icon="memory:eye-fill" class="text-[1.3rem] md:text-[1.5rem]" /></h1>
                   <h1 class="underline underline-offset-2 text-[1rem] md:text-[1.2rem] text-gray-300 font-semibold font-mono">instagram link</h1>
                 </div>
               </a>
+              <a href="https://drive.google.com/drive/folders/1fkYVCSDc7XJ8u1nkr0Y1T8vbdKpYqWCc" target="_blank" rel="noopener noreferrer">
+                <div class="text-gray-300 flex flex-row flex justify-center items-center gap-[0.4rem] font-semibold cursor-pointer">
+                  <h1><Icon icon="material-symbols:hd-outline-rounded" class="text-[1.7rem] md:text-[2rem]" /></h1>
+                </div>
+              </a>
+            </div>
            </div>
          </div>
 
