@@ -73,7 +73,7 @@
                     <a href="https://www.instagram.com/share/BAFhXRU-ag" target="_blank" rel="noopener noreferrer" >
                       <div class="text-gray-300 flex flex-row flex justify-center items-center gap-[0.4rem] font-semibold">
                         <h1><Icon icon="memory:eye-fill" class="text-[1.3rem] md:text-[1.5rem]" /></h1>
-                        <h1 class="underline underline-offset-2 text-[1rem] md:text-[1.2rem] text-gray-300 font-semibold font-mono">instagram link</h1>
+                        <h1 class="underline underline-offset-2 text-[1rem] md:text-[1.2rem] text-gray-300 font-semibold font-mono">instagram</h1>
                       </div>
                     </a>
                     <a href="https://drive.google.com/drive/folders/1xegAi_9utGxv2-UseHuNZ9nKRmYqUtxe" target="_blank" rel="noopener noreferrer">
@@ -108,7 +108,7 @@
               <a href="https://www.instagram.com/share/BAMGK-fYZ9" target="_blank" rel="noopener noreferrer" >
                 <div class="text-gray-300 flex flex-row flex justify-center items-center gap-[0.4rem] font-semibold">
                   <h1><Icon icon="memory:eye-fill" class="text-[1.3rem] md:text-[1.5rem]" /></h1>
-                  <h1 class="underline underline-offset-2 text-[1rem] md:text-[1.2rem] text-gray-300 font-semibold font-mono">instagram link</h1>
+                  <h1 class="underline underline-offset-2 text-[1rem] md:text-[1.2rem] text-gray-300 font-semibold font-mono">instagram</h1>
                 </div>
               </a>
               <a href="https://drive.google.com/drive/folders/1fkYVCSDc7XJ8u1nkr0Y1T8vbdKpYqWCc" target="_blank" rel="noopener noreferrer">
@@ -140,7 +140,7 @@
                 <a href="https://www.linkedin.com/posts/dami-oyeniyi-97805b23a_fintech-personalproject-react-ugcPost-7076183377304838144-b-pP?utm_medium=ios_app&rcm=ACoAADtzxKwBnNXukmm6xAG7XUw5ax_VVEvNlbk&utm_source=social_share_send&utm_campaign=copy_link " target="_blank" rel="noopener noreferrer" >
                   <div class="text-gray-300 flex flex-row flex justify-center items-center gap-[0.4rem] font-semibold">
                     <h1><Icon icon="memory:eye-fill" class="text-[1.3rem] md:text-[1.5rem]" /></h1>
-                    <h1 class="underline underline-offset-2 text-[1rem] md:text-[1.2rem] text-gray-300 font-semibold font-mono">linkedin link</h1>
+                    <h1 class="underline underline-offset-2 text-[1rem] md:text-[1.2rem] text-gray-300 font-semibold font-mono">linkedin</h1>
                   </div>
                 </a>
              </div>
