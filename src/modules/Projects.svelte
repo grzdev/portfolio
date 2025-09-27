@@ -70,7 +70,7 @@
                    room 14
                   </h1>
                   <div class="flex flex-row justify-center items-center gap-[2rem]">
-                    <a href="https://www.instagram.com/share/BAFhXRU-ag" target="_blank" rel="noopener noreferrer" >
+                    <a href="https://www.instagram.com/p/DPG9JWlDIrj/?igsh=MXU5ejZsbjJpZm50OA==" target="_blank" rel="noopener noreferrer" >
                       <div class="text-gray-300 flex flex-row flex justify-center items-center gap-[0.4rem] font-semibold">
                         <h1><Icon icon="memory:eye-fill" class="text-[1.3rem] md:text-[1.5rem]" /></h1>
                         <h1 class="underline underline-offset-2 text-[1rem] md:text-[1.2rem] text-gray-300 font-semibold font-mono">instagram</h1>
