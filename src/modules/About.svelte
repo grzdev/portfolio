@@ -78,7 +78,7 @@
         <p
           class="text-gray-200 text-sm sm:text-lg md:text-lg mt-[1rem] md:mt-[1.2rem] font-mono font-bold text-center w-[17rem] sm:w-[30rem] md:w-[30rem]"
         >
-          What drives me is a fixation on making design both seamless and beautiful.
+          What drives me is my fixation on making design that is both seamless and beautiful.
         </p>
       </div>
 
