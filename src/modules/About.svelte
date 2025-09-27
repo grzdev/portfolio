@@ -67,7 +67,7 @@
         <h1
           class="text-gray-200 text-sm sm:text-lg md:text-lg mt-[-2rem] sm:mt-[-1rem] md:mt-[-2.2rem] font-mono font-bold text-center w-[17rem] sm:w-[30rem] md:w-[30rem]"
         >
-          I build interactive sites and apps, with expertise in frontend development.
+          I build interactive sites and apps, with an expertise in frontend development.
         </h1>
         <p
           class="text-gray-200 text-sm sm:text-lg md:text-lg mt-[1rem] md:mt-[1.2rem] font-mono font-bold text-center w-[17rem] sm:w-[30rem] md:w-[30rem]"
