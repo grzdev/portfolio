@@ -76,7 +76,7 @@
                         <h1 class="underline underline-offset-2 text-[1rem] md:text-[1.2rem] text-gray-300 font-semibold font-mono">instagram</h1>
                       </div>
                     </a>
-                    <a href="https://drive.google.com/drive/folders/1xegAi_9utGxv2-UseHuNZ9nKRmYqUtxe" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.behance.net/gallery/235695887/room-14" target="_blank" rel="noopener noreferrer">
                       <div class="text-gray-300 flex flex-row flex justify-center items-center gap-[0.4rem] font-semibold cursor-pointer">
                         <h1><Icon icon="material-symbols:hd-outline-rounded" class="text-[1.7rem] md:text-[2rem]" /></h1> 
                       </div>
@@ -111,7 +111,7 @@
                   <h1 class="underline underline-offset-2 text-[1rem] md:text-[1.2rem] text-gray-300 font-semibold font-mono">instagram</h1>
                 </div>
               </a>
-              <a href="https://drive.google.com/drive/folders/1fkYVCSDc7XJ8u1nkr0Y1T8vbdKpYqWCc" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.behance.net/gallery/235695171/donut" target="_blank" rel="noopener noreferrer">
                 <div class="text-gray-300 flex flex-row flex justify-center items-center gap-[0.4rem] font-semibold cursor-pointer">
                   <h1><Icon icon="material-symbols:hd-outline-rounded" class="text-[1.7rem] md:text-[2rem]" /></h1>
                 </div>
