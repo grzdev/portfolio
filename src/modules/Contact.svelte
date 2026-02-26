@@ -29,9 +29,32 @@
         <div
           class="w-[14rem] sm:w-[25rem] md:w-[26rem] gap-[2rem] mt-[2rem] flex flex-wrap justify-center items-center"
         >
-        
           <div class="flex flex-col gap-[0.4rem] justify-center items-center">
-            <a href="https://www.linkedin.com/in/dami-oyeniyi-97805b23a/" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://discord.com/users/752124227720577094"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button class="">
+                <span>
+                  <!-- discord  -->
+                  <Icon icon="simple-icons:discord" />
+                </span>
+              </button>
+            </a>
+            <h1
+              class="text-gray-200 text-sm sm:text-lg md:text-lg font-mono font-bold"
+            >
+              discord
+            </h1>
+          </div>
+
+          <div class="flex flex-col gap-[0.4rem] justify-center items-center">
+            <a
+              href="https://www.linkedin.com/in/dami-oyeniyi-97805b23a/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <button class="">
                 <span>
                   <!-- linkedin  -->
@@ -39,11 +62,19 @@
                 </span>
               </button>
             </a>
-            <h1 class="text-gray-200 text-sm sm:text-lg md:text-lg font-mono font-bold">linkedin</h1>
+            <h1
+              class="text-gray-200 text-sm sm:text-lg md:text-lg font-mono font-bold"
+            >
+              linkedin
+            </h1>
           </div>
 
           <div class="flex flex-col gap-[0.4rem] justify-center items-center">
-            <a href="https://github.com/grzdev" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://github.com/grzdev"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <button class="">
                 <span>
                   <!-- github  -->
@@ -51,11 +82,19 @@
                 </span>
               </button>
             </a>
-            <h1 class="text-gray-200 text-sm sm:text-lg md:text-lg font-mono font-bold">github</h1>
+            <h1
+              class="text-gray-200 text-sm sm:text-lg md:text-lg font-mono font-bold"
+            >
+              github
+            </h1>
           </div>
 
           <div class="flex flex-col gap-[0.4rem] justify-center items-center">
-            <a href="https://www.instagram.com/dmidev_/?next=%2F" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://www.instagram.com/dmidev_/?next=%2F"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <button class="">
                 <span>
                   <!-- instagram  -->
@@ -63,11 +102,19 @@
                 </span>
               </button>
             </a>
-            <h1 class="text-gray-200 text-sm sm:text-lg md:text-lg font-mono font-bold">instagram</h1>
+            <h1
+              class="text-gray-200 text-sm sm:text-lg md:text-lg font-mono font-bold"
+            >
+              instagram
+            </h1>
           </div>
 
           <div class="flex flex-col gap-[0.4rem] justify-center items-center">
-            <a href="mailto:damilolaoyeniyi13@gmail.com?subject=Let's%20Work%20Together!" target="_blank" rel="noopener noreferrer">
+            <a
+              href="mailto:damilolaoyeniyi13@gmail.com?subject=Let's%20Work%20Together!"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <button class="">
                 <span>
                   <!-- gmail  -->
@@ -75,33 +122,32 @@
                 </span>
               </button>
             </a>
-            <h1 class="text-gray-200 text-sm sm:text-lg md:text-lg font-mono font-bold">gmail</h1>
+            <h1
+              class="text-gray-200 text-sm sm:text-lg md:text-lg font-mono font-bold"
+            >
+              gmail
+            </h1>
           </div>
 
           <div class="flex flex-col gap-[0.4rem] justify-center items-center">
-            <a href="whatsapp://send?phone=+2349036818841" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://x.com/3sentry5"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <button class="">
                 <span>
-                  <!-- whatsapp  -->
-                  <Icon icon="cib:whatsapp" />
+                  <!-- x/twitter  -->
+                  <Icon icon="prime:twitter" />
                 </span>
               </button>
             </a>
-            <h1 class="text-gray-200 text-sm sm:text-lg md:text-lg font-mono font-bold">whatsapp</h1>
+            <h1
+              class="text-gray-200 text-sm sm:text-lg md:text-lg font-mono font-bold"
+            >
+              x/twitter
+            </h1>
           </div>
-
-          <div class="flex flex-col gap-[0.4rem] justify-center items-center">
-            <a href="https://docs.google.com/document/d/1-uH3fALtNXvl1HbSjqLyRce0pkWXDjvO-Lg_kum4K_I/edit?usp=sharing" target="_blank" rel="noopener noreferrer">
-              <button class="">
-                <span>
-                  <!-- cv  -->
-                  <Icon icon="pepicons-pop:cv" />
-                </span>
-              </button>
-            </a>
-            <h1 class="text-gray-200 text-sm sm:text-lg md:text-lg font-mono font-bold">cv</h1>
-          </div>
-
         </div>
       </div>
     </div>

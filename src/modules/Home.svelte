@@ -6,7 +6,7 @@
   import Icon from "@iconify/svelte";
   const options = ["javascript", "react", "typescript", "frontend"];
   let currentIndex = 0;
-  let isPressed = false;  
+  let isPressed = false;
   let isReleased = false;
 
   function handlePress() {
@@ -16,7 +16,7 @@
 
   function handleRelease() {
     if (!isPressed) return;
-    
+
     isPressed = false;
     isReleased = true;
 
@@ -24,7 +24,6 @@
       isReleased = false;
     }, 200); // clear the animation class
   }
-
 
   // header text change
   function changeOption() {
@@ -58,10 +57,10 @@
     // Preload the avatar image to ensure smooth animation
     const img = new Image();
     img.src = Avatar;
-    
+
     const startAnimations = () => {
       isReady = true;
-      
+
       // Image fade in - start immediately after ready
       setTimeout(() => {
         fadeIn = true;
@@ -71,11 +70,11 @@
       setTimeout(() => {
         showText1 = true;
       }, 500);
-      
+
       setTimeout(() => {
         showText2 = true;
       }, 900);
-      
+
       setTimeout(() => {
         showText3 = true;
       }, 1300);
@@ -99,12 +98,11 @@
       }
     }, 1000);
   });
-  
 </script>
 
 <!-- HTML -->
 <div
-  class="flex flex-col-reverse sm:flex-col-reverse md:flex-row justify-center items-center text-white mt-[2rem] sm:mt-[1rem] md:mt-[2rem] gap-[2rem] sm:gap-[2rem] md:gap-[3rem] lg:gap-[6rem] md:mb-[2rem]"
+  class="flex flex-col-reverse sm:flex-col-reverse md:flex-row justify-center items-center text-white mt-[2rem] sm:mt-[1rem] md:mt-[5rem] gap-[2rem] sm:gap-[2rem] md:gap-[3rem] lg:gap-[6rem] md:mb-[2rem]"
 >
   <!-- Name/Job -->
   <div class="w-[] sm:w-[35rem] md:w-[35rem]">
@@ -124,7 +122,7 @@
         >
           a <span
             class="text-[#76c3ff] cursor-pointer font-mono hover:text-[#31a4fe] transition duration-500 ease-in-out"
-            >software designer</span
+            >software engineer</span
           >
         </h1>
       {/if}
@@ -146,22 +144,25 @@
   <div>
     {#if isReady}
       <div>
-       <img
-        src={Avatar}
-        alt=""
-        class="fade-transition w-[15rem] sm:w-[23rem] md:w-[20rem] cursor-pointer 
+        <img
+          src={Avatar}
+          alt=""
+          class="fade-transition w-[15rem] sm:w-[23rem] md:w-[20rem] cursor-pointer
           {fadeIn ? 'fade-in-active' : ''}
           {isPressed ? 'avatar-pressed' : ''} 
           {isReleased ? 'avatar-release' : ''}"
-        on:mousedown={handlePress}
-        on:mouseup={handleRelease}
-        on:mouseleave={handleRelease}
-        on:touchstart={handlePress}
-        on:touchend={handleRelease}
-      />
-        <div class="move-container fade-transition {fadeIn ? 'fade-in-active' : ''}">
+          on:mousedown={handlePress}
+          on:mouseup={handleRelease}
+          on:mouseleave={handleRelease}
+          on:touchstart={handlePress}
+          on:touchend={handleRelease}
+        />
+        <div
+          class="move-container fade-transition {fadeIn
+            ? 'fade-in-active'
+            : ''}"
+        >
           <Icon
-            
             icon="bxl:typescript"
             class="text-3xl sm:text-4xl md:text-5xl text-[#76c3ff] absolute mt-[-19rem] ml-[1rem] sm:mt-[-23rem] sm:ml-[4rem] md:mt-[-28rem] md:ml-[2rem] move"
           />
@@ -208,35 +209,34 @@
     }
   }
 
-@keyframes press {
-  0% {
-    transform: scale(1);
+  @keyframes press {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(0.9); /* press in */
+    }
+    100% {
+      transform: scale(1); /* bounce back */
+    }
   }
-  50% {
-    transform: scale(0.9); /* press in */
-  }
-  100% {
-    transform: scale(1); /* bounce back */
-  }
-}
-.avatar-pressed {
-  transform: scale(0.9);
-  transition: transform 0.1s ease;
-}
-
-.avatar-release {
-  animation: popback 0.2s ease forwards;
-}
-
-@keyframes popback {
-  0% {
+  .avatar-pressed {
     transform: scale(0.9);
+    transition: transform 0.1s ease;
   }
-  100% {
-    transform: scale(1);
-  }
-}
 
+  .avatar-release {
+    animation: popback 0.2s ease forwards;
+  }
+
+  @keyframes popback {
+    0% {
+      transform: scale(0.9);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
 
   button {
     padding: 0.1em 0.25em;
@@ -281,7 +281,9 @@
     transition: all 1s;
   }
   .fly-in {
-    animation: fly-in 0.5s ease-out, fade-in 1s ease-in;
+    animation:
+      fly-in 0.5s ease-out,
+      fade-in 1s ease-in;
   }
 
   @keyframes fly-in {
