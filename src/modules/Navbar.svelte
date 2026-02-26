@@ -3,9 +3,9 @@
   import { onMount } from "svelte";
   import { createEventDispatcher } from "svelte";
   import { fade } from "svelte/transition";
-  import { page } from "$app/stores"; 
+  import { page } from "$app/stores";
   import CV from "../components/CV.pdf";
-  import avatar from "../images/Avatar3.png"
+  import avatar from "../images/Avatar3.png";
 
   export let menuOpen: boolean;
   const dispatch = createEventDispatcher();
@@ -13,11 +13,10 @@
   let currentPath = "";
 
   // Update currentPath when $page store changes
-  $: currentPath = $page.url.pathname.endsWith('/')
+  $: currentPath = $page.url.pathname.endsWith("/")
     ? $page.url.pathname.slice(0, -1) // Remove trailing slash
     : $page.url.pathname;
 
-    
   onMount(() => {
     const checkViewport = () => {
       isMobileView = window.innerWidth <= 768;
@@ -48,14 +47,14 @@
 
 <!-- HTML -->
 <nav class="mt-[0.5rem] sm:mt-[0.5rem] md:mt-[1rem]">
-  <div class="max-w-full mx-auto px-4 sm:px-6 lg:px-16">
+  <div class="max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-16 xl:px-24 2xl:px-32">
     <div class="flex items-center justify-between h-16 sm:h-20 lg:h-20">
       <div class="flex-shrink-0">
         <!-- Logo -->
         <a href="/">
-          <img 
+          <img
             src={avatar}
-            alt="Logo" 
+            alt="Logo"
             class="h-12 w-12 sm:h-14 sm:w-14 lg:h-16 lg:w-16 rounded-full object-cover hover:scale-110 transition-transform duration-300 ease-in-out"
           />
         </a>
@@ -85,32 +84,38 @@
       <!-- Navbar (Bigger screens) -->
       <div class="hidden md:block">
         <div class="ml-10 flex items-baseline space-x-4">
-          <a href="/projects/" 
-          class={`${
-            currentPath === "/projects" 
-            ? "border-b-4 border-blue-500 text-gray-200" 
-            : "text-gray-300 hover:text-gray-200"
-          } font-mono text-bounce transition duration-500 ease-in-out px-3 py-2 text-2xl font-semibold`}>
-         projects
-       </a>
-       
-       <a href="/about/" 
-          class={`${
-            currentPath === "/about" 
-            ? "border-b-4 border-blue-500 text-gray-200" 
-            : "text-gray-300 hover:text-gray-200"
-          } font-mono text-bounce transition duration-500 ease-in-out px-3 py-2 text-2xl font-semibold`}>
-         about
-       </a>
-       
-       <a href="/contact/" 
-          class={`${
-            currentPath === "/contact" 
-            ? "border-b-4 border-blue-500 text-gray-200" 
-            : "text-gray-300 hover:text-gray-200"
-          } font-mono text-bounce transition duration-500 ease-in-out px-3 py-2 text-2xl font-semibold`}>
-         contact
-       </a>
+          <a
+            href="/projects/"
+            class={`${
+              currentPath === "/projects"
+                ? "border-b-4 border-blue-500 text-gray-200"
+                : "text-gray-300 hover:text-gray-200"
+            } font-mono text-bounce transition duration-500 ease-in-out px-3 py-2 text-2xl font-semibold`}
+          >
+            projects
+          </a>
+
+          <a
+            href="/about/"
+            class={`${
+              currentPath === "/about"
+                ? "border-b-4 border-blue-500 text-gray-200"
+                : "text-gray-300 hover:text-gray-200"
+            } font-mono text-bounce transition duration-500 ease-in-out px-3 py-2 text-2xl font-semibold`}
+          >
+            about
+          </a>
+
+          <a
+            href="/contact/"
+            class={`${
+              currentPath === "/contact"
+                ? "border-b-4 border-blue-500 text-gray-200"
+                : "text-gray-300 hover:text-gray-200"
+            } font-mono text-bounce transition duration-500 ease-in-out px-3 py-2 text-2xl font-semibold`}
+          >
+            contact
+          </a>
         </div>
       </div>
 
@@ -122,25 +127,26 @@
           <ul>
             <li>
               <a
-                href="https://docs.google.com/document/d/1-uH3fALtNXvl1HbSjqLyRce0pkWXDjvO-Lg_kum4K_I/edit?usp=sharing" 
+                href="https://docs.google.com/document/d/1-uH3fALtNXvl1HbSjqLyRce0pkWXDjvO-Lg_kum4K_I/edit?usp=sharing"
                 class="text-white font-bold text-2xl"
-                target="_blank" rel="noopener noreferrer"
-                ><Icon icon="pepicons-pop:cv" /></a
+                target="_blank"
+                rel="noopener noreferrer"><Icon icon="pepicons-pop:cv" /></a
               >
             </li>
             <li>
               <a
                 href="https://mail.google.com/mail/?view=cm&fs=1&to=damilolaoyeniyi13@gmail.com"
                 class="text-white font-bold text-2xl"
-                target="_blank" rel="noopener noreferrer"
-                ><Icon icon="bxl:gmail" /></a
+                target="_blank"
+                rel="noopener noreferrer"><Icon icon="bxl:gmail" /></a
               >
             </li>
             <li>
               <a
                 href="https://www.linkedin.com/in/dami-oyeniyi-97805b23a/"
                 class="text-white font-bold text-[1.4rem]"
-                target="_blank" rel="noopener noreferrer"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <Icon icon="uiw:linkedin" />
               </a>
@@ -149,7 +155,6 @@
         </button>
       </div>
     </div>
-    
   </div>
 </nav>
 
@@ -172,54 +177,67 @@
       >
         <div class="block md:hidden">
           <div class="flex flex-col gap-[2rem] items-center justify-center">
-            <div class="flex flex-col gap-[2rem] items-center mt-[4rem]  justify-center">
-              <a href="/"
-              class={`${
-                currentPath === "" || currentPath === "/" 
-                ? "border-b-2 border-blue-500 text-white" 
-                : "text-gray-300 hover:text-white"
-              } block font-mono text-bounce transition duration-500 ease-in-out px-3 py-2 text-2xl font-semibold`}>
-             home
-           </a>
-              <a href="/projects/"
-              class={`${
-                currentPath === "/projects" 
-                ? "border-b-2 border-blue-500 text-white" 
-                : "text-gray-300 hover:text-white"
-              } block font-mono text-bounce transition duration-500 ease-in-out px-3 py-2 text-2xl font-semibold`}>
-             projects
-           </a>
-         
-           <a href="/about/"
-              class={`${
-                currentPath === "/about" 
-                ? "border-b-2 border-blue-500 text-white" 
-                : "text-gray-300 hover:text-white"
-              } block font-mono text-bounce transition duration-500 ease-in-out px-3 py-2 text-2xl font-semibold`}>
-             about
-           </a>
-         
-           <a href="/contact/"
-              class={`${
-                currentPath === "/contact" 
-                ? "border-b-2 border-blue-500 text-white" 
-                : "text-gray-300 hover:text-white"
-              } block font-mono text-bounce transition duration-500 ease-in-out px-3 py-2 text-2xl font-semibold`}>
-             contact
-           </a>
+            <div
+              class="flex flex-col gap-[2rem] items-center mt-[4rem] justify-center"
+            >
+              <a
+                href="/"
+                class={`${
+                  currentPath === "" || currentPath === "/"
+                    ? "border-b-2 border-blue-500 text-white"
+                    : "text-gray-300 hover:text-white"
+                } block font-mono text-bounce transition duration-500 ease-in-out px-3 py-2 text-2xl font-semibold`}
+              >
+                home
+              </a>
+              <a
+                href="/projects/"
+                class={`${
+                  currentPath === "/projects"
+                    ? "border-b-2 border-blue-500 text-white"
+                    : "text-gray-300 hover:text-white"
+                } block font-mono text-bounce transition duration-500 ease-in-out px-3 py-2 text-2xl font-semibold`}
+              >
+                projects
+              </a>
+
+              <a
+                href="/about/"
+                class={`${
+                  currentPath === "/about"
+                    ? "border-b-2 border-blue-500 text-white"
+                    : "text-gray-300 hover:text-white"
+                } block font-mono text-bounce transition duration-500 ease-in-out px-3 py-2 text-2xl font-semibold`}
+              >
+                about
+              </a>
+
+              <a
+                href="/contact/"
+                class={`${
+                  currentPath === "/contact"
+                    ? "border-b-2 border-blue-500 text-white"
+                    : "text-gray-300 hover:text-white"
+                } block font-mono text-bounce transition duration-500 ease-in-out px-3 py-2 text-2xl font-semibold`}
+              >
+                contact
+              </a>
             </div>
             <div />
           </div>
 
-            <div class="absolute bottom-4 w-full flex justify-center">
-            <h1 class="text-[white] block font-mono text-bounce px-3 py-2 text-2xl font-semibold">dami oyeniyi</h1>
-            </div>
+          <div class="absolute bottom-4 w-full flex justify-center">
+            <h1
+              class="text-[white] block font-mono text-bounce px-3 py-2 text-2xl font-semibold"
+            >
+              dami oyeniyi
+            </h1>
+          </div>
         </div>
       </div>
     </div>
   {/if}
 {/if}
-
 
 <!-- CSS -->
 <style>
@@ -336,5 +354,4 @@
   .btn-cssbuttons:hover ul li:nth-child(3) a {
     transition-delay: 0.25s;
   }
-  
 </style>

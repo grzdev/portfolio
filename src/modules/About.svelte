@@ -24,7 +24,7 @@
 </script>
 
 <div
-  class="flex justify-center items-center flex-col sm:flex-col md:flex-row mt-[1rem] md:mt-[2rem] md:mb-[2rem] gap-[8rem] sm:gap-[8rem] md:gap-[12rem]"
+  class="flex justify-center items-center flex-col sm:flex-col md:flex-row mt-[1rem] md:mt-[1rem] md:mb-[2rem] gap-[8rem] sm:gap-[8rem] md:gap-[6rem]"
 >
   <div class="flex justify-center items-center flex-col fade-transition">
     <img
@@ -47,9 +47,11 @@
     </h1>
     <div class="mt-[1rem] md:mt-[1.5rem]">
       <a
-        href="https://docs.google.com/document/d/1-uH3fALtNXvl1HbSjqLyRce0pkWXDjvO-Lg_kum4K_I/edit?usp=sharing" target="_blank" rel="noopener noreferrer"
+        href="https://docs.google.com/document/d/1-uH3fALtNXvl1HbSjqLyRce0pkWXDjvO-Lg_kum4K_I/edit?usp=sharing"
+        target="_blank"
+        rel="noopener noreferrer"
       >
-        <button class="mt-[0.9rem] md:mt-[0.5rem] ">
+        <button class="mt-[0.9rem] md:mt-[0.5rem]">
           <span class="flex justify-center items-center gap-[0.5rem]">
             cv <Icon icon="memory:arrow-right" /></span
           >
@@ -62,23 +64,39 @@
     class="flip-container move-container mt-[-5rem] sm:mt-[-4rem] md:mt-[1rem] mb-[3rem] md:mb-[0]"
     transition:fly={{ y: "100%", duration: 1000 }}
   >
-    <div class="flip-card {flippedCardId === 1 ? 'flipped' : ''}" on:click={() => toggleFlip(1)} on:keydown={(e) => handleKeyDown(e, 1)} role="button" tabindex="0" >
+    <div
+      class="flip-card {flippedCardId === 1 ? 'flipped' : ''}"
+      on:click={() => toggleFlip(1)}
+      on:keydown={(e) => handleKeyDown(e, 1)}
+      role="button"
+      tabindex="0"
+    >
       <div class="flip-front justify-center items-center flex flex-col">
         <h1
-          class="text-gray-200 text-sm sm:text-lg md:text-lg mt-[-2rem] sm:mt-[-1rem] md:mt-[-2.2rem] font-mono font-bold text-center w-[17rem] sm:w-[30rem] md:w-[30rem]"
+          class="text-gray-200 text-sm sm:text-lg md:text-lg mt-[-2rem] sm:mt-[-1rem] md:mt-[-2.2rem] font-mono font-bold text-center w-[18rem] sm:w-[30rem] md:w-[35rem]"
         >
-          I build interactive sites and apps, with an expertise in frontend development.
+          I build modern web products in an AI-accelerated world.
         </h1>
         <p
-          class="text-gray-200 text-sm sm:text-lg md:text-lg mt-[1rem] md:mt-[1.2rem] font-mono font-bold text-center w-[17rem] sm:w-[30rem] md:w-[30rem]"
+          class="text-gray-200 text-sm sm:text-lg md:text-lg mt-[1rem] md:mt-[1.2rem] font-mono font-bold text-center w-[18rem] sm:w-[30rem] md:w-[35rem]"
         >
-          I’m self-taught and have spent the past 4 years honing my craft, bringing ideas to life with clean and engaging interfaces.
-          Along the way, I’ve explored UI design with Figma, 3D modeling in Blender, and mobile development with React Native.
+          I’m a software engineer specialising in scalable web applications with
+          React and TypeScript, focused on seemless and beautiful designs.
         </p>
         <p
-          class="text-gray-200 text-sm sm:text-lg md:text-lg mt-[1rem] md:mt-[1.2rem] font-mono font-bold text-center w-[17rem] sm:w-[30rem] md:w-[30rem]"
+          class="text-gray-200 text-sm sm:text-lg md:text-lg mt-[1rem] md:mt-[1.2rem] font-mono font-bold text-center w-[18rem] sm:w-[30rem] md:w-[35rem]"
         >
-          What drives me is my fixation on making design that is both seamless and beautiful.
+          I work in an AI-assisted workflow, using tools like GitHub Copilot and
+          ChatGPT to prototype fast without compromising engineering standards.
+          Speed matters, so does precision.
+        </p>
+        <p
+          class="text-gray-200 text-sm sm:text-lg md:text-lg mt-[1rem] md:mt-[1.2rem] font-mono font-bold text-center w-[18rem] sm:w-[30rem] md:w-[35rem]"
+        >
+          My experience spans healthcare, automotive, fintech, AI-driven
+          products, and interactive 3D web experiences, working with both grown
+          product teams and independent clients<span class="underline">...</span
+          >
         </p>
       </div>
 
@@ -86,84 +104,111 @@
         class="flip-back justify-center items-center flex flex-col gap-[2rem]"
       >
         <h1
-          class="text-gray-200 text-xl sm:text-3xl md:text-2xl font-mono font-bold mt-[-2rem] sm:mt-[] md:mt-[0.2rem]"
+          class="text-gray-200 text-xl sm:text-3xl md:text-2xl font-mono font-bold mt-[-2rem] sm:mt-[] md:mt-[-2rem]"
         >
           stack
         </h1>
-        <div class="grid grid-cols-3 gap-[1rem] md:gap-[2.5rem] gap-y-[2rem] md:sm:gap-y-[0]">
-          <div class="flex flex-col justify-center items-center gap-[0.5rem] md:gap-[0.6rem]">
-            <Icon
-              icon="skill-icons:javascript"
-              class="text-4xl md:text-4xl"
-            />
-            <h1 class=" text-[0.8rem] md:text-[1.2rem] text-gray-300 font-semibold font-mono">javascript</h1>
+        <div
+          class="grid grid-cols-3 gap-[1rem] md:gap-[2.5rem] gap-y-[2rem] md:sm:gap-y-[0]"
+        >
+          <div
+            class="flex flex-col justify-center items-center gap-[0.5rem] md:gap-[0.6rem]"
+          >
+            <Icon icon="skill-icons:javascript" class="text-4xl md:text-4xl" />
+            <h1
+              class=" text-[0.8rem] md:text-[1.2rem] text-gray-300 font-semibold font-mono"
+            >
+              javascript
+            </h1>
           </div>
 
-          <div class="flex flex-col justify-center items-center gap-[0.5rem] md:gap-[0.6rem]">
-            <Icon
-              icon="skill-icons:typescript"
-              class="text-4xl md:text-4xl"
-            />
-            <h1 class=" text-[0.8rem] md:text-[1.2rem] text-gray-300 font-semibold font-mono">typescript</h1>
+          <div
+            class="flex flex-col justify-center items-center gap-[0.5rem] md:gap-[0.6rem]"
+          >
+            <Icon icon="skill-icons:typescript" class="text-4xl md:text-4xl" />
+            <h1
+              class=" text-[0.8rem] md:text-[1.2rem] text-gray-300 font-semibold font-mono"
+            >
+              typescript
+            </h1>
           </div>
 
-          <div class="flex flex-col justify-center items-center gap-[0.5rem] md:gap-[0.6rem]">
-            <Icon
-              icon="devicon:react"
-              class="text-4xl md:text-4xl"
-            />
-            <h1 class=" text-[0.8rem] md:text-[1.2rem] text-gray-300 font-semibold font-mono">react</h1>
+          <div
+            class="flex flex-col justify-center items-center gap-[0.5rem] md:gap-[0.6rem]"
+          >
+            <Icon icon="devicon:react" class="text-4xl md:text-4xl" />
+            <h1
+              class=" text-[0.8rem] md:text-[1.2rem] text-gray-300 font-semibold font-mono"
+            >
+              react
+            </h1>
           </div>
 
-          <div class="flex flex-col justify-center items-center gap-[0.5rem] md:gap-[0.6rem]">
-            <Icon
-              icon="devicon:tailwindcss"
-              class="text-4xl md:text-4xl"
-            />
-            <h1 class=" text-[0.8rem] md:text-[1.2rem] text-gray-300 font-semibold font-mono">tailwind</h1>
-          </div>  
-
-          <div class="flex flex-col justify-center items-center gap-[0.5rem] md:gap-[0.6rem]">
-            <Icon
-              icon="devicon:chakraui" 
-              class="text-4xl md:text-4xl"
-            />
-            <h1 class=" text-[0.8rem] md:text-[1.2rem] text-gray-300 font-semibold font-mono">chakra ui</h1>
-          </div>  
-
-          <div class="flex flex-col justify-center items-center gap-[0.5rem] md:gap-[0.6rem]">
-            <Icon
-              icon="logos:figma"
-              class="text-4xl md:text-4xl"
-            />
-            <h1 class=" text-[0.8rem] md:text-[1.2rem] text-gray-300 font-semibold font-mono">figma</h1>
-          </div>  
-
-          <div class="flex flex-col justify-center items-center gap-[0.5rem] md:gap-[0.6rem]">
-            <Icon
-              icon="devicon:svelte"
-              class="text-4xl md:text-4xl"
-            />
-            <h1 class=" text-[0.8rem] md:text-[1.2rem] text-gray-300 font-semibold font-mono">svelte</h1>
-          </div>
-           
-          <div class="flex flex-col justify-center items-center gap-[0.5rem] md:gap-[0.6rem]">
-            <Icon
-              icon="logos:nextjs-icon"
-              class="text-4xl md:text-4xl"
-            />
-            <h1 class=" text-[0.8rem] md:text-[1.2rem] text-gray-300 font-semibold font-mono">next js</h1>
+          <div
+            class="flex flex-col justify-center items-center gap-[0.5rem] md:gap-[0.6rem]"
+          >
+            <Icon icon="devicon:tailwindcss" class="text-4xl md:text-4xl" />
+            <h1
+              class=" text-[0.8rem] md:text-[1.2rem] text-gray-300 font-semibold font-mono"
+            >
+              tailwind
+            </h1>
           </div>
 
-          <div class="flex flex-col justify-center items-center gap-[0.5rem] md:gap-[0.6rem]">
-            <Icon
-              icon="logos:blender"
-              class="text-4xl md:text-4xl"
-            />
-            <h1 class=" text-[0.8rem] md:text-[1.2rem] text-gray-300 font-semibold font-mono">blender</h1>
+          <div
+            class="flex flex-col justify-center items-center gap-[0.5rem] md:gap-[0.6rem]"
+          >
+            <Icon icon="devicon:chakraui" class="text-4xl md:text-4xl" />
+            <h1
+              class=" text-[0.8rem] md:text-[1.2rem] text-gray-300 font-semibold font-mono"
+            >
+              chakra ui
+            </h1>
           </div>
 
-        
+          <div
+            class="flex flex-col justify-center items-center gap-[0.5rem] md:gap-[0.6rem]"
+          >
+            <Icon icon="logos:figma" class="text-4xl md:text-4xl" />
+            <h1
+              class=" text-[0.8rem] md:text-[1.2rem] text-gray-300 font-semibold font-mono"
+            >
+              figma
+            </h1>
+          </div>
+
+          <div
+            class="flex flex-col justify-center items-center gap-[0.5rem] md:gap-[0.6rem]"
+          >
+            <Icon icon="devicon:svelte" class="text-4xl md:text-4xl" />
+            <h1
+              class=" text-[0.8rem] md:text-[1.2rem] text-gray-300 font-semibold font-mono"
+            >
+              svelte
+            </h1>
+          </div>
+
+          <div
+            class="flex flex-col justify-center items-center gap-[0.5rem] md:gap-[0.6rem]"
+          >
+            <Icon icon="logos:nextjs-icon" class="text-4xl md:text-4xl" />
+            <h1
+              class=" text-[0.8rem] md:text-[1.2rem] text-gray-300 font-semibold font-mono"
+            >
+              next js
+            </h1>
+          </div>
+
+          <div
+            class="flex flex-col justify-center items-center gap-[0.5rem] md:gap-[0.6rem]"
+          >
+            <Icon icon="logos:blender" class="text-4xl md:text-4xl" />
+            <h1
+              class=" text-[0.8rem] md:text-[1.2rem] text-gray-300 font-semibold font-mono"
+            >
+              blender
+            </h1>
+          </div>
         </div>
       </div>
     </div>
@@ -173,8 +218,8 @@
 <style>
   .flip-card {
     position: relative;
-    width: 33rem;
-    height: 28rem;
+    width: 38rem;
+    height: 32rem;
     transition: transform 0.5s;
     transform-style: preserve-3d;
   }
@@ -186,7 +231,7 @@
   @media (max-width: 640px) {
     .flip-card {
       width: 20rem;
-      height: 28rem;
+      height: 34rem;
     }
   }
 
@@ -227,8 +272,7 @@
 
   button {
     padding: 0.1em 0.25em;
-    width:
- 11.7em;
+    width: 11.7em;
     height: 5em;
     background-color: #212121;
     border: 0.08em solid #fff;
