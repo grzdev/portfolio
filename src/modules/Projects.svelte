@@ -218,38 +218,48 @@
             />
           </div>
           <div
-            class="flex flex-row justify-center items-center mt-[1rem] gap-[1.5rem]"
+            class="flex flex-col justify-center items-center mt-[1rem] gap-[0.2rem] md:gap-[0.4rem]"
           >
-            <a
-              href="https://x.com/Zai_org/status/1960326809515696535?s=20"
-              target="_blank"
-              rel="noopener noreferrer"
+            <h1
+              class="text-[1.2rem] md:text-[1.6rem] sm:text-xl md:text-xl text-gray-300 font-semibold font-mono"
             >
-              <div class="trophy-glow cursor-pointer">
-                <Icon icon="noto:trophy" class="text-[2rem] md:text-[2.5rem]" />
-              </div>
-            </a>
-            <a
-              href="https://x.com/3sentry5/status/1958661282158231640?s=20"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <div
-                class="text-gray-300 flex flex-row flex justify-center items-center gap-[0.4rem] font-semibold"
+              skillsheet
+            </h1>
+            <div class="flex flex-row justify-center items-center gap-[1.5rem]">
+              <a
+                href="https://x.com/Zai_org/status/1960326809515696535?s=20"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                <h1>
+                <div class="trophy-glow cursor-pointer">
                   <Icon
-                    icon="memory:eye-fill"
-                    class="text-[1.3rem] md:text-[1.5rem]"
+                    icon="noto:trophy"
+                    class="text-[2rem] md:text-[2.5rem]"
                   />
-                </h1>
-                <h1
-                  class="underline underline-offset-2 text-[1rem] md:text-[1.2rem] text-gray-300 font-semibold font-mono"
+                </div>
+              </a>
+              <a
+                href="https://x.com/3sentry5/status/1958661282158231640?s=20"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div
+                  class="text-gray-300 flex flex-row flex justify-center items-center gap-[0.4rem] font-semibold"
                 >
-                  tweet
-                </h1>
-              </div>
-            </a>
+                  <h1>
+                    <Icon
+                      icon="memory:eye-fill"
+                      class="text-[1.3rem] md:text-[1.5rem]"
+                    />
+                  </h1>
+                  <h1
+                    class="underline underline-offset-2 text-[1rem] md:text-[1.2rem] text-gray-300 font-semibold font-mono"
+                  >
+                    tweet
+                  </h1>
+                </div>
+              </a>
+            </div>
           </div>
         </div>
 
@@ -265,38 +275,48 @@
             />
           </div>
           <div
-            class="flex flex-row justify-center items-center mt-[1rem] gap-[1.5rem]"
+            class="flex flex-col justify-center items-center mt-[1rem] gap-[0.2rem] md:gap-[0.4rem]"
           >
-            <a
-              href="https://x.com/CreaoAI/status/2018740778680701096?s=20"
-              target="_blank"
-              rel="noopener noreferrer"
+            <h1
+              class="text-[1.2rem] md:text-[1.6rem] sm:text-xl md:text-xl text-gray-300 font-semibold font-mono"
             >
-              <div class="trophy-glow cursor-pointer">
-                <Icon icon="noto:trophy" class="text-[2rem] md:text-[2.5rem]" />
-              </div>
-            </a>
-            <a
-              href="https://x.com/3sentry5/status/2015753989027967461?s=20"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <div
-                class="text-gray-300 flex flex-row flex justify-center items-center gap-[0.4rem] font-semibold"
+              hexagrab
+            </h1>
+            <div class="flex flex-row justify-center items-center gap-[1.5rem]">
+              <a
+                href="https://x.com/CreaoAI/status/2018740778680701096?s=20"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                <h1>
+                <div class="trophy-glow cursor-pointer">
                   <Icon
-                    icon="memory:eye-fill"
-                    class="text-[1.3rem] md:text-[1.5rem]"
+                    icon="noto:trophy"
+                    class="text-[2rem] md:text-[2.5rem]"
                   />
-                </h1>
-                <h1
-                  class="underline underline-offset-2 text-[1rem] md:text-[1.2rem] text-gray-300 font-semibold font-mono"
+                </div>
+              </a>
+              <a
+                href="https://x.com/3sentry5/status/2015753989027967461?s=20"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div
+                  class="text-gray-300 flex flex-row flex justify-center items-center gap-[0.4rem] font-semibold"
                 >
-                  tweet
-                </h1>
-              </div>
-            </a>
+                  <h1>
+                    <Icon
+                      icon="memory:eye-fill"
+                      class="text-[1.3rem] md:text-[1.5rem]"
+                    />
+                  </h1>
+                  <h1
+                    class="underline underline-offset-2 text-[1rem] md:text-[1.2rem] text-gray-300 font-semibold font-mono"
+                  >
+                    tweet
+                  </h1>
+                </div>
+              </a>
+            </div>
           </div>
         </div>
 
@@ -312,29 +332,36 @@
             />
           </div>
           <div
-            class="flex flex-row justify-center items-center mt-[1rem] gap-[1.5rem]"
+            class="flex flex-col justify-center items-center mt-[1rem] gap-[0.2rem] md:gap-[0.4rem]"
           >
-            <a
-              href="https://x.com/3sentry5/status/1998226674048283003?s=20"
-              target="_blank"
-              rel="noopener noreferrer"
+            <h1
+              class="text-[1.2rem] md:text-[1.6rem] sm:text-xl md:text-xl text-gray-300 font-semibold font-mono"
             >
-              <div
-                class="text-gray-300 flex flex-row flex justify-center items-center gap-[0.4rem] font-semibold"
+              webgrabber
+            </h1>
+            <div class="flex flex-row justify-center items-center gap-[1.5rem]">
+              <a
+                href="https://x.com/3sentry5/status/1998226674048283003?s=20"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                <h1>
-                  <Icon
-                    icon="memory:eye-fill"
-                    class="text-[1.3rem] md:text-[1.5rem]"
-                  />
-                </h1>
-                <h1
-                  class="underline underline-offset-2 text-[1rem] md:text-[1.2rem] text-gray-300 font-semibold font-mono"
+                <div
+                  class="text-gray-300 flex flex-row flex justify-center items-center gap-[0.4rem] font-semibold"
                 >
-                  tweet
-                </h1>
-              </div>
-            </a>
+                  <h1>
+                    <Icon
+                      icon="memory:eye-fill"
+                      class="text-[1.3rem] md:text-[1.5rem]"
+                    />
+                  </h1>
+                  <h1
+                    class="underline underline-offset-2 text-[1rem] md:text-[1.2rem] text-gray-300 font-semibold font-mono"
+                  >
+                    tweet
+                  </h1>
+                </div>
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -421,7 +448,7 @@
       flex: 1 1 0%;
       min-width: 0;
       max-width: 22rem;
-      height: 20rem;
+      height: 22rem;
     }
   }
 
@@ -432,7 +459,8 @@
 
   @media (min-width: 768px) {
     .hackathon-card {
-      height: 19rem;
+      max-width: 25rem;
+      height: 22rem;
       padding-top: 1.2rem;
     }
   }

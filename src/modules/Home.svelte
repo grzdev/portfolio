@@ -122,7 +122,7 @@
         >
           a <span
             class="text-[#76c3ff] cursor-pointer font-mono hover:text-[#31a4fe] transition duration-500 ease-in-out"
-            >software engineer</span
+            >frontend engineer</span
           >
         </h1>
       {/if}
