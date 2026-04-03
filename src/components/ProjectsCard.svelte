@@ -4,9 +4,11 @@
   export let projects: Project[] = [];
 
   let flippedCardId: number | null = null;
+  let hasFlipped = false;
 
   const toggleFlip = (id: number) => {
     flippedCardId = flippedCardId === id ? null : id;
+    hasFlipped = true;
   };
 </script>
 
@@ -20,6 +22,11 @@
     tabindex="0"
     aria-label="Project card flip"
   >
+    {#if project.id === 1 && !hasFlipped}
+      <div class="tap-hint">
+        <Icon icon="fluent:tap-single-48-filled" class="text-[2rem] text-white drop-shadow-lg" />
+      </div>
+    {/if}
     <div class="flip-card" class:flipped={flippedCardId === project.id}>
       <!-- front -->
       <div class="flip-front flex flex-col items-center pt-[0.8rem]">
@@ -27,6 +34,7 @@
           <img
             src={project.image}
             alt={project.name}
+            loading="lazy"
             class="w-[15rem] md:w-[17rem] h-[10rem] object-cover rounded-[1rem]"
           />
         {/if}
@@ -95,6 +103,10 @@
 {/each}
 
 <style>
+  .flip-container {
+    position: relative;
+  }
+
   .flip-card {
     position: relative;
     width: 18rem;
@@ -127,6 +139,21 @@
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 1rem 0 1rem 0;
+  }
+
+  .tap-hint {
+    position: absolute;
+    bottom: -1rem;
+    right: -0.8rem;
+    z-index: 10;
+    animation: tap-pulse 2s ease-in-out infinite;
+    pointer-events: none;
+    user-select: none;
+  }
+
+  @keyframes tap-pulse {
+    0%, 100% { transform: scale(1); opacity: 0.8; }
+    50% { transform: scale(1.3); opacity: 1; }
   }
 
   .flip-back {

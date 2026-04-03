@@ -9,4 +9,6 @@ declare global {
 	}
 }
 
+/// <reference types="vite-imagetools/client" />
+
 export {};

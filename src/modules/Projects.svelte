@@ -65,6 +65,7 @@
             <img
               src={room14}
               alt=""
+              loading="lazy"
               class="w-[14.5rem] md:w-[17.5rem] rounded-[1rem] mt-[-3rem]"
             />
             <Icon
@@ -132,6 +133,7 @@
             <img
               src={Donut}
               alt=""
+              loading="lazy"
               class="w-[14rem] md:w-[16rem] rounded-[1rem] mt-[-3rem]"
             />
             <Icon
@@ -218,6 +220,7 @@
             <img
               src={hackathon1}
               alt="Hackathon 1"
+              loading="lazy"
               class="w-[14.5rem] md:w-[17.5rem] rounded-[1rem] mt-[-3rem]"
             />
           </div>
@@ -275,6 +278,7 @@
             <img
               src={hackathon2}
               alt="Webgrabber"
+              loading="lazy"
               class="w-[14.5rem] md:w-[17.5rem] rounded-[1rem] mt-[-3rem]"
             />
           </div>
@@ -332,6 +336,7 @@
             <img
               src={leapility}
               alt="Leapility"
+              loading="lazy"
               class="w-[14.5rem] md:w-[17.5rem] h-[9rem] object-cover object-top rounded-[1rem] mt-[-3rem]"
             />
           </div>
