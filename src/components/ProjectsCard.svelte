@@ -21,50 +21,71 @@
     aria-label="Project card flip"
   >
     <div class="flip-card" class:flipped={flippedCardId === project.id}>
-      <div class="flip-front justify-center items-center flex flex-col">
-        <h1
-          class="text-gray-200 text-2xl sm:text-3xl md:text-3xl font-mono font-bold"
-        >
-          {project.name}
-        </h1>
-        <p
-          class="text-gray-200 text-sm sm:text-xl md:text-xl font-mono font-bold mt-[1rem] w-[14rem] sm:w-[16rem] md:w-[16rem] text-center"
-        >
-          {project.desc}
-        </p>
-        <p
-          class="text-gray-200 text-[0.7rem] sm:text-[0.9rem] md:text-[1rem] font-mono font-bold mt-[2.5rem] w-[14rem] text-center underline underline-offset-2"
-        >
-          {project.type}
-        </p>
+      <!-- front -->
+      <div class="flip-front flex flex-col items-center pt-[0.8rem]">
+        {#if project.image}
+          <img
+            src={project.image}
+            alt={project.name}
+            class="w-[15rem] md:w-[17rem] h-[10rem] object-cover rounded-[1rem]"
+          />
+        {/if}
+        <div class="flex flex-col items-center mt-[0.7rem] gap-[0.25rem]">
+          <h1
+            class="text-gray-200 text-[1.2rem] md:text-[1.5rem] font-mono font-bold"
+          >
+            {project.name}
+          </h1>
+          <p
+            class="text-gray-200 text-[0.7rem] md:text-[0.9rem] font-mono font-bold underline underline-offset-2"
+          >
+            {project.type}
+          </p>
+        </div>
       </div>
+      <!-- back -->
       <div
         class="flip-back justify-center items-center flex flex-col gap-[2rem]"
       >
-        <div
-          class="text-gray-300 flex flex-row flex-wrap justify-center gap-[0.8rem] md:gap-[0.5rem] text-[0.8rem] sm:text-xl md:text-xl font-semibold font-mono"
+        <p
+          class="text-gray-300 text-[0.8rem] sm:text-[0.9rem] md:text-[1.1rem] font-semibold font-mono text-center"
         >
-          <h1>{project.tools.first}</h1>
-          <h1>{project.tools.second}</h1>
-          <h1>{project.tools.third}</h1>
+          {project.desc}
+        </p>
+        <div
+          class="text-gray-300 flex flex-row flex-wrap justify-center gap-[0.8rem] md:gap-[0.5rem] text-[0.8rem] sm:text-[0.9rem] md:text-[1.1rem] font-semibold font-mono"
+        >
+          {#if project.tools.first}<h1>{project.tools.first}</h1>{/if}
+          {#if project.tools.second}<h1>{project.tools.second}</h1>{/if}
+          {#if project.tools.third}<h1>{project.tools.third}</h1>{/if}
         </div>
         <div
-          class="flex flex-row gap-[1.9rem] text-[0.9rem] sm:text-xl md:text-xl font-semibold font-mono"
+          class="flex flex-row gap-[1.9rem] text-[0.9rem] sm:text-[1rem] md:text-[1.1rem] font-semibold font-mono"
         >
-          <a href={project.link} target="_blank" rel="noopener noreferrer">
+          <a
+            href={project.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            on:click|stopPropagation
+          >
             <div
               class="flex flex-row justify-center items-center gap-[0.4rem] font-semibold text-gray-300"
             >
-              <h1><Icon icon="octicon:link-16" /></h1>
-              <h1 class="underline underline-offset-2">link</h1>
+              <Icon icon="octicon:link-16" />
+              <span class="underline underline-offset-2">link</span>
             </div>
           </a>
-          <a href={project.repo} target="_blank" rel="noopener noreferrer">
+          <a
+            href={project.repo}
+            target="_blank"
+            rel="noopener noreferrer"
+            on:click|stopPropagation
+          >
             <div
               class="text-gray-300 flex flex-row justify-center items-center gap-[0.2rem] font-semibold"
             >
-              <h1><Icon icon="octicon:repo-forked-16" /></h1>
-              <h1 class="underline underline-offset-2">repo</h1>
+              <Icon icon="octicon:repo-forked-16" />
+              <span class="underline underline-offset-2">repo</span>
             </div>
           </a>
         </div>
@@ -77,7 +98,7 @@
   .flip-card {
     position: relative;
     width: 18rem;
-    height: 12rem;
+    height: 18rem;
     transition: transform 0.5s;
     transform-style: preserve-3d;
   }
@@ -89,7 +110,7 @@
   @media (min-width: 768px) {
     .flip-card {
       width: 100%;
-      height: 13rem;
+      height: 19rem;
     }
   }
 

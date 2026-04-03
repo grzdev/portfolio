@@ -2,9 +2,22 @@
     "personal":[
         {
             "id": 1,
+            "name": "pixel grab",
+            "desc": "a color extractor",
+            "type": "tool",
+            "tools": {
+                "first": "google's antigravity",
+                "second": "",
+                "third": ""
+            },
+            "link": "https://piixelgrab.netlify.app/",
+            "repo": "https://github.com/grzdev/pixel-grab"
+        },
+        {
+            "id": 2,
             "name": "yezir hasan",
             "desc": "yezir hasan's portfolio",
-            "type": "website",
+            "type": "portfolio",
             "tools": {
                 "first": "svelte",
                 "second": "javascript",
@@ -14,30 +27,17 @@
             "repo": "https://github.com/grzdev/yezirhasan.git"
         },
         {
-            "id": 2,
-            "name": "pennywise",
-            "desc": "a daily expense tracker",
-            "type": "website/webapp",
-            "tools": {
-                "first": "next.js",
-                "second": "typescript",
-                "third": "firebase"
-            },
-            "link": "https://pennywiise.netlify.app/",
-            "repo": "https://github.com/grzdev/pennywise"
-        },
-        {
             "id": 3,
-            "name": "hatstore",
-            "desc": "an app that sells caps",
-            "type": "mobile-app",
+            "name": "testsource",
+            "desc": "an open source repo analyzer",
+            "type": "tool",
             "tools": {
-                "first": "react-native",
-                "second": "mongo-db",
-                "third": "node.js"
+                "first": "copilot",
+                "second": "antigravity",
+                "third": "railway"
             },
-            "link": "https://drive.google.com/drive/folders/1gvxBYwzbbtuv5pby8dEI1DCS7nfWmbf0?usp=sharing",
-            "repo": "https://github.com/grzdev/hatstore"
+            "link": "https://testsource.netlify.app/",
+            "repo": "https://github.com/grzdev/testsource"
         }
     ]
 }

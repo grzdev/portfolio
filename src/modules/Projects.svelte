@@ -3,9 +3,12 @@
   import ProjectsCard from "../components/ProjectsCard.svelte";
   import type { Project, Project2 } from "../components/projectsInterface";
   import personalProjects from "../components/personalProjects.json";
-  export let projects: Project[] = personalProjects.personal;
+  import pixelgrab from "../images/pixelgrab.png";
+  import yezirPortfolio from "../images/yezir-portfolio.png";
+  import testsource from "../images/testsource.png";
+  const projectImageMap: Record<number, string> = { 1: pixelgrab, 2: yezirPortfolio, 3: testsource };
+  export let projects: Project[] = personalProjects.personal.map((p) => ({ ...p, image: projectImageMap[p.id] }));
   import Donut from "../images/content.jpg";
-  import Pennywise from "../images/pennywise4.png";
   import yezir from "../images/yezir3.png";
   import room14 from "../images/4krender.png";
   import { onMount } from "svelte";
@@ -14,6 +17,7 @@
   import hackathon1 from "../images/hackathon1.jpg";
   import hackathon2 from "../images/hackthon2.jpg";
   import hackathon4 from "../images/hackathon4.jpg";
+  import leapility from "../images/leapility.jpg";
 
   let showDiv = false;
 
@@ -31,7 +35,7 @@
       class="text-gray-300 font-mono hover:text-white transition duration-500 ease-in-out text-xl sm:text-3xl md:text-3xl font-mono font-bold"
       in:fade
     >
-      some personal work
+      some featured work
     </h1>
     <div
       class="flex flex-row mt-[0.3rem] gap-[1.3rem] sm:gap-[2rem] md:gap-[2rem] overflow-x-auto md:overflow-x-visible custom-scrollbar"
@@ -197,7 +201,7 @@
       class="text-gray-300 font-mono hover:text-white transition duration-500 ease-in-out text-xl sm:text-3xl md:text-3xl font-mono font-bold"
       in:fade
     >
-      some hackathon projects
+      some hackathon wins
     </h1>
     <div
       class="flex flex-row mt-[0.3rem] gap-[1.3rem] sm:gap-[2rem] md:gap-[2rem] overflow-x-auto md:overflow-x-visible custom-scrollbar"
@@ -239,7 +243,7 @@
                 </div>
               </a>
               <a
-                href="https://x.com/3sentry5/status/1958661282158231640?s=20"
+                href="https://x.com/Zai_org/status/1960326809515696535?s=20"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -263,14 +267,14 @@
           </div>
         </div>
 
-        <!-- hackathon card 2 (was card 3) -->
+        <!-- hackathon card 2 - webgrabber -->
         <div
           class="flip-card hackathon-card justify-center items-center flex flex-col"
         >
           <div class="relative">
             <img
-              src={hackathon4}
-              alt="Hackathon 4"
+              src={hackathon2}
+              alt="Webgrabber"
               class="w-[14.5rem] md:w-[17.5rem] rounded-[1rem] mt-[-3rem]"
             />
           </div>
@@ -280,7 +284,7 @@
             <h1
               class="text-[1.2rem] md:text-[1.6rem] sm:text-xl md:text-xl text-gray-300 font-semibold font-mono"
             >
-              hexagrab
+              webgrabber
             </h1>
             <div class="flex flex-row justify-center items-center gap-[1.5rem]">
               <a
@@ -296,7 +300,7 @@
                 </div>
               </a>
               <a
-                href="https://x.com/3sentry5/status/2015753989027967461?s=20"
+                href="https://x.com/CreaoAI/status/2018740778680701096?s=20"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -320,15 +324,15 @@
           </div>
         </div>
 
-        <!-- hackathon card 3 (was card 2, no trophy) -->
+        <!-- hackathon card 3 - leapility -->
         <div
           class="flip-card hackathon-card justify-center items-center flex flex-col"
         >
           <div class="relative">
             <img
-              src={hackathon2}
-              alt="Hackathon 2"
-              class="w-[14.5rem] md:w-[17.5rem] rounded-[1rem] mt-[-3rem]"
+              src={leapility}
+              alt="Leapility"
+              class="w-[14.5rem] md:w-[17.5rem] h-[9rem] object-cover object-top rounded-[1rem] mt-[-3rem]"
             />
           </div>
           <div
@@ -337,11 +341,23 @@
             <h1
               class="text-[1.2rem] md:text-[1.6rem] sm:text-xl md:text-xl text-gray-300 font-semibold font-mono"
             >
-              webgrabber
+              learn from anything
             </h1>
             <div class="flex flex-row justify-center items-center gap-[1.5rem]">
               <a
-                href="https://x.com/3sentry5/status/1998226674048283003?s=20"
+                href="https://x.com/leapility/status/2039670636805607633?s=20"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div class="trophy-glow cursor-pointer">
+                  <Icon
+                    icon="noto:trophy"
+                    class="text-[2rem] md:text-[2.5rem]"
+                  />
+                </div>
+              </a>
+              <a
+                href="https://x.com/leapility/status/2039670636805607633?s=20"
                 target="_blank"
                 rel="noopener noreferrer"
               >

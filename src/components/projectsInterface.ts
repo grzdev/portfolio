@@ -10,6 +10,7 @@ export interface Project {
     };
     link: string;
     repo: string;
+    image?: string;
   }
   export interface Project2 {
     id: number;
