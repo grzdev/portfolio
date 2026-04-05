@@ -35,7 +35,7 @@
             src={project.image}
             alt={project.name}
             loading="lazy"
-            class="w-[15rem] md:w-[17rem] h-[10rem] object-cover rounded-[1rem]"
+            class="w-[15rem] md:w-[17rem] h-[10rem] object-cover rounded-[1rem] mt-[1.2rem]"
           />
         {/if}
         <div class="flex flex-col items-center mt-[0.7rem] gap-[0.25rem]">
