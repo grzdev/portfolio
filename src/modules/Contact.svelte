@@ -31,21 +31,21 @@
         >
           <div class="flex flex-col gap-[0.4rem] justify-center items-center">
             <a
-              href="https://discord.com/users/752124227720577094"
+              href="https://github.com/grzdev"
               target="_blank"
               rel="noopener noreferrer"
             >
               <button class="">
                 <span>
-                  <!-- discord  -->
-                  <Icon icon="simple-icons:discord" />
+                  <!-- github  -->
+                  <Icon icon="teenyicons:github-solid" />
                 </span>
               </button>
             </a>
             <h1
               class="text-gray-200 text-sm sm:text-lg md:text-lg font-mono font-bold"
             >
-              discord
+              github
             </h1>
           </div>
 
@@ -71,21 +71,21 @@
 
           <div class="flex flex-col gap-[0.4rem] justify-center items-center">
             <a
-              href="https://github.com/grzdev"
+              href="https://discord.com/users/752124227720577094"
               target="_blank"
               rel="noopener noreferrer"
             >
               <button class="">
                 <span>
-                  <!-- github  -->
-                  <Icon icon="teenyicons:github-solid" />
+                  <!-- discord  -->
+                  <Icon icon="simple-icons:discord" />
                 </span>
               </button>
             </a>
             <h1
               class="text-gray-200 text-sm sm:text-lg md:text-lg font-mono font-bold"
             >
-              github
+              discord
             </h1>
           </div>
 

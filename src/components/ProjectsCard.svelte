@@ -15,7 +15,7 @@
 <!-- personal projects -->
 {#each projects as project (project.id)}
   <div
-    class="flip-container move-container mt-[1rem] md:flex-1 md:min-w-0"
+    class="flip-container move-container mt-[1rem] shrink-0"
     on:click={() => toggleFlip(project.id)}
     on:keydown={(e) => e.key === "Enter" && toggleFlip(project.id)}
     role="button"
@@ -121,8 +121,8 @@
 
   @media (min-width: 768px) {
     .flip-card {
-      width: 100%;
-      height: 19rem;
+      width: 20rem;
+      height: 20rem;
     }
   }
 

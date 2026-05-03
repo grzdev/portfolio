@@ -4,9 +4,10 @@
   import type { Project, Project2 } from "../components/projectsInterface";
   import personalProjects from "../components/personalProjects.json";
   import pixelgrab from "../images/pixelgrab.png";
+  import quizorb from "../images/quizorb.png";
   import yezirPortfolio from "../images/yezir-portfolio.png";
   import testsource from "../images/testsource.png";
-  const projectImageMap: Record<number, string> = { 1: pixelgrab, 2: yezirPortfolio, 3: testsource };
+  const projectImageMap: Record<number, string> = { 1: pixelgrab, 2: quizorb, 3: yezirPortfolio, 4: testsource };
   export let projects: Project[] = personalProjects.personal.map((p) => ({ ...p, image: projectImageMap[p.id] }));
   import Donut from "../images/content.jpg";
   import yezir from "../images/yezir3.png";
@@ -35,10 +36,10 @@
       class="text-gray-300 font-mono hover:text-white transition duration-500 ease-in-out text-xl sm:text-3xl md:text-3xl font-mono font-bold"
       in:fade
     >
-      some featured work
+      some vibe coded projects
     </h1>
     <div
-      class="flex flex-row mt-[0.3rem] gap-[1.3rem] sm:gap-[2rem] md:gap-[2rem] overflow-x-auto md:overflow-x-visible custom-scrollbar"
+      class="flex flex-row mt-[0.3rem] gap-[1.3rem] sm:gap-[2rem] md:gap-[2rem] overflow-x-auto custom-scrollbar pb-[0.6rem]"
       class:slide-in={showDiv}
     >
       <ProjectsCard {projects} />
@@ -394,21 +395,24 @@
 <style>
   /* Target the scrollbar for the desired element */
   .custom-scrollbar::-webkit-scrollbar {
-    margin-top: 1rem;
     width: 2px;
-    height: 0rem;
-    background-color: black;
+    height: 6px;
+    background-color: transparent;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
   }
 
   /* Style the scrollbar thumb */
   .custom-scrollbar::-webkit-scrollbar-thumb {
-    background-color: #888;
-    border-radius: 1px;
+    background-color: rgba(150, 150, 180, 0.25);
+    border-radius: 8px;
   }
 
   /* Style the scrollbar thumb when hovered */
   .custom-scrollbar::-webkit-scrollbar-thumb:hover {
-    background-color: #555;
+    background-color: rgba(150, 150, 180, 0.5);
   }
   .slide-in {
     animation: slide-in 1.5s;

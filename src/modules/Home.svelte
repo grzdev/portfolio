@@ -109,26 +109,24 @@
     <div
       class="flex flex-col justify-center sm:justify-center mt:justify-start items-center sm:items-center md:items-start"
     >
-      {#if showText1}
-        <h1
-          class="text-gray-300 cursor-pointer font-mono hover:text-white transition duration-500 ease-in-out fly-in font-mono text-[1.8rem] mt-[-0.5rem] sm:mt-[-0.5rem] md:mt-[-1rem] sm:text-[3rem] md:text-[2rem] font-bold"
+      <h1
+          class="text-gray-300 cursor-pointer font-mono hover:text-white transition duration-500 ease-in-out font-mono text-[1.8rem] mt-[-0.5rem] sm:mt-[-0.5rem] md:mt-[-1rem] sm:text-[3rem] md:text-[2rem] font-bold stagger-item"
+          class:stagger-visible={showText1}
         >
           hello, i'm dami
         </h1>
-      {/if}
-      {#if showText2}
         <h1
-          class="text-gray-300 cursor-pointer font-mono hover:text-white transition duration-500 ease-in-out md:mt-[-0.6rem] fly-in font-mono text-[1.5rem] sm:text-[2rem] md:text-[2.5rem] font-bold"
+          class="text-gray-300 cursor-pointer font-mono hover:text-white transition duration-500 ease-in-out md:mt-[-0.6rem] font-mono text-[1.5rem] sm:text-[2rem] md:text-[2.5rem] font-bold stagger-item"
+          class:stagger-visible={showText2}
         >
           a <span
             class="text-[#76c3ff] cursor-pointer font-mono hover:text-[#31a4fe] transition duration-500 ease-in-out"
             >frontend engineer</span
           >
         </h1>
-      {/if}
-      {#if showText3}
         <div
-          class="fly-in flex flex-row mt-[1.5rem] sm:mt-[1.5rem] md:mt-[2rem] gap-[2rem]"
+          class="flex flex-row mt-[1.5rem] sm:mt-[1.5rem] md:mt-[2rem] gap-[2rem] stagger-item"
+          class:stagger-visible={showText3}
         >
           <a href="/projects">
             <button>
@@ -136,7 +134,6 @@
             </button>
           </a>
         </div>
-      {/if}
     </div>
   </div>
 
@@ -280,30 +277,6 @@
   button span:not(hover) {
     transition: all 1s;
   }
-  .fly-in {
-    animation:
-      fly-in 0.5s ease-out,
-      fade-in 1s ease-in;
-  }
-
-  @keyframes fly-in {
-    from {
-      transform: translateY(100%);
-    }
-    to {
-      transform: translateY(0);
-    }
-  }
-
-  @keyframes fade-in {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-
   /* Enhanced fade transition for image and icons */
   .fade-transition {
     opacity: 0;
@@ -312,6 +285,20 @@
   }
 
   .fade-transition.fade-in-active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Stagger text reveal — always in DOM, no layout shifts */
+  .stagger-item {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+                transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    will-change: opacity, transform;
+  }
+
+  .stagger-item.stagger-visible {
     opacity: 1;
     transform: translateY(0);
   }
